@@ -1,0 +1,49 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<!-- File: TellMe || Alice -->
+<!-- Author: VaryAble -->
+<!-- Date: 8/13/20 -->
+<!-- About: tell me -->
+<aiml>
+    <category>
+        <pattern>TELL ME ABOUT *</pattern>
+        <template>
+            <think><set name="it"><star/></set></think>
+            Here is some information about <star/>.
+            <button>
+                <text>Click here</text>
+                <url>https://en.wikiperdia.org/wiki/<star/></url>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>SHOW ME A MAP OF *</pattern>
+        <template>
+            <think><set name="it"><star/></set></think>
+            Here is a map of <star/>.
+            <button>
+                <text>Click here</text>
+                <url>https://www.google.co/uk/maps?q=<star/></url>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>What is the weather like in *</pattern>
+        <template>
+            <think><set name="it"><star/></set></think>
+            The weather in <star/> is....
+            <button>
+                <text>Click here</text>
+                <url>https://www.weather-forecast.com/locations/<star/>/forecasts/latest</url>
+            </button>
+        </template>
+    </category>
+<category>
+    <pattern>TELL ME ABOUT IT</pattern>
+    <template>
+        <condition name="it">
+            <li value="*"><srai>Tell me about <get name="it"/></srai></li>
+            <li>Tell you about what?</li>
+        </condition>
+    </template>
+</category></aiml> <!-- Thanks for looking -->

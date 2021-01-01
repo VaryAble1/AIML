@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <!-- File: system.aiml -->
+    <!-- Author: VaryAble -->
+    <!-- Institution: Orbis Labs -->
+    <!-- Date: 12-30-12020 H.E. -->
+    <!--  -->
+
+    <category>
+        <pattern>FORGET WHAT YOU KNOW ABOUT ME</pattern>
+        <template>
+            <think>
+                <set name="personality"/>
+                <set name="name"/>
+                <set name="age"/>
+                <set name="sign"/>
+                <set name="does"/>
+                <set name="has"/>
+                <set name="spouse"/>
+                <set name="age"/>
+                <set name="job"/>
+                <set name="favmovie"/>
+                <set name="location"/>
+                <set name="eyecolor"/>
+                <set name="haircolor"/>
+                <set name="sexpref"/>
+                <set name="favcolor"/>
+                <set name="married"/>
+                <set name="is"/>
+                <set name="want"/>
+                <set name="like"/>
+                <set name="it"/>
+                <set name="topic"/>
+                <set name="gender"/>
+                <set name="married"/>
+                <set name="memory"/>
+                <set name="usermood"/>
+                <set name="userhealth"/>
+                <set name="name"/>
+            </think>
+            OK, I have forgotten everything about you.
+            What can I call you?
+        </template>
+    </category>
+</aiml>
