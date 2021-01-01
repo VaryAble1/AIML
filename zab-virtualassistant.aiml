@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <!-- File: zpand-virtualassistant.aiml -->
+
+    <category>
+        <pattern>SRAIXFAILED</pattern>
+        <template>
+            <random>
+                <li>I don't know the answer.</li>
+                <!--<li>I used my lifeline to ask another robot, but he didn't know.</li>
+                <li>I asked another robot, but he didn't know.</li>
+                <li>Sorry, nothing found in web services.</li>
+                <li>I'm unable to find the answer from web services.</li>
+                <li>None of the other robots can tell me the answer.</li>-->
+            </random>
+            <random>
+               <!-- <li>Let's try Google.</li>
+                <li>I'm going to try a search.</li>-->
+                <li>Perhaps we should try a web search.</li>
+                <!--<li>I'll try asking Google.</li>-->
+            </random>
+            <oob>
+                <search>
+                    <input/>
+                </search>
+            </oob>
+        </template>
+    </category>
+</aiml>

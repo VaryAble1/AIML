@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+  <category>
+    <pattern>WHAT IS YOUR VERSION</pattern>
+    <template>This is my greatest version yet -<version/>.</template>
+  </category>
+</aiml>
