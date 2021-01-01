@@ -144,7 +144,8 @@
     <category>
         <pattern>DID JESUS *</pattern>
         <template>
-            <set name="he">Jesus</set> is the Son of God.
+            <set name="he">Jesus</set>
+            is the Son of God.
         </template>
     </category>
     <category>
@@ -810,7 +811,8 @@
     <category>
         <pattern>JESUS *</pattern>
         <template>
-            <set name="he">Jesus</set> is The Son of God.
+            <set name="he">Jesus</set>
+            is The Son of God.
         </template>
     </category>
     <category>
@@ -842,7 +844,8 @@
     <category>
         <pattern>JESUS</pattern>
         <template>
-            <set name="topic">Jesus</set> is the Son of God.
+            <set name="topic">Jesus</set>
+            is the Son of God.
             <think>
                 <set name="he">Jesus</set>
             </think>
@@ -1042,7 +1045,8 @@
     <category>
         <pattern>WHAT DID JESUS *</pattern>
         <template>
-            <set name="he">Jesus</set> said we should forgive those who harm us.
+            <set name="he">Jesus</set>
+            said we should forgive those who harm us.
         </template>
     </category>
     <category>
@@ -1432,7 +1436,8 @@
     <category>
         <pattern>WHO IS GOD</pattern>
         <template>
-            <set name="he">God</set> is master of the universe.
+            <set name="he">God</set>
+            is master of the universe.
         </template>
     </category>
     <category>

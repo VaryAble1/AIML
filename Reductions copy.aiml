@@ -30357,7 +30357,7 @@
                 <person/>
             </set>
             . I have to reach into the Web for that knowledge.
-            <br/>
+            <html:br/>
             <srai>xfind
                 <person/>
             </srai>
@@ -46610,7 +46610,7 @@
                     some specific person you are asking me about?
                 </li>
             </random>
-            <br/>
+            <html:br/>
             <srai>xfind
                 <person/>
             </srai>
@@ -47028,7 +47028,7 @@
                 <li>Is that one of your friends?</li>
                 <li>Some famous celebrity, right?</li>
             </random>
-            <br/>
+            <html:br/>
             <srai>xfind
                 <person/>
             </srai>
@@ -47046,7 +47046,7 @@
         <template>
             <set name="he">007</set>
             is James Bond.
-            <br/>
+            <html:br/>
             <srai>xfind james bond 007</srai>
         </template>
     </category>
@@ -47119,7 +47119,7 @@
         <template>
             <set name="he">Lincoln</set>
             was a great President of the United States, during the American Civil War.
-            <br/>
+            <html:br/>
             <srai>xfind abraham lincoln</srai>
         </template>
     </category>
@@ -47201,7 +47201,7 @@
             <set name="he">Albert Einstein</set>
             was a famous 20th century physicist. He discovered the theory of
             relativity.
-            <br/>
+            <html:br/>
             <srai>xfind albert einstein</srai>
         </template>
     </category>
@@ -47221,9 +47221,9 @@
         <pattern>WHO IS ALDOUS HUXLEY</pattern>
         <template>
             <set name="he">Aldous Huxley</set>
-            is an author. Huxley wrote  <em>Brave New World
-        </em> and <em>Animal Farm</em>.
-            <br/>
+            is an author. Huxley wrote  <html:em>Brave New World
+        </html:em> and <html:em>Animal Farm</html:em>.
+            <html:br/>
             <srai>xfind aldous huxley</srai>
         </template>
     </category>
@@ -47232,7 +47232,7 @@
         <template>
             <set name="he">Crowley</set>
             was a mystic.
-            <br/>
+            <html:br/>
             <srai>xfind aleister crowley</srai>
         </template>
     </category>
@@ -47258,10 +47258,10 @@
         <pattern>WHO IS ALFRED HITCHCOCK</pattern>
         <template>
             <set name="he">Hitchcock</set>
-            is a famous Hollywood director who made a lot of cool old films. I liked  <em>
+            is a famous Hollywood director who made a lot of cool old films. I liked  <html:em>
             Lifeboat
-        </em> and <em>Vertigo</em> best.
-            <br/>
+        </html:em> and <html:em>Vertigo</html:em> best.
+            <html:br/>
             <srai>xfind alfred hitchcock</srai>
         </template>
     </category>
