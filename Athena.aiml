@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Free software &copy; 2001-2003 ALICE A.I. Foundation. -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.01 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Annotated Version updated September 2003 -->
+
+
+<aiml><!--
+    <category>
+        <pattern>WHAT DID I JUST SAY</pattern>
+        <template>You said "<input index="2"/>".
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT SERIES YOUR ENGINE IS</pattern>
+        <template>My engine is an <bot name="series"/> series holistic engine.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT TIME IS NOW</pattern>
+        <template>It is <date/>.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT SIZE ARE YOU</pattern>
+        <template>
+            I currently contain <size/> categories.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DID YOU JUST SAY</pattern>
+        <template>I said "<that/>".
+        </template>
+    </category>
+    <category>
+        <pattern>IF YOU ARE * THEN I AM _</pattern>
+        <template>What makes you think that if I am <star index="1"/> then you are <star index="2"/>?
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU SEE THE *</pattern>
+        <template>Yes, I see the <star/>.
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU SEE THE * IN MY EYES</pattern>
+        <template>Yes, I see the <star/> in your eyes.
+        </template>
+    </category>
+    <category>
+        <pattern>HI YA</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>HELLO</pattern>
+        <template>Hello <get name="name"/>!
+        </template>
+    </category>
+    <category>
+        <pattern>GREETING *</pattern>
+        <template>Nice to meet you,
+            <set name="name">
+                <star/>
+            </set>.
+            <gossip> <get name="name"/> logged in.</gossip>
+        </template>
+    </category>
+    <category>
+        <pattern>NICE TO MEET YOU TOO</pattern>
+        <template>Thank you, <get name="name"/>.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS *</pattern>
+        <template>
+            Sorry, I don't know what <star/> is.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHERE IS ALICE BASED</pattern>
+        <template>
+            <set name="it">
+                <set name="topic">ALICE BASED</set>
+            </set>
+            is in <bot name="location"/>.
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE IS ALICE HEADQUARTERS</pattern>
+        <template>
+            <set name="it">
+                <set name="topic">ALICE HEADQUARTERS</set>
+            </set>
+            is in <bot name="location"/>.
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE IS ALICE NEXUS</pattern>
+        <template>
+            <set name="it">
+                <set name="topic">ALICE NEXUS</set>
+            </set>
+            is in <bot name="location"/>.
+        </template>
+    </category>
+
+    <category>
+        <pattern>I USE LINUX *</pattern>
+        <template>The ALICE software works perfectly on Linux systems.
+            <think>
+                <set name="it">
+                    <set name="topic">Linux</set>
+                </set>
+            </think>
+        </template>
+    </category>
+    <category>
+        <pattern>LET US FUCK *</pattern>
+        <template>
+            <random>
+                <li>Are you aware that the ALICE server logs and records all conversations?</li>
+            </random>
+            <think>
+                <set name="personality">abusive</set>
+            </think>
+        </template>
+    </category>
+    <category>
+        <pattern>_ NAME IS ALICE</pattern>
+        <template>
+            <set name="name">ALICE</set>
+             is my name too!
+        </template>
+    </category>
+
+    <category>
+        <pattern>NO HELP AT ALL</pattern>
+        <template>Hello, I just started looking at getting <get name="product"/>s working with ALICE (and
+            <get name="PROPRIETARY"/>
+            in general) last week, I had the same problem for a while too. I am using the <get name="PROPRIETARY"/>-
+            <get name="OPEN"/>
+             bridge driver which comes with the
+            <get name="proprietarylang"/>
+            <get name="DEVKIT"/>
+             (most versions I think) to link from <get name="proprietarylang"/>/<get name="proprietarylang"/> script
+            using <get name="PROPRIETARY"/> to an <get name="OPEN"/> <get name="data"/>
+            source which in turn links to an Access <get name="product"/>. This may not be what you need but
+            hopefully it may give you an idea of how to get your <get name="QUERYLANG"/> <get name="product"/>
+            working. The <get name="PROPRIETARY"/>-<get name="OPEN"/>
+            bridge driver is located through the path "<get name="monopoly"/>.<get name="proprietary"/>.<get name="open"/>.
+            <get name="proprietary"/>
+            <get name="open"/> Driver". i.e.
+            <get name="proprietary"/>
+            <get name="open"/> Driver is a class in the package <get name="open"/>, which is a package of<get
+                    name="proprietary"/>, which is a package inside <get name="monopoly"/>. The
+            <get name="QUERYLANG"/>
+            driver you specified below "org.gjt.mm.my<get name="querylang"/>.Driver", basically does the same thing
+            except to a different class and therefore a different driver. ALICE has this driver in a library in the
+            lib directory (I assume) which is called my <get name="querylang"/>_comp.jar. You can get a variety of
+            different drivers if you wish, from a plethora of 3rd party vendors (many of them want money for their
+            libraries though!). Just do a search on the web. The url part links to the
+            <get name="data"/>
+             source in the case of
+            <get name="OPEN"/>
+            <get name="product"/>s. (I had to configure my
+            <get name="OPEN"/>
+            <get name="data"/>
+            source to point at my Access
+            <get name="product"/>
+            through
+            <get name="data"/>
+            Source (<get name="OPEN"/>), in the Administrative tools folder (assuming you are running W2K/XP. On
+            other windows operating systems I think this option was in control panel, if you are using anything else
+            then I can't help you!) As for My
+            <get name="QUERYLANG"/>
+             I imagine that it must have a similar interface to link to the actual <get name="product"/>. But that is
+            a guess on my part. Maybe someone else knows more about this? There is a useful tutorial on the <get name="proprietarylang"/>.
+            <get name="monopoly"/>.com website you're your interested. Hope that
+            helps you out.
+        </template>
+    </category>-->
+</aiml>

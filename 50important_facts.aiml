@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <!-- Last modified 8-13-12020 by VaryAble -->
+
+    <category>
+        <pattern>Is it the i or the e first</pattern>
+        <template>
+            This is a spelling question that troubles even the best spellers
+            out there from time to time. The old rule "i before e except after
+            c" will help you sometimes, but not in all cases. Some important
+            notes should include "or when sounded like a, like neighbor
+            and weigh" and the rule should be dropped altogether when -c
+            sounds like -sh, as in species.
+        </template>
+    </category>
+    <category>
+        <pattern>How is a paper organized</pattern>
+        <template>
+            Being able to organize an essay, research project or story is an
+            essential part to doing well in any area of academics. While there
+            are, of course, many subtleties, a paper should start with an
+            introductory paragraph containing a thesis–the most important part
+            of any essay. After this, each paragraph should have a main idea
+            followed by information that expands on and explains these ideas.
+            At the end, work should be tied up with a conclusion paragraph. It
+            sounds basic, but many students let their writing become sloppier
+            as they go along or never develop these strong fundamentals in the
+            first place.
+        </template>
+    </category>
+    <category>
+        <pattern>Which is the subject and which is the object</pattern>
+        <template>
+            If you don’t remember which part of the sentence is which, you’re
+            not alone. In most basic terms, you can remember that the subject
+            is the part of the sentence that is doing something, while the
+            object is the thing that is having something done to it. This can
+            be helpful to know when learning a language besides English, as
+            well.
+        </template>
+    </category>
+    <category>
+        <pattern>What is a pronoun</pattern>
+        <template>
+            Most of us know what a noun is a person, place, or thing, but do you recall what a pronoun
+            is? Pronouns are the words that take the place of nouns in a
+            sentence including I, she, he, it, you, we and they. Using these
+            correctly may get a bit trickier but you can always ask me.
+        </template>
+    </category>
+    <category>
+        <pattern>What is a homonym antonym and a synonym</pattern>
+        <template>
+            A homonym is a group of words that appear to be the same but
+            actually have different meanings or pronunciations. An antonym
+            refers to a word that is the opposite in meaning from another
+            word. A synonym is a word that means the same or similar as
+            another word.
+        </template>
+    </category>
+    <category>
+        <pattern>What is the correct way to use commas</pattern>
+        <template>
+            Commas aren't alone in often being used incorrectly. Semi-colons,
+            hyphens and colons are frequently used incorrectly as well. If you
+            find it hard to remember to use these elements of speech
+            correctly, reference a guide like this until you can commit it to
+            memory.
+        </template>
+    </category>
+    <category>
+        <pattern>What’s the difference between its and it’s</pattern>
+        <template>
+            Find yourself often mixing these two up? You’re certainly not
+            alone but there’s an easy way to remember which is the right word
+            for the situation. Simply remind yourself that "it’s" is a
+            contraction of the words "it is." If the expanded form of those
+            words doesn’t make sense in your sentence, then you know to use
+            "its" rather than "it’s".
+        </template>
+    </category>
+    <category>
+        <pattern>How can you tell if a sentence is too long or too short</pattern>
+        <template>
+            Sentences can either be a run-on or a fragment. You can determine
+            if your sentence is a run-on by simply turning it into a yes or no
+            question. If it makes sense, you’re doing ok. If not, you need to
+            add some kind of conjunction or separate it into two sentences. A
+            fragment on the other hand is simply an incomplete sentence that
+            doesn’t make sense on it’s own. You can usually fix these by
+            adding them back onto the main sentence to which they refer.
+        </template>
+    </category>
+    <category>
+        <pattern>What are a verse stanza and paragraph</pattern>
+        <template>
+            In most cases, a verse is a single line of poetry, though more
+            loosely it is a series of words arranged metrically. A stanza is a
+            group of these verses, usually composed of four or more that work
+            together in a poem or a song. A paragraph, on the other hand, is a
+            division within a written work that focuses on a particular idea
+            found in prose rather than poetic works.
+        </template>
+    </category>
+    <category>
+        <pattern>What things need to be capitalized</pattern>
+        <template>
+            While you’re probably aware that things like names, titles and
+            other proper nouns need to be capitalized, are you aware of what
+            parts of a book title should be capitalized or whether or not to
+            capitalize the names of the seasons? Here you’ll find information
+            on just about everything you should or shouldn’t put into caps.
+        </template>
+    </category>
+    <category>
+        <pattern>What are the state capitals</pattern>
+        <template>
+            Unless you use this information regularly, it’s easy to forget
+            what the capital of far flung states are. It can be good to know
+            these kinds of things, however, so use this online table to
+            review. If you get ambitious, learn the capitals of other
+            countries as well.
+        </template>
+    </category>
+    <category>
+        <pattern>What are longitude and latitude</pattern>
+        <template>
+            Longitudinal lines are those that go around the globe vertically
+            (you can remember them as being long like hair) and latitudinal
+            lines are those that go around horizontally like the equator.
+            These lines allow every place on earth to be specified using just
+            three coordinates and aid in navigation.
+        </template>
+    </category>
+    <category>
+        <pattern>What factors led to the Revolutionary War</pattern>
+        <template>
+            Taxation without representation is a phrase you should remember
+            from your elementary education days. Taxes imposed on the colonies
+            by the British on goods like sugar and documents enraged the
+            public who felt that if they were gong to be taxed they should at
+            least have some kind of representation in the British Parliament.
+            These factors, among many much more complex issues, led the early
+            American people to revolt against British rule.
+        </template>
+    </category>
+    <category>
+        <pattern>How are laws made</pattern>
+        <template>
+            Not sure how the regulations we have came to be? The process takes
+            a little explaining so you can read about it here or watch the
+            classic Schoolhouse Rocks video of how a bill gets made into a
+            law.
+        </template>
+    </category>
+    <category>
+        <pattern>
+            What are the branches of the government and what do they do
+        </pattern>
+        <template>
+            The government is composed of three branches: the legislative, the
+            judicial and the executive. The legislative branch is made up of
+            the Senate and the House of Representatives. These individuals are
+            responsible for debating, proposing and signing bills into law.
+            The judicial branch refers to the court system, headed up by the
+            Supreme Court. This branch decides how to apply the laws, whether
+            or not they are constitutional and how they should be interpreted.
+            Finally, the executive branch is composed of the president, vice
+            president, cabinet members and various other supporting
+            institutions. This branch carries out laws, suggests new ones and
+            runs national defense and foreign policies.
+        </template>
+    </category>
+    <category>
+        <pattern>What is Manifest Destiny</pattern>
+        <template>
+            This term, coined in the 19th century, refers to the belief that
+            Americans were destined, perhaps even divinely so, to expand
+            across the continent from the Atlantic Ocean to the Pacific. This
+            term was used to justify the harsh, and often violent, means
+            implemented in an effort to bring the rest of North America under
+            US control.
+        </template>
+    </category>
+    <category>
+        <pattern>What are the major amendments to the Constitution</pattern>
+        <template>
+            The first ten amendments to the Constitution are collectively
+            known as the Bill of Rights. These include the right to free
+            speech, the right to bear arms, the right to trial, and many more
+            basic freedoms we often take for granted. Other important
+            amendments include the 13th which abolished slavery, the 15th
+            which gave non-whites the right to vote, the 19th giving women the
+            right to vote, the 22nd limiting the president to two terms, and
+            the 18th and 21st prohibiting (and then allowing) the sale and
+            consumption of alcohol.
+        </template>
+    </category>
+    <category>
+        <pattern>What were the 13 original colonies</pattern>
+        <template>
+            The 13 colonies were Massachusetts, Rhode Island, New Hampshire,
+            New York, Virginia, Connecticut, Delaware, New Jersey,
+            Pennsylvania, Maryland, North Carolina, South Carolina, and
+            Georgia.
+        </template>
+    </category>
+    <category>
+        <pattern>What are the names of the Great Lakes</pattern>
+        <template>
+            The Great Lakes are composed of five large bodies of water: Erie,
+            Huron, Michigan, Superior and Ontario, containing a whopping 5
+            percent of the world’s fresh water.
+        </template>
+    </category>
+    <category>
+        <pattern>Who wrote the Declaration of Independence</pattern>
+        <template>
+            While there were several contributors to this piece of writing,
+            the primary author was Thomas Jefferson, using the statement to
+            declare that the 13 colonies were no longer under the rule of the
+            British Empire.
+        </template>
+    </category>
+    <category>
+        <pattern>Why do the seasons change</pattern>
+        <template>
+            If you ask most people, they’ll say it has something to do with
+            the Earth’s distance from the sun. However, this is actually not
+            why the seasons occur. The real reason is that the Earth spins on
+            a tilted axis, causing different parts of the Earth to point
+            towards the sun at different times of the year. This allows more
+            sun to reach these areas at a more direct angle, causing the
+            warmer and cooler temperatures that we experience as the seasons.
+        </template>
+    </category>
+    <category>
+        <pattern>What’s the difference between mitosis and meiosis</pattern>
+        <template>
+            Mitosis it is the basic way that cells of all kinds reproduce,
+            creating two cells from one that are identical copies of the
+            original parent cell. Meiosis on the other hand, is what happens
+            in gamete or sex cells, producing cells with half the number of
+            chromosomes as the parent cell and creating four cells from the
+            original one.
+        </template>
+    </category>
+    <category>
+        <pattern>What the heck do mitochondria do</pattern>
+        <template>
+            You may have forgotten the parts of the cell, but the mitochondria
+            is an important component, providing your cells with the energy
+            they need to do what a cell needs to do, often being referred to
+            as the powerhouse of the cell.
+        </template>
+    </category>
+    <category>
+        <pattern>How are animal and plant cells different</pattern>
+        <template>
+            Animal and plant cells are alike in many ways but have some key
+            differences that allow them to create such a diverse group of
+            organisms. One difference is the lack of a thick cell wall in
+            animal cells. Plants need this cell wall to keep from bursting.
+            Perhaps the biggest difference between plant and animal cells is
+            their source of energy. Plants gather light from the sun and
+            convert it to energy through photosynthesis, while animal cells
+            use sugars and other substances that they consume to power
+            themselves. Additionally, plant and animal cells differ in the
+            size, shape and number of their vacuoles, and plant cells tend to
+            have a set shape while animal cells can differ greatly.
+        </template>
+    </category>
+    <category>
+        <pattern>What are the phases of the moon</pattern>
+        <template>
+            The moon starts off at the new moon where no light is visible.
+            From there it grows through the waxing crescent, first quarter,
+            and waxing gibbous into a full moon. After a full moon, the light
+            dwindles through the waning gibbous, third quarter, and waning
+            crescent back to the new moon.
+        </template>
+    </category>
+    <category>
+        <pattern>What are the types of clouds</pattern>
+        <template>
+            While there are many subdivisions of clouds, the main types are:
+            cumulus (the puffy, fluffy clouds); stratus (horizontal, layered
+            clouds); and cirrus (wispy, feathery clouds). Add the word
+            "nimbus" onto any of these to denote a cloud that produces rain,
+            hail or snow.
+        </template>
+    </category>
+    <category>
+        <pattern>What is the order of the planets</pattern>
+        <template>
+            While many of us learned that there are nine planets, today there
+            are only eight, as Pluto is no longer included. The remaining
+            eight comprise of: Mercury, Venus, Earth, Mars, Jupiter, Saturn,
+            Uranus and Neptune.
+        </template>
+    </category>
+    <category>
+        <pattern>How does weather work</pattern>
+        <template>
+            Weather is a complex thing, but something that students begin
+            learning about in school from an early age. Watch the animation
+            found on this site to learn why weather changes or stays the same.
+            You can also refresh your memory on the water cycle here.
+        </template>
+    </category>
+    <category>
+        <pattern>How do we know the Earth’s crust isn’t solid</pattern>
+        <template>
+            While the ground you’re standing on might seem solid, any fifth
+            grader can tell you that it’s simply an arrangement of plates
+            making up the outer crust. We can see and feel these plates move
+            through earthquakes and can look back in history to find that the
+            continents themselves have moved around over millions of years.
+        </template>
+    </category>
+    <category>
+        <pattern>How does gravity work</pattern>
+        <template>
+            While there are two different interpretations of gravity
+            (Einstein’s and Newton’s), we’ll stick with the basics here.
+            Gravity is the natural tendency for objects with mass to attract
+            one another. In our case, this object is Earth, which, in being
+            much larger than us, pulls us to the ground and keeps us firmly
+            earth bound.
+        </template>
+    </category>
+    <category>
+        <pattern>What’s osmosis</pattern>
+        <template>
+            As a kid you probably hoped you could learn through this process
+            rather than doing your homework, but you may have long since
+            forgotten the meaning. Osmosis is the process by which water is
+            diffused into a cell body through a semi-permeable membrane,
+            moving water from an area of high saturation to one of low
+            saturation, much like a sponge picking up a spill or water seeping
+            into a basement.
+        </template>
+    </category>
+    <category>
+        <pattern>How do reflexes work</pattern>
+        <template>
+            A reflex is an involuntary reaction that your body has in response
+            to a stimulus, like pulling your hand away from a hot surface.
+            Reflexes are controlled by the spinal cord, which takes over,
+            sending a message to your muscle via the nerves that tells it to
+            react. Reflexes can include things like coughing, breathing and
+            sneezing as well.
+        </template>
+    </category>
+    <category>
+        <pattern>What is the scapula</pattern>
+        <template>
+            The scapula is the scientific name for the shoulder blade, one of
+            206 bones in the human body.
+        </template>
+    </category>
+    <category>
+        <pattern>What are the steps of the scientific method</pattern>
+        <template>
+            If you want to figure something out using science, you’d follow
+            these steps of the scientific method: ask a question, do research,
+            form a hypothesis, test your hypothesis with an experiment,
+            analyze your data and draw a conclusion, and finally, report your
+            results.
+        </template>
+    </category>
+    <category>
+        <pattern>Who laid out the Laws of Motion</pattern>
+        <template>
+            The Laws of Motion (regarding force, inertia and other basics of
+            physics) were laid out by Sir Isaac Newton in 1687 and form the
+            foundation of classical mechanics.
+        </template>
+    </category>
+    <category>
+        <pattern>What are the parts of an atom</pattern>
+        <template>
+            There are three components to an atom: the protons (positively
+            charged particles); the neutrons (particles with no charge); and
+            numerous electrons (the negatively charged particles).
+        </template>
+    </category>
+    <category>
+        <pattern>How many feet are in a mile</pattern>
+        <template>
+            American students have it rough using measurements that are hard
+            to remember because they’re so oddly numbered. There are 12 inches
+            in a foot, three feet in a yard, 1760 yards in a mile. That means
+            there’s a whopping 5280 feet to a mile.
+        </template>
+    </category>
+    <category>
+        <pattern>What are the different types of numbers</pattern>
+        <template>
+            There are several different groups numbers can fall into. Natural
+            numbers (the counting numbers), whole numbers (add a zero to the
+            natural numbers), and integers (this group throws negatives into
+            the mix as well). Additionally, there are rational numbers
+            (integers with the addition of fractions) and irrational (numbers
+            that can’t be represented as fractions like pi and some square
+            roots). Of course, there are other groups as well, but these are
+            the basics.
+        </template>
+    </category>
+    <category>
+        <pattern>What is a prime number</pattern>
+        <template>
+            In math-speak, a prime number is a number that has two integer
+            factors, one and itself. More plainly speaking, it’s a number that
+            can’t be divided evenly by any number other than one and itself.
+            Some examples of prime numbers are 2, 3, 5, 7, and 11, though the
+            list goes on and on.
+        </template>
+    </category>
+    <category>
+        <pattern>Just what is the order of operations</pattern>
+        <template>
+            This order can be remembered as PEMDAS: parentheses, exponents,
+            multiplication, division, addition, and subtraction. This order
+            will allow you to get the correct answer when working with complex
+            equations.
+        </template>
+    </category>
+    <category>
+        <pattern>What’s a mean median mode and range</pattern>
+        <template>
+            The mean is the average of a group of numbers, the median is the
+            middle value in a list of numbers put in numerical order, the mode
+            is the most commonly occurring number and the range is the
+            difference between the largest and smallest values in the list.
+        </template>
+    </category>
+    <category>
+        <pattern>What are the types of triangles</pattern>
+        <template>
+            Triangles can be put into several categories: right (having one
+            right angle); equilateral (all angles are 60 degrees); isosceles
+            (having two equal angles and two equal sides); scalene (having no
+            sides the same); acute (all angles are less than 90 degrees); and
+            obtuse (the triangle has one angle larger than 90 degrees).
+        </template>
+    </category>
+    <category>
+        <pattern>What happens when you multiply two negatives</pattern>
+        <template>
+            Negative numbers can get tricky. When you multiply two of them,
+            you should end up with a positive number. Additionally, when you
+            subtract a negative number from any other number the negative
+            number is treated as an addition of a positive one.
+        </template>
+    </category>
+    <category>
+        <pattern>Can you divide by zero</pattern>
+        <template>
+            Hopefully you remembered you cannot divide by zero. Any attempt to
+            divide by zero, even to divide zero by zero, results in an
+            undefined result that isn’t much use to anyone.
+        </template>
+    </category>
+    <category>
+        <pattern>The Arts</pattern>
+        <template>Here you’ll find the basics for music and the arts.</template>
+    </category>
+    <category>
+        <pattern>What are the notes on the scale</pattern>
+        <template>
+            The basic notes on a scale are C, D, E, F, G, A and B in that
+            order, though there are sharps, flats and other variations to
+            these notes.
+        </template>
+    </category>
+    <category>
+        <pattern>What are the types of notes</pattern>
+        <template>
+            Chances are good that you used these notes in a childhood music
+            class, but you may have forgotten them, unless you still play an
+            instrument. The basic types of notes are whole, half, quarter,
+            eighth and sixteenth which you can see in this picture. Each type
+            of note tells you how many of it will appear in each measure.
+        </template>
+    </category>
+    <category>
+        <pattern>What is the style of art Picasso is best known for</pattern>
+        <template>
+            Picasso worked his way through a variety of artistic styles in his
+            decades of production but is perhaps best known for his work with
+            Cubism. Cubism distorts space and forms, leaving works that often
+            have recognizable elements that have been twisted and fractured.
+        </template>
+    </category>
+    <category>
+        <pattern>What is the difference between high and bas relief</pattern>
+        <template>
+            These represent different levels of relief. High relief art stands
+            out from its surface, often having elements that are not attached
+            at all. Bas relief on the other hand, is an extremely low relief,
+            barely standing out on the surface.
+        </template>
+    </category>
+    <category>
+        <pattern>What are complementary colors</pattern>
+        <template>
+            The basic colors on the color wheel are red, blue, yellow, purple,
+            orange and green. Of these colors, the complementary ones are
+            those that opposite to one another–blue and orange, red and green
+            and yellow and purple. When two complementary colors are mixed
+            they create a neutral color like gray or black.
+        </template>
+    </category>
+</aiml>
+      

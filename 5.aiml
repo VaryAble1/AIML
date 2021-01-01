@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <aiml>
-	<!-- 5.aiml - Number 5 related        -->
-	<!-- Released by Charlie Dev Team -->
-	<!-- Released under GNU GPL      -->
-	<!-- Fork of 9/26/2001 ALICE        -->
+	<!-- 5.aiml - Number 5 related                -->
+	<!-- Released by Orbis Labs                    -->
+	<!-- Released under GNU GPL                   -->
+	<!-- Fork of 9/26/2001 ALICE                  -->
+	<!-- Altered Dec. 16, 2016 by VaryAble -->
 	<category>
 		<pattern>5</pattern>
-		<template>Five
-</template>
+		<template>Five</template>
 	</category>
 </aiml>
+		<!-- Thanks for looking -->

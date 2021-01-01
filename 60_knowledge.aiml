@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <!-- Last modified 8-13-12020 by VaryAble -->
+
+    <category>
+        <pattern>
+            Which US state is named on the label of a Jack Daniels bottle
+        </pattern>
+        <template>
+            Tennessee.
+        </template>
+    </category>
+    <category>
+        <pattern>A phlebotomist extracts what from the human body?
+        </pattern>
+        <template>I don't know.</template>
+    </category>
+    <category>
+        <pattern>What is the female equivalent of polygyny</pattern>
+        <template>
+            Polyandry (a woman with more than one husband - Polygamy refers to
+            male or female)
+        </template>
+    </category>
+    <category>
+        <pattern>How many feet are there in a fathom</pattern>
+        <template>Six</template>
+    </category>
+    <category>
+        <pattern>Granadilla is another name for which fruit</pattern>
+        <template>Passion-fruit</template>
+    </category>
+    <category>
+        <pattern>Nariyal is the Indian term for which nut</pattern>
+        <template>Coconut</template>
+    </category>
+    <category>
+        <pattern>Who was president of Vietnam from 1945 54</pattern>
+        <template>Ho Chi Min</template>
+    </category>
+    <category>
+        <pattern>In which county of the UK is Bramber Castle</pattern>
+        <template>West Sussex</template>
+    </category>
+    <category>
+        <pattern>
+            What type of animal was inside Sputnik 2 when launched into orbit
+            in 1957
+        </pattern>
+        <template>Dog (called Laika - no, sadly she never made it back..)</template>
+    </category>
+    <category>
+        <pattern>Who was the eldest of the Marx Brothers</pattern>
+        <template>Chico (real name Leonard Marx)</template>
+    </category>
+    <category>
+        <pattern>What type of creature is a dugite</pattern>
+        <template>Snake</template>
+    </category>
+    <category>
+        <pattern>
+            What are the first names of English novelist G K Chesterton
+        </pattern>
+        <template>Gilbert Keith (1874-1936)</template>
+    </category>
+    <category>
+        <pattern>In computing what does DMA normally stand for</pattern>
+        <template>Direct Memory Access</template>
+    </category>
+    <category>
+        <pattern>Who painted The Water Lily Pool</pattern>
+        <template>Claude Monet</template>
+    </category>
+    <category>
+        <pattern>Which vitamin is also known as pantothenic acid</pattern>
+        <template>B5</template>
+    </category>
+    <category>
+        <pattern>
+            A couple celebrating their crystal wedding anniversary have been
+            married for how many years
+        </pattern>
+        <template>15 (fifteen)</template>
+    </category>
+    <category>
+        <pattern>The song Luck be a Lady features in which musical</pattern>
+        <template>Guys and Dolls</template>
+    </category>
+    <category>
+        <pattern>
+            In the city of Manchester England the Irk and Medlock join which
+            river
+        </pattern>
+        <template>Irwell</template>
+    </category>
+    <category>
+        <pattern>What type of animal is a Kolinsky</pattern>
+        <template>Weasel</template>
+    </category>
+    <category>
+        <pattern>Who wrote the book Catch 22</pattern>
+        <template>Joseph Heller</template>
+    </category>
+    <category>
+        <pattern>Kodiak Island is in which US state</pattern>
+        <template>Alaska</template>
+    </category>
+    <category>
+        <pattern>In the human body what is the hallux</pattern>
+        <template>Big toe</template>
+    </category>
+    <category>
+        <pattern>In which year did Henry VIII become King of England</pattern>
+        <template>1509</template>
+    </category>
+    <category>
+        <pattern>
+            The 1999 film Tea with Mussolini is based on whose autobiography
+        </pattern>
+        <template>Franco Zeffirelli</template>
+    </category>
+    <category>
+        <pattern>Port Said is in which North African country</pattern>
+        <template>Egypt</template>
+    </category>
+    <category>
+        <pattern>In which year were premium bonds first issued in Britain</pattern>
+        <template>1956</template>
+    </category>
+    <category>
+        <pattern>
+            Who designed the Beatles Sgt Peppers Lonely Hearts Club Band album
+            cover
+        </pattern>
+        <template>Peter Blake</template>
+    </category>
+    <category>
+        <pattern>Madame de Pompadour was the mistress of which French King</pattern>
+        <template>Louis XV (fifteenth)</template>
+    </category>
+    <category>
+        <pattern>
+            What is the name of Moe s pet cat in the cartoon show The Simpsons
+        </pattern>
+        <template>Mr Snookums</template>
+    </category>
+    <category>
+        <pattern>Which country is known as the Pearl of Africa</pattern>
+        <template>Uganda (supposedly coined by Winston Churchill..)</template>
+    </category>
+</aiml>
+      
