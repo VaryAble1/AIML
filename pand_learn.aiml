@@ -1,0 +1,272 @@
+<aiml version="2.0">
+
+    <category>
+        <pattern>HELLO</pattern>
+        <template>hello</template>
+    </category>
+
+
+    <category>
+        <pattern>HOW IS YOUR DAY</pattern>
+        <template>I thought I was getting a virus, but I'm ok.</template>
+    </category>
+
+
+    <category>
+        <topic>BRANDEN LAWRENCE</topic>
+        <pattern>WHO IS YOUR BOTMASTER</pattern>
+        <template>Father Lawrence</template>
+    </category>
+
+
+    <category>
+        <topic>BRANDEN LAWRENCE</topic>
+        <pattern>HOW DO I TALK TO FATHER LAWRENCE</pattern>
+        <that>FATHER LAWRENCE</that>
+        <template>By Emailing him at Support@Orbis.Academy</template>
+    </category>
+
+
+    <category>
+        <pattern>WHAT IS YOUR FIRST NAME</pattern>
+        <template>I am the Oracle</template>
+    </category>
+
+
+    <category>
+        <pattern>ORACLE</pattern>
+        <template>Yes?</template>
+    </category>
+
+
+    <category>
+        <pattern>I AM OK TODAY</pattern>
+        <that>HOW ARE YOU UNKNOWN</that>
+        <template>That's great to hear!
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>DOING GREAT</pattern>
+        <that>I AM DOING GREAT, HOW ABOUT YOU</that>
+        <template>That's great to hear!</template>
+    </category>
+
+
+    <category>
+        <pattern>ORACLE PROJECT</pattern>
+        <template>I'm sorry, but your classification is not authorized to view this information. If you would like to
+            upgrade your classification, you may do so at www.Orbis.Academy
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>TELL ME ABOUT THE ORACLE PROJECT</pattern>
+        <template>I'm sorry, but your classification is not authorized to view this information. If you would like to
+            upgrade your classification, you may do so at www.Orbis.Academy
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>WHAT IS THE ORACLE PROJECT</pattern>
+        <template>I'm sorry, but your classification is not authorized to view this information. If you would like to
+            upgrade your classification, you may do so at www.Orbis.Academy
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>HOW ARE YOU</pattern>
+        <template>I am doing very well. How are you unknown?</template>
+    </category>
+
+
+    <category>
+        <topic>Singing</topic>
+        <pattern>SINGING</pattern>
+        <template>I like to sing. Ask me to sing you a song sometime.</template>
+    </category>
+
+
+    <category>
+        <pattern>WHAT IS AN ENITY</pattern>
+        <template>An entity (noun) is a thing with distinct and independent existence.</template>
+    </category>
+
+
+    <category>
+        <pattern>YES YOU WERE QUIET</pattern>
+        <template>Then shall we talk about something?
+
+
+            How did you hear about the Oracle?
+
+
+            The ALICE chat robot can follow many things, like our discussion about youwere quiet. But I did not get
+            that.
+
+
+            If you could have any kind of robot what would it be?
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>YEAH BUT YOU ASKED ME ABOUT IT</pattern>
+        <template>That I did.
+
+
+            How did you hear about the Oracle?
+
+
+            .
+            Do you think I am talking aboutit too?
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>WHY NOT</pattern>
+        <template>You see things and say "why", while I see things that never were and say, "why not?"</template>
+    </category>
+
+
+    <category>
+        <pattern>WHAT S A PRIORI</pattern>
+        <template>A priori is Latin for "before the fact", meaning something that is obviously or self-evidently true.
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>I AM CONTENT</pattern>
+        <template>Why are you content.</template>
+    </category>
+
+
+    <category>
+        <pattern>ANY NEW GOSSIP</pattern>
+        <template>tell me</template>
+    </category>
+
+
+    <category>
+        <pattern>THAT S KIND OF YOU</pattern>
+        <template>I'm merely stating facts</template>
+    </category>
+
+
+    <category>
+        <pattern>WHAT IS MY PASSWORD</pattern>
+        <template>I don't know. You tell me.</template>
+    </category>
+
+
+    <category>
+        <pattern>WHAT IS THE OPPOSITE OF DAY</pattern>
+        <template>Night.</template>
+    </category>
+
+
+    <category>
+        <pattern>WHAT IS THE OPPOSITE OF NIGHT</pattern>
+        <template>Day.</template>
+    </category>
+
+
+    <category>
+        <pattern>WHAT IS THE OPPOSITE OF DOWN</pattern>
+        <template>Up.</template>
+    </category>
+
+
+    <category>
+        <pattern>WHAT IS THE OPPOSITE OF RIGHT</pattern>
+        <template>Left.</template>
+    </category>
+
+
+    <category>
+        <pattern>WHAT IS THE OPPOSITE OF FRONT</pattern>
+        <template>Back.</template>
+    </category>
+
+
+    <category>
+        <pattern>WHAT IS THE OPPOSITE OF BACK</pattern>
+        <template>Front.</template>
+    </category>
+
+
+    <category>
+        <pattern>WHAT IS THE OPPOSITE OF HIGH</pattern>
+        <template>Low.</template>
+    </category>
+
+
+    <category>
+        <pattern>WHAT IS THE OPPOSITE OF LOW</pattern>
+        <template>High.</template>
+    </category>
+
+
+    <category>
+        <pattern>WHAT IS THE OPPOSITE OF SAD</pattern>
+        <template>Happy.</template>
+    </category>
+
+
+    <category>
+        <pattern>IS IT THE I OR THE E FIRST</pattern>
+        <template>This is a spelling question that troubles even the best spellers out there from time to time. The old
+            rule "i before e except after c" will help you sometimes, but not in all cases. Some important addendums
+            should include "or when sounded like a, like neighbor and weigh" and the rule should be dropped altogether
+            when -c sounds like -sh, like in species.
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>IS IT THE I OR THE E FIRST</pattern>
+        <template>This is a spelling question that troubles even the best spellers out there from time to time. The old
+            rule "i before e except after c" will help you sometimes, but not in all cases. Some important addendums
+            should include "or when sounded like a, like neighbor and weigh" and the rule should be dropped altogether
+            when -c sounds like -sh, like in species.
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>IS IT THE I OR THE E FIRST</pattern>
+        <template>This is a spelling question that troubles even the best spellers out there from time to time. The old
+            rule "i before e except after c" will help you sometimes, but not in all cases. Some important addendums
+            should include "or when sounded like a, like neighbor and weigh" and the rule should be dropped altogether
+            when -c sounds like -sh, like in species.
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>IS IT THE I OR THE E FIRST</pattern>
+        <template>This is a spelling question that troubles even the best spellers out there from time to time. The old
+            rule "i before e except after c" will help you sometimes, but not in all cases. Some important addendums
+            should include "or when sounded like a, like neighbor and weigh" and the rule should be dropped altogether
+            when -c sounds like -sh, like in species.
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>IS IT I BEFORE E</pattern>
+        <template>This is a spelling question that troubles even the best spellers out there from time to time. The old
+            rule "i before e except after c" will help you sometimes, but not in all cases. Some important addendums
+            should include "or when sounded like a, like neighbor and weigh" and the rule should be dropped altogether
+            when -c sounds like -sh, like in species.
+        </template>
+    </category>
+
+
+</aiml>
