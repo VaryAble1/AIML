@@ -2,19 +2,20 @@
 
 <aiml version="1.0">
 
-<!-- Free software (c) 2001 ALICE AI Foundation -->
-<!-- This program is open source code released under -->
-<!-- the terms of the GNU General Public License -->
-<!-- as published by the Free Software Foundation. -->
+    <!-- Free software (c) 2001 ALICE AI Foundation -->
+    <!-- This program is open source code released under -->
+    <!-- the terms of the GNU General Public License -->
+    <!-- as published by the Free Software Foundation. -->
 
-<meta name="author" content="Pedro E. Colla"/>
-<meta name="language" content="en"/>
+    <meta name="author" content="Pedro E. Colla"/>
+    <meta name="language" content="en"/>
 
-<category>
-<pattern>WHAT IS THE DATE</pattern>
-<template>
-Today is <javascript>
-<![CDATA[
+    <category>
+        <pattern>WHAT IS THE DATE</pattern>
+        <template>
+            Today is
+            <javascript>
+                <![CDATA[
      var t = new Date();
      var m = t.getMonth();
      var d = t.getDate();
@@ -85,22 +86,23 @@ case 11:
 dow + ", " + m + " " + d + ", " + y;
 
 ]]>
-</javascript>
-</template>
-</category>
+            </javascript>
+        </template>
+    </category>
 
-<category>
-<pattern>WHAT IS TODAY</pattern>
-<template>
-<srai>WHAT IS THE DATE</srai>
-</template>
-</category>
+    <category>
+        <pattern>WHAT IS TODAY</pattern>
+        <template>
+            <srai>WHAT IS THE DATE</srai>
+        </template>
+    </category>
 
-<category>
-<pattern>WHAT TIME IS IT</pattern>
-<template>
-The time is <javascript> 
-<![CDATA[
+    <category>
+        <pattern>WHAT TIME IS IT</pattern>
+        <template>
+            The time is
+            <javascript>
+                <![CDATA[
  var now = new java.util.Date()
  var hour = now.getHours()
  var minute = now.getMinutes()
@@ -120,8 +122,8 @@ if (minute < 10)
  minute = "0" + minute // do not parse this number!
 hour + ":" + minute + " " + ampm;
 ]]>
-</javascript>
-</template>
-</category>
+            </javascript>
+        </template>
+    </category>
 
 </aiml>

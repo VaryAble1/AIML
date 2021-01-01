@@ -2,18 +2,18 @@
 
 <aiml version="1.0">
 
-<meta name="author" content="Jon Baer"/>
+    <meta name="author" content="Jon Baer"/>
 
-<!-- Free software (c) 2001 ALICE AI Foundation -->
-<!-- This program is open source code released under -->
-<!-- the terms of the GNU General Public License -->
-<!-- as published by the Free Software Foundation. -->
+    <!-- Free software (c) 2001 ALICE AI Foundation -->
+    <!-- This program is open source code released under -->
+    <!-- the terms of the GNU General Public License -->
+    <!-- as published by the Free Software Foundation. -->
 
-<category>
-<pattern>TELL BOT AGE</pattern>
-<template>I am 
-<javascript>
-<![CDATA[
+    <category>
+        <pattern>TELL BOT AGE</pattern>
+        <template>I am
+            <javascript>
+                <![CDATA[
 var now = new java.util.Date()
 var birth = new java.util.Date(bot("birthday"))
 var difference = now.getTime() - birth.getTime()
@@ -27,15 +27,15 @@ var secondsDifference = Math.floor(difference/1000)
 daysDifference + " days, " + hoursDifference + " hours, " +
 minutesDifference + " minutes and " + secondsDifference + " seconds old."
 ]]>
-</javascript>
-</template>
-</category>
+            </javascript>
+        </template>
+    </category>
 
-<category>
-<pattern>what does * mean</pattern>
-<template>
-<javascript>
-<![CDATA[
+    <category>
+        <pattern>what does * mean</pattern>
+        <template>
+            <javascript>
+                <![CDATA[
      var word = '<star/>'
      
      if (word.indexof(" ") > 0) word = word.substr(0, word.indexOf(" "));
@@ -78,22 +78,25 @@ minutesDifference + " minutes and " + secondsDifference + " seconds old."
      
      _buffer.toString();
 ]]>
-</javascript>
-</template>
-</category>
+            </javascript>
+        </template>
+    </category>
 
-<category>
-<pattern>WHAT IS THE DEFINITION OF *</pattern>
-<template>
-<srai>WHAT DOES <star/> MEAN</srai>
-</template>
-</category>
+    <category>
+        <pattern>WHAT IS THE DEFINITION OF *</pattern>
+        <template>
+            <srai>WHAT DOES
+                <star/>
+                MEAN
+            </srai>
+        </template>
+    </category>
 
-<category>
-<pattern>SELECT *</pattern>
-<template>
-<javascript>
-<![CDATA[
+    <category>
+        <pattern>SELECT *</pattern>
+        <template>
+            <javascript>
+                <![CDATA[
      var sql = '<star/>' 
 
      sql = "select " + sql;
@@ -123,8 +126,8 @@ minutesDifference + " minutes and " + secondsDifference + " seconds old."
      
      _buffer.toString();
 ]]>
-</javascript>
-</template>
-</category>
+            </javascript>
+        </template>
+    </category>
 
 </aiml>
