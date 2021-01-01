@@ -1,0 +1,1034 @@
+<aiml>
+
+<category>
+<pattern>HELP FOR CONTROL COMMANDS</pattern>
+<template>In the control category of script commands are: do, break, restart, exit, quit, submit, show, calc.</template>
+</category>
+
+<category>
+<pattern>HELP FOR DO</pattern>
+<template>
+do<br/>
+Just a syntax place holder which does nothing but provides for nested conditionals.  The null statement.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR BREAK</pattern>
+<template>
+break<br/>
+Stops current frame from continuing as though it finished normally (skip to end of frame).
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR RESTART</pattern>
+<template>
+restart<br/>
+Loops back to beginning of frame and starts again (jump to start of frame).<br/>
+Looks for "}" of frame id so it doesn't work for the command statement and the command typed in at the command line.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR EXIT</pattern>
+<template>
+exit<br/>
+Stops current frame from continuing with a flag set to stop any further processing of script.<br/>
+A exit command entered at the immediate command prompt (Ctrl-E) will stop any currently executing script.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR QUIT</pattern>
+<template>
+quit<br/>
+Stops the program.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR SUBMIT</pattern>
+<template>
+submit &lt;predicate name&gt;<br/>
+Immediately executes the predicate as though it was a called frame (without the frame id).<br/>
+Does not allow restarts in script because of the missing frame id.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR SHOW</pattern>
+<template>
+show &lt;on/off/deduce/think&gt;<br/>
+Turns the display flag on or off.<br/>
+Predetermine commands will ignore their output when show is off.<br/>
+This is especially significant for the kill command since it will not ask for confirmation if show is off.<br/>
+It effects these commands: subjects, cases, facts, db, frame, frames, scripts, kill, calc, rules, attributes, why, what, how, which.<br/>
+The deduce option turns off inputs from script assignment.  With deduce, only the existing predicates are used.<br/>
+The think option turns off both display and inputs.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR CALC</pattern>
+<template>
+calc &lt;expression&gt;<br/>
+Immediately display an answer from the expression sent to the calculator.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR SCRIPT COMMANDS</pattern>
+<template>In the script category of script commands are: pose, rescind, frame, scripts.</template>
+</category>
+
+<category>
+<pattern>HELP FOR POSE</pattern>
+<template>
+pose &lt;script file name&gt;<br/>
+<!--Loads text file with line length < 1024. --> Text lines are CR,LF delimited.  The file name becomes the script name (with the .txt removed.)
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR RESCIND</pattern>
+<template>
+rescind &lt;script&gt;<br/>
+Deallocates the storage used by storing the script file and removes the object from the script class.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FRAME</pattern>
+<template>
+frame &lt;frame id&gt;<br/>
+Lists all the command statements in the given frame.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR SCRIPTS</pattern>
+<template>
+scripts |v| |c|<br/>
+Lists all available frames in the order by which they will be processed during an interview, etc.<br/>
+The optional v parameter causes the list to include the frame statements.<br/>
+The optional c parameter causes the list to only include the currently processing script.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR SUBJECT COMMANDS</pattern>
+<template>In the subject category of script commands are: consider, discard, get, put, subjects.</template>
+</category>
+
+<category>
+<pattern>HELP FOR CONSIDER</pattern>
+<template>
+consider &lt;subject&gt;<br/>
+Switches focus to the specified set of cases.<br/>
+If the subject area does not exist, it is created.  An empty ~~global~~ case is also created and made the current case.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR DISCARD</pattern>
+<template>
+discard<br/>
+All the cases in the current subject are dropped and the subject is discarded.<br/>
+The current subject area is switched to "New Cases".  If that subject area does not exist, it is created and an empty ~~global~~ case is also created and made the current case.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR GET</pattern>
+<template>
+get &lt;file name&gt;<br/>
+Loads all cases in current subject from a text file.<br/>
+If a new subject is not considered prior to the get, the cases in the text file will be merged into the existing subject.  When name conflicts between cases occur, the old case is dropped and the one in the text file replaces it.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR PUT</pattern>
+<template>
+put &lt;file name&gt;<br/>
+Saves all cases in current subject into a text file.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR SUBJECTS</pattern>
+<template>
+subjects |v| |x|<br/>
+Display a list of subject titles and cases.<br/>
+The optional v parameter causes the list to include the facts(predicates) in each case.<br/>
+The optional x parameter causes the list to be in XML format.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR CASES COMMANDS</pattern>
+<template>In the cases category of script commands are: make, drop, load, save, cases.</template>
+</category>
+
+<category>
+<pattern>HELP FOR MAKE</pattern>
+<template>
+make &lt;case name&gt;<br/>
+Allocates dynamic memory for new case or switches to an existing case.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR DROP</pattern>
+<template>
+drop<br/>
+De-allocates current case and its memory. The current case becomes ~~global~~.<br/>
+If ~~global~~ was dropped, it is recreated.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR LOAD</pattern>
+<template>
+load &lt;file name&gt;<br/>
+Reads a text file to create all the predicates for the single case.<br/>
+Creates an case if one does not already exist, otherwise becomes the current case.  Uses the file name for the case name (excluding the .txt).
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR SAVE</pattern>
+<template>
+save &lt;file name&gt;<br/>
+Stores all the predicates of the current case into a text file.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR CASES</pattern>
+<template>
+cases |v| |x| |f| |l| |s|<br/>
+Display a list of cases in current subject.<br/>
+The optional v is list verbose which includes all details down to facts.<br/>
+The optional x is list in XML format.<br/>
+The optional f is list in file format (same as save statement).<br/>
+The optional l is list only local predicates filter.<br/>
+The optional s is list only situation tags filter.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FACTS COMMANDS</pattern>
+<template>In the facts category of script commands are: url, evaluate, queue, push, pop, insert, extract, declare, remove, facts.</template>
+</category>
+
+<category>
+<pattern>HELP FOR URL</pattern>
+<template>
+url &lt;http:address&gt;<br/>
+Retrieves the data from the Internet for the specified url.  Only retrieves the page data and not any embedded images or addition script like cascading style sheets. The results are put into predicates named URLdata1 through URLdata9 or whatever number it takes to download the page's bits.  The URLdata# predicates are sized at the basic buffer size for all variables which currently is set to 10,240 bytes.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR EVALUATE</pattern>
+<template>
+evaluate &lt;*predicate name&gt;<br/>
+Replaces predicate with the result from sending the value to the calculator.<br/>
+This currently only works on first value of the predicate - not on multi-values.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR QUEUE</pattern>
+<template>
+queue &lt;*predicate name&gt; &lt;predicate name&gt;...<br/>
+The first specified predicate becomes a list with the following predicates appended on the front end (FIFO using pop).
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR PUSH</pattern>
+<template>
+push &lt;*predicate name&gt; &lt;predicate name&gt;...<br/>
+The first specified predicate becomes a list with the following predicates added to the tail end of the list (LIFO using pop).
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR POP</pattern>
+<template>
+pop &lt;*predicate name&gt; &lt;predicate name&gt;...<br/>
+The first specified predicate loses last entry in its list and the second predicate becomes that entry, and so on for all the following predicates.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR INSERT</pattern>
+<template>
+insert &lt;count&gt; &lt;*predicate name&gt; &lt;predicate name&gt;...<br/>
+Puts second specified predicate into first specified predicate's multi-value list at specified count from beginning of list.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR EXTRACT</pattern>
+<template>
+extract &lt;count&gt; &lt;*predicate name&gt; &lt;*predicate name&gt;<br/>
+Removes specified entry (count item) from the first predicate's multi-value list and puts it in second predicate.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR DECLARE</pattern>
+<template>
+declare &lt;predicate name&gt;<br/>
+Moves the predicate to the ~~global~~ object<br/>
+A predicate can be retrieved from the ~~global~~ object by just using its name in the assignment statement when the current object does not already contain the predicate, ~~global~~ is automatically inherited (after the $General inheritance has not found the predicate).
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR REMOVE</pattern>
+<template>
+remove &lt;*predicate name&gt;...<br/>
+Delete predicate(s) only in current case.<br/>
+To remove all situation tags for a particular frame, add "()" to the end of the frame id, e.g., remove $GENUS().<br/>
+To remove all the assigned values use the wildcard *, e.g., remove *.<br/>
+To remove all the script history for an case use the wildcard *(), e.g. remove *().
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FACTS</pattern>
+<template>
+facts |x| |l| |s|<br/>
+Display a list of facts (predicates) in current case.<br/>
+The optional x is list in XML format.<br/>
+The optional l is list only local predicates filter.<br/>
+The optional s is list only situation tags filter.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR EDITOR COMMANDS</pattern>
+<template>In the editor category of script commands are: nl, clear, home, eop, position, pin, select, cut, copy, paste, erase, read, find, open, saveas, kill.</template>
+</category>
+
+<category>
+<pattern>HELP FOR NL</pattern>
+<template>
+nl<br/>
+Displays a new line, that is, carriage return and line feed.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR CLEAR</pattern>
+<template>
+clear<br/>
+Erases all the text in the editor, that is, clears the display.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR HOME</pattern>
+<template>
+home<br/>
+Moves the cursor to the first position in the file.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR EOP</pattern>
+<template>
+eop<br/>
+Moves the cursor to the end of the text file (end of page).
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR POS</pattern>
+<template>
+pos &lt;position&gt;<br/>
+Moves the cursor to the given character position from the start of the text file.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR PIN</pattern>
+<template>
+pin<br/>
+Saves the cursor position for later use by the select command.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR SELECT</pattern>
+<template>
+select &lt;position&gt;<br/>
+Turns selection on from current position to given character position from start of text file.  If the position is not given, then the selected text is from the last pin position to the current cursor location.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR CUT</pattern>
+<template>
+cut<br/>
+Cuts the selected text onto the clipboard.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR COPY</pattern>
+<template>
+copy<br/>
+Copies the selected text onto the clipboard.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR PASTE</pattern>
+<template>
+paste<br/>
+Insert text from clipboard into current cursor location.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR ERASE</pattern>
+<template>
+erase<br/>
+Deletes the selected text.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR READ</pattern>
+<template>
+read &lt;predicate name&gt;<br/>
+Copies the current text selection into the data of the given predicate.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FIND</pattern>
+<template>
+find &lt;character string&gt;<br/>
+Selects the next text matching the find string.  The match is case sensitive.<br/>
+Note: If the cursor is at home, the find currently doesn't work on the Pocket PC!  Any other position in the file works fine.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR OPEN</pattern>
+<template>
+open &lt;file name&gt;<br/>
+Opens the given text file for editing.<br/>
+The filename must be fully qualified (from the root of the Pocket PC file system.)
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR SAVEAS</pattern>
+<template>
+saveas &lt;file name&gt;<br/>
+Saves the text to the given fully qualified file name.<br/>
+If a file name is not given, a file explorer is presented similar to the "Save As..." menu option.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR KILL</pattern>
+<template>
+kill &lt;file name&gt;<br/>
+Deletes the given fully qualified file name.<br/>
+If the "show on" display flag is set (which is the default), a confirmation dialog is displayed.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR AIML COMMANDS</pattern>
+<template>In the AIML category of script commands are: bot, match, search, ignore, recall, db, use, getbot, setbot, normalize, category, write, rewrite.</template>
+</category>
+
+<category>
+<pattern>HELP FOR BOT</pattern>
+<template>
+bot &lt;input&gt;<br/>
+Sends the input which may be a predicate's data to chat bot as a request and gets $REPLY as response.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR MATCH</pattern>
+<template>
+match &lt;input&gt;<br/>
+Sends the input which may be a predicate's data to AIML engine matching routine and gets the $BotDB Pattern, $BotDB Template and $BotDB Index predicates for the category that matches.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR SEARCH</pattern>
+<template>
+search &lt;pattern&gt;<br/>
+Searches the AIML internal database for the given pattern.  The pattern is in the BotDB Pattern format which looks like the data of the pattern tag followed by the optional &lt;that&gt; and the data in the that tag followed by an optional &lt;topic&gt; with the attribute in the topic tag.  Only compares the length of the given pattern so this may be used for a partial match to get a starting index in the database.  Returns $BotDB Pattern, $BotDB Template and BotDB Index predicates.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR IGNORE</pattern>
+<template>
+ignore &lt;pattern&gt;<br/>
+Marks the exactly matching pattern as temporarily not part of the categories to be considered by the AIML engine.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR RECALL</pattern>
+<template>
+recall &lt;pattern&gt;<br/>
+Restores the exactly matching pattern back into the categories to be considered by the AIML engine.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR DB</pattern>
+<template>
+db &lt;item number&gt; &lt;pattern file name&gt; &lt;template file name&gt;<br/>
+Displays the specified pattern as a XML category entry.<br/>
+Also creates BotDB Index, BotDB Pattern and BotDB Templates predicates.<br/>
+If item number is negative or the "show off" display flag is set, only the predicates are created.<br/>
+Pattern file name and template file name are optional.<br/>
+The item number may be from the data in a predicate.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR USE</pattern>
+<template>
+use &lt;index file name&gt; &lt;patterns file name&gt; &lt;templates file name&gt; &lt;bot vars file name&gt;<br/>
+This command effectively can change the bot's brain like switching to a different bot.  It identifies an alternate AIML database and bot vars.<br/>
+All the files names are optional.<br/>
+If none are given, then the AIML database returns back to its default as at was at the start of the program.<br/>
+If only one file name is given, then it is assumed to be the folder for the three AIML database files using their standard names of index.txt, patterns.txt and templates.txt.<br/>
+If two file names are given, then the bot vars (predicates) come from the indicated file as well as the AIML database changing to the given folder.<br/>
+If three files are given, then each AIML file is changed as outlined in the above syntax.<br/>
+If all four files are given, then the four files indicated in the syntax above are changed to the new settings.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR GETBOT</pattern>
+<template>
+getbot &lt;*thats&gt; &lt;*inputs&gt; &lt;*topic&gt;<br/>
+Dumps the history in the AIML engine into the given predicates.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR SETBOT</pattern>
+<template>
+setbot &lt;thats&gt; &lt;inputs&gt; &lt;topic&gt;<br/>
+Set the history, the thats and inputs and topic, of the AIML engine from the data in the given predicates.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR NORMALIZE</pattern>
+<template>
+normalize &lt;predicate&gt;<br/>
+Normalize the contents of given predicate the same as the bot's input is normalized.<br/>
+Picks the last sentence so will match as &lt;that&gt;'s do.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR CATEGORY</pattern>
+<template>
+category &lt;pattern&gt; &lt;template&gt;<br/>
+Given the format as in the BotDB Pattern and BotDB Template predicates extracted with the DB command, a new category is immediately added to the AIML text database and can be used in the next chat input.<br/>
+Note that when the category is added, it is sorted in according to the standard AIML matching rules for GraphMaster technology.  If the database is large, this may take a few seconds.<br/>
+Also note that pattern and template may be from the data in a predicate.  To assist in writing directly in AIML, &amp;lt; and &amp;gt; are converted in pattern and template data to &lt; and &gt;.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR WRITE</pattern>
+<template>
+write &lt;pattern&gt; &lt;template&gt; &lt;file name&gt;<br/>
+Given the format as in the BotDB Pattern and BotDB Template predicates extracted with the DB command, a new category is immediately added to the AIML text file.<br/>
+Note that the category is added to the end of the file just before &lt;/aiml&gt;.<br/>
+If the file does not exist, it is created.<br/>
+The folder in which the file is created must exist before using the write command.<br/>
+Also note that pattern and template may be from the data in a predicate.  To assist in writing directly in AIML, &amp;lt; and &amp;gt; are converted in pattern and template data to &lt; and &gt;.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR REWRITE</pattern>
+<template>
+rewrite &lt;old pattern&gt; &lt;new pattern&gt; &lt;template&gt; &lt;file name&gt;<br/>
+This is just like the write script command except if a category matching the old pattern exists in the AIML text file, it is removed before the new category is added.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR GRAMMAR COMMANDS</pattern>
+<template>In the grammar category of script commands are: sentences, words, senses, synonyms, define.</template>
+</category>
+
+<category>
+<pattern>HELP FOR SENTENCES</pattern>
+<template>
+sentences &lt;predicate&gt;<br/>
+The sentences in the predicate are split out into the multi-value fields associated with the predicate.<br/>
+So the $var(0) is the original value and $var(1) to $var(n) are the sentences contained in it.<br/>
+You can use the @MVCNT("$var") - 1 expression to determine how many sentences are found.<br/>
+This lets you pick a single sentence out of the many possible responses to a bot input for feedback in self-chatting.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR WORDS</pattern>
+<template>
+words &lt;-parameters&gt; &lt;predicate&gt;<br/>
+The words in the predicate are split out into the multi-value fields associated with the predicate.<br/>
+So the $var(0) is the original value and $var(1) to $var(n) are the words contained in it.<br/>
+You can use the @MVCNT("$var") - 1 expression to determine how many words are found.<br/>
+All words found and placed in the multi-value list are changed to lowercase.<br/><br/>
+The -parameters is optional.  It is determined by the - prefix.<br/>
+If used, it must be enclosed in quotes or be a predicate.<br/>
+The parameter filters the words to parts of speech.<br/>
+It can be a dash followed by any number of these letters: "n" for the nouns, "v" for the verbs, "a" for the adjectives, "r" for the adverbs, "f" for female names, "m" for male names, "s" for words in the stop list, "b" for words in the bad words list, and "x" to exclude words indicated by parameters instead of including them.<br/>
+"!"  and "=" are special options for repeated executions of the word command.<br/>
+"^" means all words found are merged into existing multi-value list and duplicates are ignored.<br/>
+"!"  is for removing words found from an existing multi-value list, for example "-s!" removes words on the stop list from words already in the multi-value list by a previous execution.<br/><br/>
+Example: words $phrase               splits the phrase into words<br/>
+	words "-v" $phrase         finds those words in the phrase which can be a verb<br/>
+	words "-xnvr" $phrase    finds words that can only be a verb or unknown part of speech (specify stop list and names to eliminate more)<br/>
+	words "-a^" $phrase        finds words that can be an adjective and add them if they are not already in the list of words found<br/>
+	words "-b!" $phrase        remove bad words from those already in the list of words found
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR SENSES</pattern>
+<template>
+senses &lt;-parameters&gt;  &lt;predicate&gt;<br/>
+The word in the predicate has its senses (meanings) iterated into the multi-value fields associated with the predicate.<br/>
+So the $var(0) is the original value and $var(1) to $var(n) are the word senses pertaining to it.<br/>
+You can use the @MVCNT("$var") - 1 expression to determine how many senses are found.<br/>
+This lets you pick a single meaning out of the many possible senses a word can denote.<br/><br/>
+The -parameter is optional.  It is determined by the - prefix.<br/>
+If used, it must be enclosed in quotes or be a predicate.<br/>
+It filters the senses to a part of speech.   It can be "-n" for the noun senses, "-v" for the verb senses, "-a" for the adjective senses, or "-r" for the adverb senses.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR SYNONYMS</pattern>
+<template>
+synonyms &lt;-parameters&gt;  &lt;predicate&gt;<br/>
+The sense or word in the predicate has its synonyms iterated into the multi-value fields associated with the predicate.<br/>
+So the $var(0) is the original value and $var(1) to $var(n) are the synonyms relating to it.<br/>
+You can use the @MVCNT("$var") - 1 expression to determine how many synonyms are found.<br/>
+All synonyms found are changed to lowercase.<br/>
+This lets you pick alternate words for a sense, that is, different words with the same specific meaning.<br/>
+You can use a word instead of the sense as the value of the predicate.   Then all possible synonyms of the word are put into the multi-values.<br/>
+The optional -parameter only applies when using a word because senses already are too specific to require filtering.<br/>
+The -parameter is identified by its - prefix.<br/>
+If used, it must be enclosed in quotes or be a predicate.<br/>
+It can be "-n" for the noun synonyms, "-v" for the verb synonyms, "-a" for the adjective synonyms, or "-r" for the adverb synonyms.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR DEFINE</pattern>
+<template>
+define &lt;-parameters&gt;  &lt;predicate&gt;<br/>
+The WordNet dictionary definition of the word is displayed in the notepad edit text.<br/>
+The -parameter is optional.  It is identified by the - prefix.<br/>
+If used, it selects different reports available through the WordNet library.<br/>
+The following is a list of possible reports to display for the definition of the given word (searchstr):<br/><br/>
+-syns (n | v | a | r ) <br/>
+Display synonyms and immediate hypernyms of synsets containing searchstr . Synsets are ordered by estimated frequency of use. For adjectives, if searchstr is in a head synset, the cluster's satellite synsets are displayed in place of hypernyms. If searchstr is in a satellite synset, its head synset is also displayed. <br/>
+-simsv<br/>
+Display verb synonyms and immediate hypernyms of synsets containing searchstr . Synsets are grouped by similarity of meaning.<br/>
+-ants (n | v | a | r )<br/>
+Display synsets containing antonyms of searchstr . For adjectives, if searchstr is in a head synset, searchstr has a direct antonym. The head synset for the direct antonym is displayed along with the direct antonym's satellite synsets. If searchstr is in a satellite synset, searchstr has an indirect antonym via the head synset, which is displayed.<br/>
+-faml (n | v | a | r )<br/>
+Display familiarity and polysemy information for searchstr.<br/>
+-hype (n | v )<br/>
+Recursively display hypernym (superordinate) tree for searchstr (searchstr IS A KIND OF _____ relation).<br/>
+-hypo (n | v )<br/>
+Display immediate hyponyms (subordinates) for searchstr (_____ IS A KIND OF searchstr relation).<br/>
+-tree (n | v )<br/>
+Display hyponym (subordinate) tree for searchstr . This is a recursive search that finds the hyponyms of each hyponym.<br/>
+-coor (n | v )<br/>
+Display the coordinates (sisters) of searchstr . This search prints the immediate hypernym for each synset that contains searchstr and the hypernym's immediate hyponyms.<br/>
+-subsn<br/>
+Display substance meronyms of searchstr (HAS SUBSTANCE relation).<br/>
+-partn<br/>
+Display part meronyms of searchstr (HAS PART relation).<br/>
+-membn<br/>
+Display member meronyms of searchstr (HAS MEMBER relation).<br/>
+-meron<br/>
+Display all meronyms of searchstr (HAS PART, HAS MEMBER, HAS SUBSTANCE relations).<br/>
+-hmern<br/>
+Display meronyms for searchstr tree. This is a recursive search that prints all the meronyms of searchstr and all of its hypernyms.<br/>
+-sprtn<br/>
+Display part of holonyms of searchstr (PART OF relation).<br/>
+-smemn<br/>
+Display member of holonyms of searchstr (MEMBER OF relation).<br/>
+-ssubn<br/>
+Display substance of holonyms of searchstr (SUBSTANCE OF relation).<br/>
+-holon<br/>
+Display all holonyms of searchstr (PART OF, MEMBER OF, SUBSTANCE OF relations).<br/>
+-hholn<br/>
+Display holonyms for searchstr tree. This is a recursive search that prints all the holonyms of searchstr and all of each holonym's holonyms.<br/>
+-entav<br/>
+Display entailment relations of searchstr.<br/>
+-framv<br/>
+Display applicable verb sentence frames for searchstr.<br/>
+-causv<br/>
+Display cause to relations of searchstr.<br/>
+-pert (a | r )<br/>
+Display pertainyms of searchstr.<br/>
+-attr (n | a )<br/>
+Display adjective values for noun attribute, or noun attributes of adjective values.<br/>
+-grep (n | v | a | r )<br/>
+List compound words containing searchstr as a substring.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR EXPERT COMMANDS</pattern>
+<template>In the expert category of script commands are: import, export, determine, how, which, what, rule, rules, attributes.</template>
+</category>
+
+<category>
+<pattern>HELP FOR IMPORT</pattern>
+<template>
+import &lt;file name&gt;<br/>
+Loads expert system rules from a text file in a predefined format.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR EXPORT</pattern>
+<template>
+export &lt;file name&gt;<br/>
+Stores expert system rules to a text file in a predefined format.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR DETERMINE</pattern>
+<template>
+determine &lt;attribute name&gt;<br/>
+Runs expert production rule system to resolve goal attribute.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR HOW</pattern>
+<template>
+how &lt;attribute name&gt;<br/>
+Lists rules that produce specified attribute.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR WHICH</pattern>
+<template>
+which &lt;attribute name&gt;<br/>
+Lists rules requiring specified attribute, that is, have the attribute in their premise.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR WHAT</pattern>
+<template>
+what &lt;rule name&gt;<br/>
+Reports what the specified rule would do with known facts, that is, the status of the rule.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR RULE</pattern>
+<template>
+rule &lt;rule name&gt;<br/>
+Lists the specified rule.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR RULES</pattern>
+<template>
+rules |v| |x| |f|<br/>
+Lists expert system's rules.<br/>
+The optional v is verbose mode where all the details about each rule is displayed.<br/>
+The optional x is to display in XML format.<br/>
+The optional f is to display in the predefined file format.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR ATTRIBUTES</pattern>
+<template>
+attributes |v| |x| |f|<br/>
+Lists expert system's attributes.<br/>
+The optional v is verbose mode where all the details about each attribute is displayed.<br/>
+The optional x is to display in XML format.<br/>
+The optional f is to display in the predefined file format.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTIONS</pattern>
+<template>
+The calculator functions are the normal +, -, * ,/, ^, &amp; as well as the following:<br/>
+@ABS, @INT, @FLOOR, @CEIL, @SQRT, @POW, @LOG, @EXP, @COS, @SIN, @ATAN, @MOD, @LEN, @RND, @TRIM, @UPPER, @LOWER, @PROPER, @NUM, @DEC, @PAD, @JUSTIFY, @ZEROFILL, @LEFT, @RIGHT, @SUBSTR, @FIND, @FIELD, @CHANGE, @REPLACE, @DATEDIFF, @XMLTAG, @XMLATTR, @XMLDATA.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION ABS</pattern>
+<template>
+@ABS(predicate) gives absolute value of predicate.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION INT</pattern>
+<template>
+@INT(predicate) gives largest integer less than or equal to value of predicate.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION FLOOR</pattern>
+<template>
+@FLOOR(predicate) gives largest whole number less than or equal to value of predicate.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION CEIL</pattern>
+<template>
+@CEIL(predicate) give smallest whole number greater than or equal to value of predicate.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION SQRT</pattern>
+<template>
+@SQRT(predicate) gives the square root of the value of predicate.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION POW</pattern>
+<template>
+@POW(predicate) gives 10 raised to the value of predicate.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION LOG</pattern>
+<template>
+@LOG(predicate) gives the logarithm of the value of predicate.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION EXP</pattern>
+<template>
+@EXP(predicate) gives the exponential value of the floating-point value of predicate.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION COS</pattern>
+<template>
+@COS(predicate) gives the cosine of the value of predicate.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION SIN</pattern>
+<template>
+@SIN(predicate) gives the sin of the value of predicate.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION ATAN</pattern>
+<template>
+ATAN(predicate) gives the ArcTangent of the value of predicate.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION MOD</pattern>
+<template>
+@MOD(predicate1,predicate2) gives the remainder of the value of predicate 1 divided by the value of predicate 2.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION LEN</pattern>
+<template>
+@LEN(predicate) gives the length in characters of the value of the predicate.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION RND</pattern>
+<template>
+@RND(predicate) gives a random number from 0 to the value of predicate.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION TRIM</pattern>
+<template>
+@TRIM(predicate) gives the value of predicate with trailing white spaces removed.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION UPPER</pattern>
+<template>
+@UPPER(predicates) gives the value of predicate shifted to uppercase.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION LOWER</pattern>
+<template>
+@LOWER(predicate) gives the value of predicate shifted to lower case.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION PROPER</pattern>
+<template>
+@PROPER(predicate) gives the value of predicate where all words are capitalized.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION NUM</pattern>
+<template>
+@NUM(predicate1,predicate2) gives value of predicate1 formatted as a number with commas to decimal places indicated by value of predicate2.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION DEC</pattern>
+<template>
+@DEC(predicate1,predicate2) gives value of predicate1 formatted as a number without commas to decimal places indicated by value of predicate2.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION PAD</pattern>
+<template>
+@PAD(predicate1,predicate2) gives value of predicate1 padded with spaces on the end (or truncated) to length specified by value of predicate2.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION JUSTIFY</pattern>
+<template>
+@JUSTIFY(predicate1,predicate2) gives value of predicate1 padded with spaces at the beginning (or truncated) to length specified by value of predicate2.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION ZEROFILL</pattern>
+<template>
+@ZEROFILL(predicate1,predicate2) gives value of predicate1 padded with zeroes at the beginning (or truncated) to length specified by value of predicate2.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION LEFT</pattern>
+<template>
+@LEFT(predicate1,predicate2) gives value of predicate1 truncated to length specified by value of predicate2.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION RIGHT</pattern>
+<template>
+@RIGHT(predicate1,predicate2) gives value of predicate1's right-most characters to length specified by value of predicate2.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION SUBSTR</pattern>
+<template>
+@SUBSTR(predicate1,predicate2,predicate3) gives value of predicate1 starting at position specified by value of predicate2 for length specified by value of predicate3.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION FIND</pattern>
+<template>
+@FIND(predicate1,predicate2) gives first position of value of predicate2 found in value of predicate1.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION FIELD</pattern>
+<template>
+@FIELD(predicate1,predicate2,predicate3) gives the value of predicate2 occurence of the field of the value of predicate1 split into fields delimited by the character specified by the value of predicate3.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION CHANGE</pattern>
+<template>
+@CHANGE(predicate1,predicate2,predicate3) gives value of predicate1 where all occurences of character specified by value of predicate2 become character specified by value of predicate3.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION REPLACE</pattern>
+<template>
+@REPLACE(predicate1,predicate2,predicate3) gives value of predicate1 where all occurences of value of predicate2 become value of predicate3.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION DATEDIFF</pattern>
+<template>
+@DATEDIFF(predicate1,predicate2) gives the number of seconds difference between the date in the value of predicate1 and the date in value of predicate2.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION XMLTAG</pattern>
+<template>
+@XMLTAG(predicate) gives the next XML tag in the value of predicate1.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION XMLATTR</pattern>
+<template>
+@XMLATTR(predicate1,predicate2) gives value of the attribute specified in the value of predicate2 from the xml tag in the predicate1.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR FUNCTION XMLDATA</pattern>
+<template>
+@XMLDATA(predicate) gives the data part of the xml tag in the value of predicate1.
+</template>
+</category>
+</aiml>

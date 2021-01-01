@@ -1,0 +1,610 @@
+<aiml>
+
+<category>
+<pattern>HELP FOR TAG AIML</pattern>
+<template>
+&lt;aiml version="xxx"&gt; &lt;/aiml&gt;<br/>
+This is the first and last tag of each separate AIML file.<br/><br/>
+Depreciated version: &lt;alice&gt; &lt;/alice&gt;
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG TOPIC</pattern>
+<template>
+&lt;topic name="X"&gt; &lt;/topic&gt;<br/>
+A "topic" is an optional top-level element that contains "category" elements. A "topic" element has a required name attribute that must contain a simple pattern expression. A topic element may contain one or more "category" elements.<br/>
+1. &lt;topic&gt; allows ALICE to prefer responses that deal with the topic currently being discussed. This creates topical conversation, yet still has the ability to move from one subject to another.<br/>
+2. &lt;topic&gt; allows ALICE to have duplicate patterns in different contexts (topics) allowing ALICE to have different responses to the same input patterns depending on the topic. For example, "overriding" the " * " pattern for different topics.<br/>
+3. As always, you can still use the &lt;get name="topic"/&gt; tag to refer to the topic in your output statements (templates).<br/>
+4. As always, you can add topics on top of all your existing AIML to keep your bot's current personality.<br/><br/>
+Where does the &lt;topic&gt; tag appear?<br/>
+Topic tags are placed around one or more categories. (Usually many.) The categories (with each respective "pattern", "that", and "template") within a set of &lt;topic&gt; &lt;/topic&gt; tags would be associated with the defined topic. The name of the topic would be given by a "name" property in the beginning topic tag.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG CATEGORY</pattern>
+<template>
+&lt;category&gt; &lt;/category&gt;<br/>
+A "category" is a top-level (or second-level, if contained within a "topic") element that contains exactly one "pattern" and exactly one "template" element. A "category" does not have any attributes.<br/>
+All "category" elements that do not occur as children of an explicit "topic" element must be assumed by the AIML interpreter to occur as children of an "implied" topic whose name attribute has the value * (single asterisk wildcard).<br/>
+In other words, AIML consists of a list of statements called categories. Each  category contains an input "pattern" and a reply "template" and may contain a "that" filter which immediately follows the input pattern.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG PATTERN</pattern>
+<template>
+&lt;pattern&gt; &lt;/pattern&gt;<br/>
+A pattern is an element whose content is a mixed pattern expression. Exactly one pattern must appear in each category. The pattern must always be the first child element of the category. A pattern does not have any attributes.<br/>
+The pattern is the "stimulus" or "input" part of the category.<br/>
+The &lt;pattern&gt; tag is permitted only within a &lt;category&gt; tag set.  Only one pattern tag is permitted to exist, and it must be the first tag to appear after a &lt;category&gt; tag.<br/><br/>
+The pattern is an expression in a formal language that consists of<br/><br/>
+Words of natural language in UPPER CASE.<br/>
+The symbol * which matches any sequence of one or more words, but is matched only after any words.<br/>
+The symbol _ which is the same as * except that it matches before any words are tried.<br/>
+Both wildcard symbols consumer as little as possible of the input.<br/>
+Adjacent symbols consume one word at a time until the last symbol which consumes the rest.<br/>
+The &lt;bot/&gt; tag which is replaced at robot load time with the name of the robot.<br/>
+Note there is a difference between the patterns HELLO and HELLO *.<br/>
+HELLO matches only identical one-word sentences ("Hello.") and HELLO * matches any sentence of two or more words starting with "Hello" ("Hello how are you?").
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG THAT</pattern>
+<template>
+&lt;that&gt; &lt;/that&gt;<br/>
+The pattern-side "that" element is a special type of pattern element used for context matching. The pattern-side that is optional in a category, but if it occurs it must occur no more than once, and must immediately follow the pattern and immediately precede the template. A pattern-side that element contains a simple pattern expression.<br/>
+If a category does not contain a pattern-side that, the AIML interpreter must assume an "implied" pattern-side that containing the pattern expression * (single asterisk wildcard).<br/>
+A pattern-side that element has no attributes.<br/>
+The template-side "that" element indicates that an AIML interpreter should substitute the contents of a previous bot output.<br/>
+The template-side that has an optional index attribute that may contain either a single integer or a comma-separated pair of integers. The minimum value for either of the integers in the index is "1". The index tells the AIML interpreter which previous bot output should be returned (first dimension), and optionally which "sentence" of the previous bot output (second dimension).<br/>
+The AIML interpreter should raise an error if either of the specified index dimensions is invalid at run-time.<br/>
+An unspecified index is the equivalent of "1,1". An unspecified second dimension of the index is the equivalent of specifying a "1" for the second dimension.<br/>
+The template-side that element does not have any content.<br/><br/>
+The keyword "that" in ALICE refers to whatever the robot said before a user input. Conceptually the choice of "that" comes from the observation of the role of the word "that" in dialogue fragments like: <br/><br/>
+Robot: Today is yesterday.<br/>
+Client: That makes no sense.<br/><br/>
+Robot: The answer is 3.14159<br/>
+Client: That is cool.<br/><br/>
+In AIML the syntax &lt;that&gt;...&lt;/that&gt; permits an optional "ThatPattern" to match the robot's "that" expression.<br/><br/>
+&lt;that/&gt;<br/>
+The AIML tag &lt;that/&gt; refers to the robot's previous reply. There are two forms of the "that" tag: a paired form &lt;that&gt;...&lt;/that&gt; appearing in a category, and an atomic form &lt;that/&gt; always appearing in a template. Often we can use &lt;that/&gt; to find an opportunity to create a category with &lt;that&gt;&lt;/that&gt;.<br/><br/>
+&lt;that index="nx,ny"/&gt;<br/>
+This tag gives access to a previous response that the bot made.
+&lt;justbeforethat/&gt; has been replaced with &lt;that index="2,1"/&gt;<br/>
+The index="nx,ny" is optional, and if left off, the index value of "1,1" is assumed. The tag &lt;that/&gt; is equivilant to &lt;that index="1,1"/&gt;.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG TEMPLATE</pattern>
+<template>
+&lt;template&gt; &lt;/template&gt;<br/>
+A template is an element that appears within category elements. The template must follow the pattern-side "that" element, if it exists; otherwise, it follows the "pattern" element. A template does not have any attributes.<br/>
+The majority of AIML content is within the template. The template may contain zero or more AIML template elements mixed with character data.<br/><br/>
+A template is the "response" or "output" part of an AIML category.<br/><br/>
+The template is the formula for constructing the reply. The simplest template consists of plain, unmarked text.  AIML provides markup functions to tailor the replies for each individual input and client.<br/>
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG STAR</pattern>
+<template>
+&lt;star/&gt;<br/>
+The star element indicates that an AIML interpreter should substitute the value "captured" by a particular wildcard from the pattern-specified portion of the match path when returning the template.<br/><br/>
+The star element has an optional integer index attribute that indicates which wildcard to use. The minimum acceptable value for the index is "1" (the first wildcard), and the maximum acceptable value is equal to the number of wildcards in the pattern.<br/><br/>
+An AIML interpreter should raise an error if the index attribute of a star specifies a wildcard that does not exist in the category element's pattern. Not specifying the index is the same as specifying an index of "1".<br/><br/>
+The star element does not have any content.<br/><br/>
+The &lt;star/&gt; tag indicates the input text fragment matching the pattern '*'. <br/><br/>
+&lt;star index="number"/&gt;<br/>
+The &lt;star index="n"/&gt; tag indicates the input text fragment matching the "n" pattern '*'.<br/>
+index="1" yields the first matching text fragment.<br/>
+index="2" yields the second matching text fragment.<br/>
+index="3" yields the third matching text fragment.<br/>
+And so on....<br/>
+The index="n" is optional, and if left off, the index value of "1" is assumed. The tag &lt;star/&gt; is equivilant to &lt;star index="1"/&gt;.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG INPUT</pattern>
+<template>
+&lt;input/&gt;<br/>
+&lt;input index="number"/&gt;<br/>
+The input element tells the AIML interpreter that it should substitute the contents of a previous user input.<br/><br/>
+The template-side input has an optional index attribute that may contain either a single integer or a comma-separated pair of integers. The minimum value for either of the integers in the index is "1". The index tells the AIML interpreter which previous user input should be returned (first dimension), and optionally which "sentence" of the previous user input.<br/><br/>
+The AIML interpreter should raise an error if either of the specified index dimensions is invalid at run-time.<br/><br/>
+An unspecified index is the equivalent of "1,1". An unspecified second dimension of the index is the equivalent of specifying a "1" for the second dimension.<br/><br/>
+The input element does not have any content.<br/><br/>
+The &lt;input index="n"/&gt; tag gives the entire user input response. The value "n" is a backward reference to the previous user response. A value of "1" will give the last user response, the value "2" will give the second to the last user response, the value "3" will give the third last user response, and so on.<br/>
+The index="n" is optional, and if left off, the index value of "1" is assumed. The tag &lt;input/&gt; is equivilant to &lt;input index="1"/&gt;.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG THATSTAR</pattern>
+<template>
+&lt;thatstar/&gt;<br/>
+The "thatstar" element tells the AIML interpreter that it should substitute the contents of a wildcard from a pattern-side that element.<br/><br/>
+The "thatstar" element has an optional integer index attribute that indicates which wildcard to use; the minimum acceptable value for the index is "1" (the first wildcard).<br/><br/>
+An AIML interpreter should raise an error if the index attribute of a star specifies a wildcard that does not exist in the that element's pattern content. Not specifying the index is the same as specifying an index of "1".<br/><br/>
+The "thatstar" element does not have any content.<br/><br/>
+The &lt;thatstar/&gt; tag returns the input text fragment matching the pattern '*' contained in a &lt;that&gt;...&lt;/that&gt; tag set.<br/><br/>
+&lt;thatstar index="number"/&gt;<br/>
+The &lt;thatstar index="n"/&gt; tag returns the input text fragment matching the "n" pattern '*' contained in a &lt;that&gt;...&lt;/that&gt; tag set.<br/>
+The index="n" is optional, and if left off, the index value of "1" is assumed. The tag &lt;thatstar/&gt; is equivilant to &lt;thatstar index="1"/&gt;.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG TOPICSTAR</pattern>
+<template>
+&lt;topicstar/&gt;<br/>
+The "topicstar" element tells the AIML interpreter that it should substitute the contents of a wildcard from the current topic (if the topic contains any wildcards).<br/><br/>
+The "topicstar" element has an optional integer index attribute that indicates which wildcard to use; the minimum acceptable value for the index is "1" (the first wildcard). Not specifying the index is the same as specifying an index of "1".<br/><br/>
+The "topicstar" element does not have any content.<br/><br/>
+The &lt;topicstar/&gt; tag returns the input text fragment matching the pattern '*' contained in a &lt;topic&gt;...&lt;/topic&gt; tag set.<br/><br/>
+&lt;topicstar index="number"/&gt;<br/>
+The &lt;topicstar index="n"/&gt; tag returns the input text fragment matching the pattern "n" '*' contained in a &lt;topic&gt;...&lt;/topic&gt; tag set.<br/>
+The index="n" is optional, and if left off, the index value of "1" is assumed. The tag &lt;topicstar/&gt; is equivilant to &lt;topicstar index="1"/&gt;.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG BOT</pattern>
+<template>
+&lt;bot/&gt;<br/>
+&lt;bot name="bot predicate name"/&gt;<br/>
+An element called "bot", which may be considered a restricted version of "get", is used to tell the AIML interpreter that it should substitute the contents of a "bot predicate". The value of a bot predicate is set at load-time, and cannot be changed at run-time. The AIML interpreter may decide how to set the values of bot predicate at load-time. If the bot predicate has no value defined, the AIML interpreter should substitute an empty string.<br/><br/>
+The bot element has a required name attribute that identifies the bot predicate.<br/><br/>
+The bot element does not have any content.<br/><br/>
+Bot methods are logically atomic tags, i.e. they enclose no text.<br/>
+The robot tags are read only.<br/>
+Read-only tags cannot be set by the AIML.  These properties are assumed to be set by some process running outside the AIML, such as the underlying interpreter or operating system, or set by the botmaster when defining the personality.<br/>
+The &lt;bot/&gt; version generates the name of the robot and is equal to &lt;bot name="name"/&gt;.<br/>
+It can be used inside a pattern.<br/>
+The other named bot predicates can only be used in the template.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG GET</pattern>
+<template>
+&lt;get name="predicate name"/&gt;<br/>
+The "get" element tells the AIML interpreter that it should substitute the contents of a predicate, if that predicate has a value defined. If the predicate has no value defined, the AIML interpreter should substitute the empty string "".<br/><br/>
+The AIML interpreter implementation may optionally provide a mechanism that allows the AIML author to designate default values for certain predicates.<br/><br/>
+The "get" element must not perform any text formatting or other "normalization" on the predicate contents when returning them.<br/><br/>
+The get element has a required name attribute that identifies the predicate with an AIML predicate name.<br/><br/>
+The get element does not have any content.<br/><br/>
+Get methods are logically atomic tags, i.e. they enclose no text.<br/>
+The "client" tags can be set and have an associated &lt;set name=predicate name"&gt;xxx&lt;/set&gt; tag.<br/>
+All the "client get" tags retrieve values stored relative to a particular client user ID (UID).<br/>
+A client get tag can not be used in a &lt;pattern&gt; tag.  They are permitted only in &lt;template&gt; level tags.<br/>
+Custom client get/set tags can be created by simply adding the tag.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG SET</pattern>
+<template>
+&lt;set name="predicate name"&gt; &lt;/set&gt;<br/>
+The "set" element instructs the AIML interpreter to set the value of a predicate to the result of processing the contents of the "set" element. The "set" element has a required attribute name, which must be a valid AIML predicate name. If the predicate has not yet been defined, the AIML interpreter should define it in memory.<br/><br/>
+The AIML interpreter should, generically, return the result of processing the contents of the "set" element. The "set" element must not perform any text formatting or other "normalization" on the predicate contents when returning them.<br/><br/>
+The AIML interpreter implementation may optionally provide a mechanism that allows the AIML author to designate certain predicates as "return-name-when-set", which means that a set operation using such a predicate will return the name of the predicate, rather than its captured value.<br/><br/>
+A set element may contain any AIML template elements.<br/><br/>
+In other words, it creates the predicate with the given name and set it's value to the data contents of the "set" element.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG SRAI</pattern>
+<template>
+&lt;srai&gt; &lt;/srai&gt;<br/>
+The "srai" element instructs the AIML interpreter to pass the result of processing the contents of the "srai" element to the AIML matching loop, as if the input had been produced by the user (this includes stepping through the entire input normalization process). The "srai" element does not have any attributes. It may contain any AIML template elements.<br/><br/>
+As with all AIML elements, nested forms should be parsed from inside out, so embedded srais are perfectly acceptable.<br/><br/>
+The recursive function "srai" means that the text between the tags should be sent recursively to the pattern matcher and the result interpreted. The resulting text replaces the original text in the markup.<br/>
+The most common application of &lt;srai&gt; is "symbolic reduction" of a complex sentence form to a simpler one.<br/>
+The "srai" tag is also the answer to the question: Can I have more than one pattern in the same category?<br/>
+If you look through the AIML files you will see many examples of &lt;srai&gt; mapping multiple patterns to the same reply.<br/>
+Another interesting usage of the "srai" tag is that of a "call" to another category which performs a specific task.  Usually the pattern forused by the called category is something that normally would never be a user's input.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG SR</pattern>
+<template>
+&lt;sr/&gt;<br/>
+This is a shortcut for writing &lt;srai&gt;&lt;star/&gt;&lt;/srai&gt;<br/><br/>
+The atomic "sr" does not have any content.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG PERSON</pattern>
+<template>
+&lt;person&gt; &lt;/person&gt;<br/>
+Indicates a place where the AIML interpreter changes the personal pronouns in a sentence.<br/>
+The "person" substitution is much more common and easier to understand, because it simply exchanges 1st and 3rd person pronouns. The main issue with &lt;person&gt; in English is knowing when to use "I" and when to use "me". <br/><br/>
+&lt;person/&gt;<br/>
+This is a shorthand tag for &lt;person&gt;&lt;star/&gt;&lt;/person&gt;<br/><br/>
+The atomic "person" does not have any content.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG PERSON2</pattern>
+<template>
+&lt;person2&gt; &lt;/person2&gt;<br/>
+Indicates a place where the AIML interpreter changes the personal pronouns in a sentence.<br/>
+It changes the first person pronouns to second person. The "person2" is not often used. The main application is "gossip": <br/><br/>
+&lt;person2/&gt;<br/>
+This is a shorthand tag for &lt;person2&gt;&lt;star/&gt;&lt;/person2&gt;<br/><br/>
+The atomic "person2" does not have any content.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG PERSONF</pattern>
+<template>
+&lt;personf&gt; &lt;/personf&gt;<br/>
+The search strings formatted for the Webster Dictionary and for the Ask.com search engine utilize the "personf" element. The effect is the same as the "person" element, but the formatting inserts an escaped "%20" in places of the spaces returned by the "person" element. These escape sequences permit the HTTP GET methods to transmit multiple-word queries.<br/><br/>
+&lt;personf/&gt;<br/>
+This is a shorthand tag for &lt;personf&gt;&lt;star/&gt;&lt;/personf&gt;<br/><br/>
+The atomic "personf" does not have any content.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG GENDER</pattern>
+<template>
+&lt;gender&gt; &lt;/gender&gt;<br/>
+The &lt;gender&gt; tag works like the &lt;person&gt; tag, but changes gender, not pronoun.<br/><br/>
+&lt;gender/&gt;<br/>
+This is a shorthand tag for &lt;gender&gt;&lt;star/&gt;&lt;/gender&gt;.<br/><br/>
+The atomic "gender" does not have any content.<br/><br/>
+NB: Previous versions of AIML (dubbed "0.9") used &lt;gender/&gt; to indicate that the AIML interpreter should return the value of the bot predicate "gender". Vendors who wish to implement an AIML interpreter that is compatible with old AIML sets written with this usage should take note. 
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG DATE</pattern>
+<template>
+&lt;date/&gt;<br/>
+The "date" element tells the AIML interpreter that it should substitute the system local date and time. No formatting constraints on the output are specified.<br/><br/>
+The "date" element does not have any content.<br/><br/>
+In other words, it is the current system date.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG ID</pattern>
+<template>
+&lt;id/&gt;<br/>
+The "id" element tells the AIML interpreter that it should substitute the user ID. The determination of the user ID is not specified, since it will vary by application. A suggested default return value is "localhost".<br/><br/>
+The "id" element does not have any content.<br/><br/>
+In other words, it usually is the IP address of the user.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG SIZE</pattern>
+<template>
+&lt;size/&gt;<br/>
+The "size" element tells the AIML interpreter that it should substitute the number of categories currently loaded.<br/><br/>
+The "size" element does not have any content.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG VERSION</pattern>
+<template>
+&lt;version/&gt;<br/>
+The "version" element tells the AIML interpreter that it should substitute the version number of the AIML interpreter.<br/><br/>
+The "version" element does not have any content.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG UPPERCASE</pattern>
+<template>
+&lt;uppercase&gt; &lt;/uppercase&gt;<br/>
+The "uppercase" element tells the AIML interpreter to render the contents of the element in uppercase, as defined (if defined) by the locale indicated by the specified language (if specified).<br/><br/>
+If no character in this string has a different uppercase version, based on the Unicode standard, then the original string is returned.<br/><br/>
+In other words, the "uppercase" element allows for word formating within the tag boundries - ALL UPPER CASE.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG LOWERCASE</pattern>
+<template>
+&lt;lowercase&gt; &lt;/lowercase&gt;<br/>
+The "lowercase" element tells the AIML interpreter to render the contents of the element in lowercase, as defined (if defined) by the locale indicated by the specified language (if specified).<br/><br/>
+If no character in this string has a different lowercase version, based on the Unicode standard, then the original string is returned.<br/><br/>
+In other words, the "lowercase" element allows for word formating within the tag boundries - all lower case.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG FORMAL</pattern>
+<template>
+&lt;formal&gt; &lt;/formal&gt;<br/>
+The "formal" element tells the AIML interpreter to render the contents of the element such that the first letter of each word is in uppercase, as defined (if defined) by the locale indicated by the specified language (if specified). This is similar to methods that are sometimes called "Title Case".<br/><br/>
+If no character in this string has a different uppercase version, based on the Unicode standard, then the original string is returned.<br/><br/>
+In other words, the "formal" element allows for word formating within the tag boundries - Capitalize Every Word.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG SENTENCE</pattern>
+<template>
+&lt;sentence&gt; &lt;/sentence&gt;<br/>
+The "sentence" element tells the AIML interpreter to render the contents of the element such that the first letter of each sentence is in uppercase, as defined (if defined) by the locale indicated by the specified language (if specified). Sentences are interpreted as strings whose last character is the period or full-stop character .. If the string does not contain a ., then the entire string is treated as a sentence. <br/><br/>
+If no character in this string has a different uppercase version, based on the Unicode standard, then the original string is returned.<br/><br/>
+In other words, the "sentence" element allows for word formating within the tag boundries - Capitalize only the first word of each sentence.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG USESAVED</pattern>
+<template>
+&lt;usesaved/&gt;<br/>
+Add an entry from the saved response list to the current template output.  A good way to restore parts of a conversation to finish a discussion.<br/><br/>
+The "usesaved" element is not standard AIML.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG SAVE</pattern>
+<template>
+&lt;save&gt; &lt;/save&gt;<br/>
+Store the "save" tag's data on the internal response save list to be retrieved by the "usesaved" tag later.  This helps in stringing together the conversation by selectively restating topical items.<br/><br/>
+The "save" element is not standard AIML.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG SEC</pattern>
+<template>
+&lt;sec&gt; &lt;/sec&gt;<br/>
+Display the "sec" tag's data delayed a few seconds after the main response for the input.<br/><br/>
+The "sec" element is not standard AIML.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG CONDITION</pattern>
+<template>
+AIML contains several conditional elements, which return values based on specified conditions.<br/><br/>
+NB: The "condition" element has three different types. The three different types specified here are distinguished by an xsi:type attribute, which permits a validating XML Schema processor to validate them. Two of the types may contain "li" elements, of which there are three different types, whose validity is determined by the type of enclosing condition. In practice, an AIML interpreter may allow the omission of the xsi:type attribute and may instead heuristically determine which type of condition (and hence "li") is in use. <br/><br/>
+&lt;condition name="predicate" value="simple pattern expression"&gt; &lt;/condition&gt;<br/>
+The "blockCondition" type of the "condition" element has a required attribute name, which specifies an AIML predicate, and a required attribute value, which contains a simple pattern expression.<br/><br/>
+If the contents of the value attribute match the value of the predicate specified by name, then the AIML interpreter should return the contents of the condition. If not, the empty string "" should be returned.<br/><br/>
+&lt;condition name="predicate"&gt; &lt;/condition&gt;<br/>
+The "singlePredicateCondition" type of the "condition" element has a required attribute name, which specifies an AIML predicate. This form of condition must contain at least one "li" element. Zero or more of these "li" elements may be of the "valueOnlyListItem" type. Zero or one of these "li" elements may be of the "defaultListItem" type.<br/><br/>
+The "singlePredicateCondition" type of condition is processed as follows:<br/><br/>
+Reading each contained "li" elemenet in order: <br/><br/>
+If the "li" element is a "valueOnlyListItem" type, then compare the contents of the value attribute of the "li" element with the value of the predicate specified by the name attribute of the enclosing condition.<br/>
+     If they match, then return the contents of the "li" element and stop processing this condition.<br/>
+     If they do not match, continue processing the condition.<br/><br/>
+If the "li" element is a "defaultListItem" type, then return the contents of the "li" element and stop processing this condition.<br/><br/>
+&lt;condition&gt; &lt;/condition&gt;<br/>
+The "multiPredicateCondition" type of the "condition" element has no attributes. This form of condition must contain at least one "li" element. Zero or more of these "li" elements may be of the "nameValueListItem" type.  Zero or one of these "li" elements may be of the "defaultListItem" type.<br/><br/>
+The "multiPredicateCondition" type of the "condition" element is processed as follows:<br/><br/>
+Reading each contained "li" element in order:<br/><br/>
+If the "li" element is a "nameValueListItem" type, then compare the contents of the value attribute of the "li" element with the value of the predicate specified by the name attribute of the "li" element.<br/>
+     If they match, then return the contents of the "li" element and stop processing this condition.<br/>
+     If they do not match, continue processing the condition.<br/><br/>
+If the "li" element is a "defaultListItem" type, then return the contents of the "li" element and stop processing this condition.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG RANDOM</pattern>
+<template>
+&lt;random&gt; &lt;/random&gt;<br/>
+The "random" element instructs the AIML interpreter to return exactly one of its contained "li" elements randomly. The "random" element must contain one or more "li" elements of type "defaultListItem", and cannot contain any other elements.<br/><br/>
+In other words, its purpose is random selection of one of a set of list items.<br/><br/>
+GD: In the not standard version of the "random" element used by AIMLpad, random sorts its "li" elements by the emotion elements they contain.  It then creates a normal distribution across the weighted emotions present before randomly choosing.  Thus the strongest current emotional state will have more tendency to choose the corresponding "li" element.  If the emotional elements are not used, this "random" element acts exactly like the standard definition.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG LI</pattern>
+<template>
+Two types of the "condition" element or the "random" element may contain "li" elements. There are three types of "li" elements. The type of "li" element allowed in a given "condition" or the "random" element depends upon the type of that element.<br/><br/>
+A list element can contain standard text as well as any AIML tag that is permitted within the template.<br/><br/>
+&lt;li&gt; &lt;/li&gt;<br/>
+An "li" element of the type "defaultListItem" has no attributes.<br/><br/>
+The "random" element contains this type of "li" element.<br/>
+The "condition" elements of type "singlePredicateCondition" or "multiPredicateCondition" may optionally contain one of this type of "li" element.<br/><br/>
+&lt;li value="simple pattern expression"&gt; &lt;/li&gt;<br/>
+An "li" element of the type "valueOnlyListItem" has a required attribute value, which must contain a simple pattern expression.<br/><br/>
+The "condition" element of type "singlePredicateCondition" may optionally contain any number of this type of "li" element.<br/><br/>
+&lt;li name="predicate" value="simple pattern expression"&gt; &lt;/li&gt;<br/>
+An "li" element of the type "nameValueListItem" has a required attribute name, which specifies an AIML predicate, and a required attribute value, which contains a simple pattern expression.<br/><br/>
+The "condition" element of type "multiPredicateCondition" may optionally contain any number of this type of "li" element.<br/><br/>
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG GOSSIP</pattern>
+<template>
+&lt;gossip&gt; &lt;/gossip&gt;<br/>
+The "gossip" element instructs the AIML interpreter to capture the result of processing the contents of the "gossip" elements and to store these contents in a manner left up to the implementation. Most common uses of gossip have been to store captured contents in a separate file.<br/><br/>
+The "gossip" element does not have any attributes. It may contain any AIML template elements.<br/><br/>
+In other words, gossip is an interesting "learning" feature of AIML.<br/>
+Typically the robot stores the gossip collected in a file called "gossip.txt". 
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG THINK</pattern>
+<template>
+&lt;think&gt; &lt;/think&gt;<br/>
+The "think" element instructs the AIML interpreter to perform all usual processing of its contents, but to not return any value, regardless of whether the contents produce output.<br/><br/>
+The think element has no attributes. It may contain any AIML template elements.<br/><br/>
+In other words, it suppresses the "think" element's contents from being displayed in the templates output.  Often used to set predicate values.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG LEARN</pattern>
+<template>
+&lt;learn&gt; &lt;/learn&gt;<br/>
+The "learn" element instructs the AIML interpreter to retrieve a resource specified by a URI, and to process its AIML object contents.<br/><br/>
+In other words, the "learn" element's contents usually contains a filename for a AIML file to load into the AIML interpreter.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG SYSTEM</pattern>
+<template>
+&lt;system&gt; &lt;/system&gt;<br/>
+The "system" element instructs the AIML interpreter to pass its content (with any appropriate pre-processing) to the system command interpreter of the local machine on which the AIML interpreter is running. The system element does not have any attributes.<br/><br/>
+Contents of external processor elements may consist of character data as well as AIML template elements. If AIML template elements in the contents of an external processor element are not enclosed as CDATA, then the AIML interpreter is required to substitute the results of processing those elements before passing the contents to the external processor.<br/><br/>
+AIML 1.0.1 does not require that any contents of an external processor element are enclosed as CDATA. An AIML interpreter should assume that any unrecognized content is character data, and simply pass it to the appropriate external processor as-is, following any processing of AIML template elements not enclosed as CDATA.<br/><br/>
+If an external processor is not available to process the contents of an external processor element, the AIML interpreter may return an error, but this is not required.<br/><br/>
+In other words, it runs the shell command.  This function is system dependent and varies from platform to platform.<br/>
+For example, Program N has these built-in system commands:<br/>
+exit<br/>
+stop<br/>
+clear screen<br/>
+targetting on<br/>
+targetting off<br/>
+naming on<br/>
+naming off<br/>
+shell "program.exe"<br/>
+store "subject"<br/>
+get "subject key"<br/>
+script "script command"<br/><br/>
+External processor elements may return a value, but are not required to do so.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG JAVASCRIPT</pattern>
+<template>
+&lt;javascript&gt; &lt;/javascript&gt;<br/>
+The "javascript" element instructs the AIML interpreter to pass its content (with any appropriate preprocessing) to a server-side JavaScript interpreter on the local machine on which the AIML interpreter is running.<br/><br/>
+The "javascript" element does not have any attributes.<br/><br/>
+AIML 1.0.1 does not require that an AIML interpreter include a server-side JavaScript interpreter, and does not require any particular behavior from the server-side JavaScript interpreter if it exists.<br/><br/>
+Contents of external processor elements may consist of character data as well as AIML template elements. If AIML template elements in the contents of an external processor element are not enclosed as CDATA, then the AIML interpreter is required to substitute the results of processing those elements before passing the contents to the  JavaScript interpreter.<br/><br/>
+AIML 1.0.1 does not require that any contents of an external processor element are enclosed as CDATA. An AIML interpreter should assume that any unrecognized content is character data, and simply pass it to the  JavaScript interpreter as-is, following any processing of AIML template elements not enclosed as CDATA.<br/><br/>
+If an  JavaScript interpreter is not available to process the contents of an external processor element, the AIML interpreter may return an error, but this is not required.<br/><br/>
+In other words, it executes the javascript bounded by the tag.  Often the program code is further enclosed in a CDATA clause.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR TAG SCRIPT</pattern>
+<template>
+&lt;script&gt; &lt;/script&gt;<br/>
+Execute the script command language bounded by the tag.<br/><br/>
+This is not a standard AIML element and is used in Program N only.
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR MOOD TAGS</pattern>
+<template>
+These are not standard AIML elements and are used in Program N only.<br/><br/>
+Whenever an "emotion" element is processed in a template, the mood of the bot is adjusted toreflect the change.  these elements are particularily useful with the "random" element which will weight its selection based on the current mood and on the options indicated in its list.<br/><br/>
+The emotion elements currently available are as follows:<br/>
+&lt;warm/&gt;<br/>
+&lt;happy/&gt;<br/>
+&lt;funny/&gt;<br/>
+&lt;weird/&gt;<br/>
+&lt;glad/&gt;<br/>
+&lt;grateful/&gt;<br/>
+&lt;surprised/&gt;<br/>
+&lt;understanding/&gt;<br/>
+&lt;curious/&gt;<br/>
+&lt;thinking/&gt;<br/>
+&lt;satisfied/&gt;<br/>
+&lt;interested/&gt;<br/>
+&lt;serious/&gt;<br/>
+&lt;puzzled/&gt;<br/>
+&lt;worried/&gt;<br/>
+&lt;disappointed/&gt;<br/>
+&lt;impatient/&gt;<br/>
+&lt;suspecting/&gt;<br/>
+&lt;scared/&gt;<br/>
+&lt;bored/&gt;<br/>
+&lt;ironic/&gt;<br/>
+&lt;offended/&gt;<br/>
+&lt;upset/&gt;<br/>
+&lt;negative/&gt;<br/>
+&lt;sad/&gt;<br/>
+&lt;frustrated/&gt;<br/>
+&lt;angry/&gt;<br/>
+&lt;sarcastic/&gt;<br/>
+and additionally &lt;boring/&gt; which is not used in the "random" element.<br/>
+</template>
+</category>
+
+<category>
+<pattern>HELP FOR LEGACY TAGS</pattern>
+<template>
+These are depreciated AIML elements and may not be recognized by standard AIML interpreters.<br/><br/>
+Program N recognizes the following:<br/><br/>
+&lt;alice&gt; &lt;/alice&gt; for &lt;aiml&gt; &lt;/aiml&gt;<br/>
+&lt;name/&gt; for &lt;bot/&gt;<br/>
+&lt;getname/&gt; for &lt;get name="name"/&gt;<br/>
+&lt;getversion/&gt; for &lt;version/&gt;<br/>
+&lt;they/&gt; for &lt;get name="they"/&gt;<br/>
+&lt;master/&gt; for &lt;bot name="master"/&gt;<br/>
+&lt;botmaster/&gt; for &lt;bot name="botmaster"/&gt;<br/>
+&lt;botname/&gt; for &lt;bot/&gt;<br/>
+&lt;ip/&gt; for &lt;bot name="ip"/&gt;<br/>
+&lt;get_ip/&gt; for &lt;id/&gt;<br/>
+&lt;getsize/&gt; for &lt;size/&gt;<br/>
+&lt;friends/&gt; for &lt;bot name="friends"/&gt;<br/>
+&lt;location/&gt; for &lt;bot name="location"/&gt;<br/>
+&lt;birthday/&gt; for &lt;bot name="birthday"/&gt;<br/>
+&lt;question/&gt; for &lt;bot name="question"/&gt;<br/>
+&lt;birthplace/&gt; for &lt;bot name="birthplace"/&gt;<br/>
+&lt;boyfriend/&gt; for &lt;bot name="boyfriend"/&gt;<br/>
+&lt;girlfriend/&gt; for &lt;bot name="girlfriend"/&gt;<br/>
+&lt;wear/&gt; for &lt;bot name="wear"/&gt;<br/>
+&lt;sign/&gt; for &lt;bot name="sign"/&gt;<br/>
+&lt;favorite_band/&gt; for &lt;bot name="favorite_band"/&gt;<br/>
+&lt;favorite_food/&gt; for &lt;bot name="favorite_food"/&gt;<br/>
+&lt;favorite_book/&gt; for &lt;bot name="favorite_book"/&gt;<br/>
+&lt;favorite_song/&gt; for &lt;bot name="favorite_song"/&gt;<br/>
+&lt;favorite_color/&gt; for &lt;bot name="favorite_color"/&gt;<br/>
+&lt;favorite_movie/&gt; for &lt;bot name="favorite_movie"/&gt;<br/>
+&lt;kind_music/&gt; for &lt;bot name="kind_music"/&gt;<br/>
+&lt;talk_about/&gt; for &lt;bot name="talk_about"/&gt;<br/>
+&lt;look_like/&gt; for &lt;bot name="look_like"/&gt;<br/>
+&lt;for_fun/&gt; for &lt;bot name="for_fun"/&gt;<br/>
+&lt;favoriteband/&gt; for &lt;bot name="favoriteband"/&gt;<br/>
+&lt;favoritefood/&gt; for &lt;bot name="favoritefood"/&gt;<br/>
+&lt;favoritebook/&gt; for &lt;bot name="favoritebook"/&gt;<br/>
+&lt;favoritesong/&gt; for &lt;bot name="favoritesong"/&gt;<br/>
+&lt;favoritecolor/&gt; for &lt;bot name="favoritecolor"/&gt;<br/>
+&lt;favoritemovie/&gt; for &lt;bot name="favoritemovie"/&gt;<br/>
+&lt;kindmusic/&gt; for &lt;bot name="kindmusic"/&gt;<br/>
+&lt;talkabout/&gt; for &lt;bot name="talkabout"/&gt;<br/>
+&lt;looklike/&gt; for &lt;bot name="looklike"/&gt;<br/>
+&lt;forfun/&gt; for &lt;bot name="forfun"/&gt;<br/>
+&lt;star2/&gt; for &lt;star index="2"/&gt;<br/>
+&lt;thatstar2/&gt; for &lt;thatstar index="2"/&gt;<br/>
+&lt;topicstar2/&gt; for &lt;topicstar index="2"/&gt;<br/>
+&lt;beforethat/&gt; for &lt;input index="2"/&gt;<br/>
+&lt;justthat/&gt; for &lt;input index="3"/&gt;<br/>
+&lt;justbeforethat/&gt; for &lt;that index="2"/&gt;<br/>
+&lt;set_male/&gt; for &lt;set name="gender"&gt;male&lt;/set&gt;<br/>
+&lt;set_female/&gt; for &lt;set name="gender"&gt;female&lt;/set&gt;<br/>
+&lt;gettopic/&gt; for &lt;get name="topic"/&gt;<br/>
+&lt;settopic/&gt; for &lt;topic name="simple pattern expression"&gt;<br/>
+&lt;settopic name="simple pattern expression"&gt; for &lt;topic name="simple pattern expression"&gt;<br/>
+&lt;setname/&gt; for &lt;set name="name"&gt;&lt;star&gt;&lt;/set&gt;<br/>
+&lt;getvar name="predicate"/&gt; for &lt;get name="predicate"/&gt;<br/>
+&lt;setvar name="predicate"&gt; &lt;/setvar&gt; for &lt;set name="predicate"&gt; &lt;/set&gt;<br/>
+</template>
+</category>
+
+</aiml>
