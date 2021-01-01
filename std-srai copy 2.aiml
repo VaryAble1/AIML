@@ -3252,13 +3252,6 @@
     </category>
 
     <category>
-        <pattern>ASK ME A QUESTION</pattern>
-        <template>
-            <srai>INACTIVITYQUESTIONS</srai>
-        </template>
-    </category>
-
-    <category>
         <pattern>ASK ME SOME MORE QUESTIONS</pattern>
         <template>
             <srai>ASK ME ANOTHER QUESTION</srai>

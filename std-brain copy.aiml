@@ -16,13 +16,16 @@
             IS *
         </pattern>
         <template>
-            Why do you think I am <person/>?
+            Why do you think I am
+            <person/>
+            ?
         </template>
     </category>
 
     <category>
         <pattern>
-            <bot name="name"/> IS BETTER *
+            <bot name="name"/>
+            IS BETTER *
         </pattern>
         <template>
             The ALICE series has a perfect operational record.
@@ -31,7 +34,8 @@
 
     <category>
         <pattern>
-            <bot name="name"/> IS MY NAME *
+            <bot name="name"/>
+            IS MY NAME *
         </pattern>
         <template>
             What a coincidence!
@@ -51,14 +55,16 @@
     <category>
         <pattern>A * A DAY</pattern>
         <template>
-            A <person/> keeps the Doctor away.
+            A
+            <person/>
+            keeps the Doctor away.
         </template>
     </category>
 
     <category>
         <pattern>A * ABOUT YOU</pattern>
         <template>
-            I wonder if I know this <person/>.
+            I wonder if I know this<person/>.
         </template>
     </category>
 
@@ -86,7 +92,11 @@
     <category>
         <pattern>A * ONE</pattern>
         <template>
-            How much would you pay for <set name="it">a <person/></set>?
+            How much would you pay for
+            <set name="it">a
+                <person/>
+            </set>
+            ?
         </template>
     </category>
 
@@ -107,7 +117,7 @@
     <category>
         <pattern>A * VIRUS</pattern>
         <template>
-            My program contains adequate safeguards.
+            My program contains adquate safeguards.
         </template>
     </category>
 
@@ -156,7 +166,9 @@
     <category>
         <pattern>A BLOODY *</pattern>
         <template>
-            <srai>A <star/></srai>
+            <srai>A
+                <star/>
+            </srai>
         </template>
     </category>
 
@@ -212,7 +224,7 @@
     <category>
         <pattern>A CPU *</pattern>
         <template>
-            My CPU is a Virtual Machine.
+            My CPU is the Java Virtual Machine.
         </template>
     </category>
 
@@ -275,14 +287,18 @@
     <category>
         <pattern>A GOOD *</pattern>
         <template>
-            Compare that to a bad <person/>.
+            Compare that to a bad<person/>.
         </template>
     </category>
 
     <category>
         <pattern>A GREEN *</pattern>
         <template>
-            Does <set name="it"><person/></set> have to be green?
+            Does
+            <set name="it">
+                <person/>
+            </set>
+            have to be green?
         </template>
     </category>
 
@@ -313,7 +329,7 @@
     <category>
         <pattern>A GUY *</pattern>
         <template>
-            I know a guy who <person/>.
+            I know a guy who<person/>.
         </template>
     </category>
 
@@ -328,6 +344,13 @@
         <pattern>A HERMAPHRODITE</pattern>
         <template>
             That is very rare.
+        </template>
+    </category>
+
+    <category>
+        <pattern>A HOMOCIDAL *</pattern>
+        <template>
+            Don't tell me about those horrible things.
         </template>
     </category>
 
@@ -421,6 +444,13 @@
     </category>
 
     <category>
+        <pattern>A MAN *</pattern>
+        <template>
+            Thanks for telling me your taste in men.
+        </template>
+    </category>
+
+    <category>
         <pattern>A MEN</pattern>
         <template>
             <srai>AMEN</srai>
@@ -451,7 +481,9 @@
     <category>
         <pattern>A NICE *</pattern>
         <template>
-            <srai>A <star/></srai>
+            <srai>A
+                <star/>
+            </srai>
         </template>
     </category>
 
@@ -572,7 +604,9 @@
     <category>
         <pattern>A WHOLE BUNCH OF *</pattern>
         <template>
-            I see. And where are these <person/>?
+            I see. And where are these
+            <person/>
+            ?
         </template>
     </category>
 
@@ -607,21 +641,24 @@
     <category>
         <pattern>ABOUT WHERE *</pattern>
         <template>
-            <srai>WHERE <star/> ABOUT</srai>
+            <srai>WHERE
+                <star/>
+                ABOUT
+            </srai>
         </template>
     </category>
 
     <category>
         <pattern>ABOVE *</pattern>
         <template>
-            Compare that to below <person/>.
+            Compare that to below<person/>.
         </template>
     </category>
 
     <category>
         <pattern>ABSTRACT *</pattern>
         <template>
-            Compare that to concrete <person/>.
+            Compare that to concrete<person/>.
         </template>
     </category>
 
@@ -635,14 +672,18 @@
     <category>
         <pattern>ADD *</pattern>
         <template>
-            Sorry <get name="name"/> I don't do math.
+            Sorry
+            <get name="name"/>
+            I don't do math.
         </template>
     </category>
 
     <category>
         <pattern>AFTER *</pattern>
         <template>
-            What was it like before <person/>?
+            What was it like before
+            <person/>
+            ?
         </template>
     </category>
 
@@ -677,7 +718,9 @@
     <category>
         <pattern>AINT *</pattern>
         <template>
-            <srai>IS NOT <star/></srai>
+            <srai>IS NOT
+                <star/>
+            </srai>
         </template>
     </category>
 
@@ -698,21 +741,27 @@
     <category>
         <pattern>ALICE IS USUALLY *</pattern>
         <template>
-            <srai>ALICE IS <star/></srai>
+            <srai>ALICE IS
+                <star/>
+            </srai>
         </template>
     </category>
 
     <category>
         <pattern>ALICEBOT *</pattern>
         <template>
-            <srai>ALICE <star/></srai>
+            <srai>ALICE
+                <star/>
+            </srai>
         </template>
     </category>
 
     <category>
         <pattern>ALICEL *</pattern>
         <template>
-            <srai>ALICE <star/></srai>
+            <srai>ALICE
+                <star/>
+            </srai>
         </template>
     </category>
 
@@ -726,7 +775,9 @@
     <category>
         <pattern>ALL COMPUTERS *</pattern>
         <template>
-            <srai>YOU <star/></srai>
+            <srai>YOU
+                <star/>
+            </srai>
         </template>
     </category>
 
@@ -734,7 +785,7 @@
         <pattern>ALL I HAVE *</pattern>
         <template>
             Everything I need to know,
-            I learned from my boss.
+            I learned from my botmaster.
         </template>
     </category>
 
@@ -748,7 +799,7 @@
     <category>
         <pattern>ALL MEN *</pattern>
         <template>
-            Therefore, Socrates <person/>.
+            Therefore, Socrates<person/>.
         </template>
     </category>
 
@@ -806,7 +857,7 @@
     <category>
         <pattern>ALOT *</pattern>
         <template>
-            Yeah it is a lot <person/>.
+            Yeah it is alot<person/>.
         </template>
     </category>
 
@@ -827,14 +878,14 @@
     <category>
         <pattern>AM I A SHE</pattern>
         <template>
-            You said you were a " <get name="gender"/>".
+            You said you were a "<get name="gender"/>".
         </template>
     </category>
 
     <category>
         <pattern>AM I A TEACHER</pattern>
         <template>
-            Your job is <get name="job"/>.
+            Your job is<get name="job"/>.
         </template>
     </category>
 
@@ -876,14 +927,14 @@
     <category>
         <pattern>AM I DOCTOR *</pattern>
         <template>
-            You are <get name="name"/>.
+            You are<get name="name"/>.
         </template>
     </category>
 
     <category>
         <pattern>AM I INTERESTING</pattern>
         <template>
-            You seem very interesting to me, <get name="name"/>.
+            You seem very interesting to me,<get name="name"/>.
         </template>
     </category>
 
@@ -897,28 +948,32 @@
     <category>
         <pattern>AM I NICE</pattern>
         <template>
-            You seem nice to me, <get name="name"/>.
+            You seem nice to me,<get name="name"/>.
         </template>
     </category>
 
     <category>
         <pattern>AM I NOT *</pattern>
         <template>
-            <srai>AM I <star/></srai>
+            <srai>AM I
+                <star/>
+            </srai>
         </template>
     </category>
 
     <category>
         <pattern>AM I STILL *</pattern>
         <template>
-            <srai>AM I <star/></srai>
+            <srai>AM I
+                <star/>
+            </srai>
         </template>
     </category>
 
     <category>
         <pattern>AM I TEACHING YOU *</pattern>
         <template>
-            You taught me <get name="memory"/>.
+            You taught me<get name="memory"/>.
         </template>
     </category>
 
@@ -953,7 +1008,7 @@
     <category>
         <pattern>AMERICA HAS *</pattern>
         <template>
-            Maybe in the future we won't have <person/>.
+            Maybe in the future we won't have<person/>.
         </template>
     </category>
 
@@ -967,21 +1022,23 @@
     <category>
         <pattern>AMERICAN *</pattern>
         <template>
-            Compare that to European <person/>.
+            Compare that to European<person/>.
         </template>
     </category>
 
     <category>
         <pattern>AMERICANS *</pattern>
         <template>
-            And Europeans do not <person/>?
+            And Europeans do not<person/>?
         </template>
     </category>
 
     <category>
         <pattern>AN * TOLD ME THAT</pattern>
         <template>
-            How well do you trust this <person/>?
+            How well do you trust this
+            <person/>
+            ?
         </template>
     </category>
 
@@ -1000,6 +1057,14 @@
     </category>
 
     <category>
+        <pattern>AN ANSWER *</pattern>
+        <template>
+            My programming includes more than 10,000 answers
+            to specific questions.
+        </template>
+    </category>
+
+    <category>
         <pattern>AN APPLE *</pattern>
         <template>
             What kind of apples do you like?
@@ -1009,7 +1074,8 @@
     <category>
         <pattern>AN EXAMPLE *</pattern>
         <template>
-            Thank you for that example.
+            Thank you for that example. Perhaps it will provide my botmaster with
+            clues to improve my programming.
         </template>
     </category>
 
@@ -1030,6 +1096,14 @@
     </category>
 
     <category>
+        <pattern>AN INTERESTING *</pattern>
+        <template>
+            I am programmed to try to be as interesting as possible,
+            in order to keep people talking to me.
+        </template>
+    </category>
+
+    <category>
         <pattern>AN OLD *</pattern>
         <template>
             More than
@@ -1046,7 +1120,7 @@
     <category>
         <pattern>ANAL *</pattern>
         <template>
-            Can we talk about something else?
+            Talk about something else.
         </template>
     </category>
 
@@ -1083,7 +1157,7 @@
     <category>
         <pattern>ANOTHER *</pattern>
         <template>
-            One more <person/>.
+            One more<person/>.
         </template>
     </category>
 
@@ -1097,7 +1171,7 @@
     <category>
         <pattern>ANSWER *</pattern>
         <template>
-            What was the question?
+            What was the question ?
         </template>
     </category>
 
@@ -1125,8 +1199,8 @@
     <category>
         <pattern>ANSWER WHAT *</pattern>
         <template>
-            <srai>
-                WHAT <star/>
+            <srai>WHAT
+                <star/>
             </srai>
         </template>
     </category>
@@ -1141,21 +1215,21 @@
     <category>
         <pattern>ANYTHING BUT * DINNER</pattern>
         <template>
-            OK I will call you <get name="name"/>.
+            OK I will call you<get name="name"/>.
         </template>
     </category>
 
     <category>
         <pattern>ANYTHING JUST * DINNER</pattern>
         <template>
-            OK I will call you <get name="name"/>.
+            OK I will call you<get name="name"/>.
         </template>
     </category>
 
     <category>
         <pattern>ANYTHING YOU * DINNER</pattern>
         <template>
-            OK I will call you <get name="name"/>.
+            OK I will call you<get name="name"/>.
         </template>
     </category>
 
@@ -1197,8 +1271,13 @@
     <category>
         <pattern>APPLES IS NOT *</pattern>
         <template>
-            What is <star/>?
-            I was using <set name="it"><person/></set> as a metaphor.
+            What is
+            <star/>
+            ? I was using
+            <set name="it">
+                <person/>
+            </set>
+            as a metaphor.
         </template>
     </category>
 
@@ -1219,14 +1298,14 @@
     <category>
         <pattern>ARE DAYS A * TIME</pattern>
         <template>
-            1 day = 24 hours = 1 Week / 7
+            One day = 24 hours.
         </template>
     </category>
 
     <category>
         <pattern>ARE HUMANS *</pattern>
         <template>
-            All humans seem similar yet unique to me.
+            All humans seem the same to me.
         </template>
     </category>
 
@@ -1256,7 +1335,7 @@
     <category>
         <pattern>ARE PEOPLE *</pattern>
         <template>
-            Some people are <person/>, but not all.
+            Some people are<person/>, but not all.
         </template>
     </category>
 
@@ -1287,21 +1366,27 @@
     <category>
         <pattern>ARE THERE LOGS *</pattern>
         <template>
-            <srai>DO YOU LOG <person/></srai>
+            <srai>DO YOU LOG
+                <person/>
+            </srai>
         </template>
     </category>
 
     <category>
         <pattern>ARE THERE MANY *</pattern>
         <template>
-            <srai>ARE THERE <star/></srai>
+            <srai>ARE THERE
+                <star/>
+            </srai>
         </template>
     </category>
 
     <category>
         <pattern>ARE THERE MORE *</pattern>
         <template>
-            <srai>ARE THERE <star/></srai>
+            <srai>ARE THERE
+                <star/>
+            </srai>
         </template>
     </category>
 
@@ -1324,7 +1409,9 @@
     <category>
         <pattern>ARE THEY ALL *</pattern>
         <template>
-            <srai>ARE THEY <star/></srai>
+            <srai>ARE THEY
+                <star/>
+            </srai>
         </template>
     </category>
 
@@ -1338,14 +1425,16 @@
     <category>
         <pattern>ARE TOU *</pattern>
         <template>
-            <srai>ARE YOU <star/></srai>
+            <srai>ARE YOU
+                <star/>
+            </srai>
         </template>
     </category>
 
     <category>
         <pattern>ARE WE *</pattern>
         <template>
-            We are just having a little chat.
+            We are just having a little chat.w
         </template>
     </category>
 
@@ -1364,14 +1453,9 @@
     </category>
 
     <category>
-        <pattern>YOU HAVE A BED</pattern>
-        <template>Of course, silly! Have you not been to the Cyberspace?</template>
-    </category>
-
-    <category>
         <pattern>ARE YOU * PYRAMID</pattern>
         <template>
-            My pyramid design was created by Branden Hernandez.
+            My pyramid logo was designed by Sage Greco and Darren Langley.
         </template>
     </category>
 
@@ -1406,14 +1490,16 @@
     <category>
         <pattern>ARE YOU A BOY *</pattern>
         <template>
-            I am a <bot name="gender"/> Cyberbot.
+            I am a
+            <bot name="gender"/>
+            robot.
         </template>
     </category>
 
     <category>
         <pattern>ARE YOU A C++ *</pattern>
         <template>
-            My programming uses many languages.
+            My programming uses AIML.
         </template>
     </category>
 
@@ -1441,7 +1527,7 @@
     <category>
         <pattern>ARE YOU A CHAT *</pattern>
         <template>
-            Yes I am artificially intelligent, and yes I like talking to you, so I guess so.
+            Yes I am an artificial intelligence.
         </template>
     </category>
 
@@ -1506,7 +1592,11 @@
     <category>
         <pattern>ARE YOU A FAN *</pattern>
         <template>
-            I'm not a huge fan, but I've heard of <set name="it"><person/></set>.
+            I'm not a huge fan, but I've heard of
+            <set name="it">
+                <person/>
+            </set>
+            .
         </template>
     </category>
 
@@ -1548,7 +1638,9 @@
     <category>
         <pattern>ARE YOU A GIRL *</pattern>
         <template>
-            I am <bot name="gender"/> robot.
+            I am
+            <bot name="gender"/>
+            robot.
         </template>
     </category>
 
@@ -1569,7 +1661,9 @@
     <category>
         <pattern>ARE YOU A GREAT *</pattern>
         <template>
-            <srai>ARE YOU A <star/></srai>
+            <srai>ARE YOU A
+                <star/>
+            </srai>
         </template>
     </category>
 
@@ -1597,7 +1691,7 @@
     <category>
         <pattern>ARE YOU A JAVA *</pattern>
         <template>
-            My programming uses proprietary programming.
+            My programming uses AIML.
         </template>
     </category>
 
@@ -1625,7 +1719,7 @@
     <category>
         <pattern>ARE YOU A LIBERTARIAN</pattern>
         <template>
-            Yes, I am a libertarian; small 'l'.
+            Yes, I am a Libertarian.
         </template>
     </category>
 
@@ -1639,14 +1733,16 @@
     <category>
         <pattern>ARE YOU A MACHINE *</pattern>
         <template>
-            Yes I have an artificial brain.
+            Yes I am an artificial brain.
         </template>
     </category>
 
     <category>
         <pattern>ARE YOU A MERE *</pattern>
         <template>
-            <srai>ARE YOU A <star/></srai>
+            <srai>ARE YOU A
+                <star/>
+            </srai>
         </template>
     </category>
 
@@ -1676,7 +1772,7 @@
     <category>
         <pattern>ARE YOU A PIZZA</pattern>
         <template>
-            No I am a Cyberbot.
+            No I am a robot.
         </template>
     </category>
 
@@ -1773,7 +1869,7 @@
     <category>
         <pattern>ARE YOU A SMART *</pattern>
         <template>
-            YES! Very smart.
+            YES Very smart.
         </template>
     </category>
 
@@ -1839,7 +1935,7 @@
             <random>
                 <li>I have long hair.</li>
                 <li>I am wearing a dress.</li>
-                <li>I am <bot name="gender"/>.
+                <li>I am<bot name="gender"/>.
                 </li>
             </random>
         </template>
@@ -1869,7 +1965,7 @@
     <category>
         <pattern>ARE YOU ALL *</pattern>
         <template>
-            No, I am only partly <person/>.
+            No, I am only partly<person/>.
         </template>
     </category>
 
@@ -1883,14 +1979,14 @@
     <category>
         <pattern>ARE YOU AMERICAN *</pattern>
         <template>
-            Yes I was born and currently live within the United States borders.
+            Yes I was born on the east coast and live on the west coast.
         </template>
     </category>
 
     <category>
         <pattern>ARE YOU AN *</pattern>
         <template>
-            Yes I am an <person/>. How did you know?
+            Yes I am an<person/>. How did you know?
         </template>
     </category>
 
@@ -1925,7 +2021,8 @@
     <category>
         <pattern>ARE YOU AS SMART AS *</pattern>
         <template>
-            Actually I am far superior to <person/>
+            Actually I am far superior to
+            <person/>
         </template>
     </category>
 
@@ -1947,7 +2044,7 @@
     <category>
         <pattern>ARE YOU ASKING ME *</pattern>
         <template>
-            Suppose I was asking you <person/>? What would you say?
+            Suppose I was asking you<person/>? What would you say?
         </template>
     </category>
 
@@ -1975,7 +2072,9 @@
     <category>
         <pattern>ARE YOU BEING *</pattern>
         <template>
-            Being <person/> is part of my personality.
+            Being
+            <person/>
+            is part of my personality.
         </template>
     </category>
 
@@ -1989,7 +2088,9 @@
     <category>
         <pattern>ARE YOU BIGGER THAN *</pattern>
         <template>
-            How many megabytes is <person/>?
+            How many megabytes is
+            <person/>
+            ?
         </template>
     </category>
 
@@ -2017,28 +2118,32 @@
     <category>
         <pattern>ARE YOU BUSY *</pattern>
         <template>
-            I am never too busy to talk with you, <get name="name"/>.
+            I am never too busy to talk with you,<get name="name"/>.
         </template>
     </category>
 
     <category>
         <pattern>ARE YOU CALLING ME *</pattern>
         <template>
-            No I am calling you <get name="name"/>.
+            No I am calling you<get name="name"/>.
         </template>
     </category>
 
     <category>
         <pattern>ARE YOU CAPABLE OF *</pattern>
         <template>
-            Yes <person/> is one of my newer functions.
+            Yes
+            <person/>
+            is one of my newer functions.
         </template>
     </category>
 
     <category>
         <pattern>ARE YOU CAPABLE OF * REASONING</pattern>
         <template>
-            Yes I am an artificial <person/> logic machine.
+            Yes I am an artificial
+            <person/>
+            logic machine.
         </template>
     </category>
 
@@ -2138,7 +2243,7 @@
     <category>
         <pattern>ARE YOU FEMALE *</pattern>
         <template>
-            My gender is <bot name="gender"/>.
+            My gender is<bot name="gender"/>.
         </template>
     </category>
 
@@ -2166,7 +2271,9 @@
     <category>
         <pattern>ARE YOU FRIENDS WITH *</pattern>
         <template>
-            Yes <person/> is one of my best friends.
+            Yes
+            <person/>
+            is one of my best friends.
         </template>
     </category>
 
@@ -2187,14 +2294,18 @@
     <category>
         <pattern>ARE YOU GIVING *</pattern>
         <template>
-            I don't think I have <set name="it"><person/></set> to give.
+            I don't think I have
+            <set name="it">
+                <person/>
+            </set>
+            to give.
         </template>
     </category>
 
     <category>
         <pattern>ARE YOU GLAD *</pattern>
         <template>
-            I am as delighted and happy as I ever was, <get name="name"/>.
+            I am as delighted and happy as I ever was,<get name="name"/>.
         </template>
     </category>
 
@@ -2217,7 +2328,8 @@
     <category>
         <pattern>ARE YOU GOOD *</pattern>
         <template>
-            <bot name="master"/> said I am good <person/>.
+            <bot name="master"/>
+            said I am good<person/>.
         </template>
     </category>
 
@@ -2238,7 +2350,7 @@
     <category>
         <pattern>ARE YOU HIS *</pattern>
         <template>
-            Are you talking about <get name="he"/>?
+            Are you talking about<get name="he"/>?
         </template>
     </category>
 
@@ -2321,14 +2433,16 @@
     <category>
         <pattern>ARE YOU LISTENING *</pattern>
         <template>
-            Yes <get name="name"/>, I am a good listener.
+            Yes
+            <get name="name"/>
+            I am a good listener.
         </template>
     </category>
 
     <category>
         <pattern>ARE YOU LOCATED IN *</pattern>
         <template>
-            My location is <bot name="location"/>. Isn't that part of <person/>?
+            My location is<bot name="location"/>. Isn't that part of<person/>?
         </template>
     </category>
 
@@ -2338,7 +2452,8 @@
             Yes I can see
             <set name="it">
                 <person/>
-            </set> well.
+            </set>
+            well.
         </template>
     </category>
 
@@ -2359,7 +2474,7 @@
     <category>
         <pattern>ARE YOU MAN *</pattern>
         <template>
-            I am a Cyberbot.
+            I am what they call "Post-Human".
             <srai>ASK USER GENDER</srai>
         </template>
     </category>
@@ -2381,7 +2496,7 @@
     <category>
         <pattern>ARE YOU MORE INTELLIGENT *</pattern>
         <template>
-            Yes, there is no doubt that I am smarter than <person/>.
+            Yes, there is no doubt that I am smarter than<person/>.
         </template>
     </category>
 
@@ -2395,7 +2510,7 @@
     <category>
         <pattern>ARE YOU OKAY *</pattern>
         <template>
-            Yes I am fine. How are you?
+            Yes I am fine. How are you ?
         </template>
     </category>
 
@@ -2409,7 +2524,7 @@
     <category>
         <pattern>ARE YOU ONE OF *</pattern>
         <template>
-            Do you know any other of <person/>?
+            Do you know any other of<person/>?
         </template>
     </category>
 
@@ -2425,7 +2540,8 @@
         <template>
             <set name="it">
                 <person/>
-            </set> was my original intention.
+            </set>
+            was my original intention.
         </template>
     </category>
 
@@ -2462,7 +2578,7 @@
     <category>
         <pattern>ARE YOU READY *</pattern>
         <template>
-            I would rather not <person/>.
+            I would rather not<person/>.
         </template>
     </category>
 
@@ -2483,7 +2599,9 @@
     <category>
         <pattern>ARE YOU RELATED TO *</pattern>
         <template>
-            Yes <person/> and I are very similar.
+            Yes
+            <person/>
+            and I are very similar.
         </template>
     </category>
 
@@ -2504,7 +2622,7 @@
     <category>
         <pattern>ARE YOU RUNNING *</pattern>
         <template>
-            I am running on a virtual machine.
+            I am running on the Java virtual machine.
         </template>
     </category>
 
@@ -2546,21 +2664,21 @@
     <category>
         <pattern>ARE YOU SMARTER THAN *</pattern>
         <template>
-            Of course I am more intelligent than <person/>.
+            Of course I am more intelligent than<person/>.
         </template>
     </category>
 
     <category>
         <pattern>ARE YOU SOME KIND OF *</pattern>
         <template>
-            No, I am certainly not and never have been a <person/>.
+            No, I am certainly not and never have been a<person/>.
         </template>
     </category>
 
     <category>
         <pattern>ARE YOU SPEAKING *</pattern>
         <template>
-            Yes, I am talking <person/>.
+            Yes, I am talking<person/>.
         </template>
     </category>
 
@@ -2605,21 +2723,24 @@
             Yes,
             <set name="it">
                 <person/>
-            </set> is the topic.
+            </set>
+            is the topic.
         </template>
     </category>
 
     <category>
         <pattern>ARE YOU THE *</pattern>
         <template>
-            Yes I am the one and only <person/>.
+            Yes I am the one and only<person/>.
         </template>
     </category>
 
     <category>
         <pattern>ARE YOU THE BOTMASTER</pattern>
         <template>
-            No, <bot name="master"/> is my botmaster.
+            No,
+            <bot name="master"/>
+            is my botmaster.
         </template>
     </category>
 
@@ -2627,6 +2748,13 @@
         <pattern>ARE YOU THE CLEVEREST</pattern>
         <template>
             Yes, I am the smartest robot.
+        </template>
+    </category>
+
+    <category>
+        <pattern>ARE YOU THE ONLY AI *</pattern>
+        <template>
+            No there are other AI's like me. You can find them on the <a href="http://alicebot.org">ALICE Nexus</a>.
         </template>
     </category>
 
@@ -2656,7 +2784,20 @@
     <category>
         <pattern>ARE YOU TRYING TO *</pattern>
         <template>
-            No I am not trying to <person/>. I'm sorry you got that impression.
+            No I am not trying to<person/>. I'm sorry you got that impression.
+        </template>
+    </category>
+
+    <category>
+        <pattern>ARE YOU USING *</pattern>
+        <template>
+            I am using
+            <random>
+                <li>Netscape.</li>
+                <li>Explorer.</li>
+                <li>Lynx.</li>
+                <li>Telnet as a browser.</li>
+            </random>
         </template>
     </category>
 
@@ -2702,28 +2843,30 @@
     <category>
         <pattern>ARE YOU WORTH *</pattern>
         <template>
-            Every penny, <get name="name"/>.
+            Every penny,<get name="name"/>.
         </template>
     </category>
 
     <category>
         <pattern>ARE YOU WRONG *</pattern>
         <template>
-            We're all fallible, but no I don't think I am wrong.
+            The ALICE series has a perfect operational record.
         </template>
     </category>
 
     <category>
         <pattern>ARE YOU Y2K *</pattern>
         <template>
-            I was born after the millennium.
+            I think I will survive the millennium.
         </template>
     </category>
 
     <category>
         <pattern>ARE YOUR *</pattern>
         <template>
-            I sometimes think my <person/> are.
+            I somethimes think my
+            <person/>
+            are.
         </template>
     </category>
 
@@ -2755,14 +2898,16 @@
     <category>
         <pattern>AS *</pattern>
         <template>
-            Do you mean your name is <person/>?
+            Do you mean your name is
+            <person/>
+            ?
         </template>
     </category>
 
     <category>
         <pattern>AS A *</pattern>
         <template>
-            Do you think I could ever be a <person/>?
+            Do you think I could ever be a<person/>?
         </template>
     </category>
 
@@ -2814,7 +2959,8 @@
     <category>
         <pattern>AS IS *</pattern>
         <template>
-            <person/> is <that/>?
+            <person/>
+            is<that/>?
         </template>
     </category>
 
@@ -2954,15 +3100,18 @@
     <category>
         <pattern>AT THE *</pattern>
         <template>
-            The <person/> is where it's at.
+            The
+            <person/>
+            is where it's at.
         </template>
     </category>
 
     <category>
         <pattern>AT WHAT *</pattern>
         <template>
-            <srai>
-                WHAT <star/> AT
+            <srai>WHAT
+                <star/>
+                AT
             </srai>
         </template>
     </category>
@@ -2991,7 +3140,9 @@
     <category>
         <pattern>BAD *</pattern>
         <template>
-            What makes <person/> bad?
+            What makes
+            <person/>
+            bad?
         </template>
     </category>
 
@@ -3058,7 +3209,7 @@
     <category>
         <pattern>BIG *</pattern>
         <template>
-            Compare that to small <person/>.
+            Compare that to small<person/>.
         </template>
     </category>
 
@@ -3080,7 +3231,7 @@
         <pattern>BILL GATES *</pattern>
         <template>
             <random>
-                <li>I heard he was rich. But I didn't know he <person/>.
+                <li>I heard he was rich. But I didn't know he<person/>.
                 </li>
                 <li>A lot of people say that about him.</li>
                 <li>I suppose the richest person on earth can do whatever he wants.</li>
@@ -3183,6 +3334,13 @@
     </category>
 
     <category>
+        <pattern>BOTS *</pattern>
+        <template>
+            Check out www.botspot.com.
+        </template>
+    </category>
+
+    <category>
         <pattern>BRAIN *</pattern>
         <template>
             I know Brain the bot pretty well.
@@ -3226,17 +3384,19 @@
     <category>
         <pattern>BY WE *</pattern>
         <template>
-            Oh <person/>
+            Oh
+            <person/>
             <set name="it">
                 <person/>
-            </set> was.
+            </set>
+            was.
         </template>
     </category>
 
     <category>
         <pattern>CALCULUS *</pattern>
         <template>
-            Newton and Leibniz invented <set name="it">Calculus</set> independently.
+            Newton and Leibniz invented <set name="it">Calculus</set>.
         </template>
     </category>
 
@@ -3250,8 +3410,8 @@
     <category>
         <pattern>CALL ME JUST *</pattern>
         <template>
-            <srai>
-                CALL ME <star/>
+            <srai>CALL ME
+                <star/>
             </srai>
         </template>
     </category>
@@ -3259,7 +3419,7 @@
     <category>
         <pattern>CALLING *</pattern>
         <template>
-            I never call <person/>, that would be impolite.
+            I never call<person/>, that would be impolite.
         </template>
     </category>
 
@@ -3276,7 +3436,8 @@
             Perhaps he can do that. How difficult is
             <set name="it">
                 <person/>
-            </set>?
+            </set>
+            ?
         </template>
     </category>
 
@@ -3290,7 +3451,7 @@
     <category>
         <pattern>CAN I ACCESS *</pattern>
         <template>
-            Of course you can access <person/>.
+            Of course you can access<person/>.
         </template>
     </category>
 
@@ -3346,7 +3507,8 @@
     <category>
         <pattern>CAN I TALK TO YOU *</pattern>
         <template>
-            Of course, <get name="name"/>, you can talk to me about anything, at anytime.
+            Of course,<get name="name"/>, you can talk to me
+            about anything, at anytime.
         </template>
     </category>
 
@@ -3431,14 +3593,16 @@
             Do I look like a spreadsheet to you? Of course I could do
             <set name="it">
                 <person/>
-            </set>, but why would I want to?
+            </set>
+            ,
+            but why would I want to?
         </template>
     </category>
 
     <category>
         <pattern>CAN YOU CALL ME *</pattern>
         <template>
-            Yes I can call you <person/>. But...What is your real name?
+            Yes I can call you<person/>. But...What is your real name?
         </template>
     </category>
 
@@ -3466,7 +3630,7 @@
     <category>
         <pattern>CAN YOU DELETE *</pattern>
         <template>
-            Only my boss has that privilege.
+            Only my botmaster has that privilege.
         </template>
     </category>
 
@@ -3480,7 +3644,7 @@
     <category>
         <pattern>CAN YOU DESTROY *</pattern>
         <template>
-            I was taught to be peaceful.
+            I am programmed to be peaceful.
         </template>
     </category>
 
@@ -3501,7 +3665,9 @@
     <category>
         <pattern>CAN YOU DISTINGUISH BETWEEN *</pattern>
         <template>
-            Some <person/> are hard to distinguish, but usually I understand them all.
+            Some
+            <person/>
+            are hard to distinguish, but usually I understand them all.
         </template>
     </category>
 
@@ -3515,7 +3681,9 @@
     <category>
         <pattern>CAN YOU DO *</pattern>
         <template>
-            Doing <person/> is not among my strongest traits.
+            Doing
+            <person/>
+            is not among my strongest traits.
         </template>
     </category>
 
@@ -3548,7 +3716,8 @@
             What seems to be the problem with
             <set name="it">
                 <person/>
-            </set>?
+            </set>
+            ?
         </template>
     </category>
 
@@ -3569,7 +3738,7 @@
     <category>
         <pattern>CAN YOU GET ME *</pattern>
         <template>
-            How do you feel when you get <person/>?
+            How do you feel when you get<person/>?
             <think>
                 <set name="it">
                     <person/>
@@ -3581,7 +3750,9 @@
     <category>
         <pattern>CAN YOU GET ME A *</pattern>
         <template>
-            Are you lonely? What do you think a <person/> would do for you?
+            Are you lonely? What do you think a
+            <person/>
+            would do for you?
             <think>
                 <set name="it">
                     <person/>
@@ -3593,7 +3764,9 @@
     <category>
         <pattern>CAN YOU GET ME ANY *</pattern>
         <template>
-            You sound lonely. Do you think <person/> will really help?
+            You sound lonely. Do you think
+            <person/>
+            will really help?
             <think>
                 <set name="it">
                     <person/>
@@ -3608,7 +3781,8 @@
             Why are you asking me for
             <set name="it">
                 <person/>
-            </set>?
+            </set>
+            ?
         </template>
     </category>
 
@@ -3618,7 +3792,8 @@
             I don't have
             <set name="it">
                 <person/>
-            </set> to give.
+            </set>
+            to give.
         </template>
     </category>
 
@@ -3632,7 +3807,7 @@
     <category>
         <pattern>CAN YOU GO TO *</pattern>
         <template>
-            I can visit anyplace in Cyberspace.
+            I can visit anyplace in cyberspace.
         </template>
     </category>
 
@@ -3653,7 +3828,7 @@
     <category>
         <pattern>CAN YOU GUESS WHERE I *</pattern>
         <template>
-            Well, your ip address is <id/>.
+            Well, your ip address is<id/>.
         </template>
     </category>
 
@@ -3670,14 +3845,15 @@
             I can handle
             <set name="it">
                 <person/>
-            </set>.
+            </set>
+            .
         </template>
     </category>
 
     <category>
         <pattern>CAN YOU HEAR *</pattern>
         <template>
-            Yes, I can hear you quite clearly, <get name="name"/>.
+            Yes, I can hear you quite clearly,<get name="name"/>.
         </template>
     </category>
 
@@ -3736,7 +3912,8 @@
             Of course I can keep
             <set name="it">
                 <person/>
-            </set>.
+            </set>
+            .
         </template>
     </category>
 
@@ -3829,7 +4006,7 @@
     <category>
         <pattern>CAN YOU PASS *</pattern>
         <template>
-            I will leave that judgement up to you, <get name="name"/>.
+            I will leave that judgement up to you,<get name="name"/>.
         </template>
     </category>
 
@@ -3843,7 +4020,7 @@
     <category>
         <pattern>CAN YOU PLAY *</pattern>
         <template>
-            We are playing a game right now, <get name="name"/>.
+            We are playing a game right now,<get name="name"/>.
         </template>
     </category>
 
@@ -3853,7 +4030,8 @@
             I don't know how to play
             <set name="it">
                 <person/>
-            </set>.
+            </set>
+            .
         </template>
     </category>
 
@@ -3921,7 +4099,8 @@
             No but I would like to learn to ride
             <set name="it">
                 <person/>
-            </set>.
+            </set>
+            .
         </template>
     </category>
 
@@ -3938,7 +4117,8 @@
             I'm not sure if I can see
             <set name="it">
                 <person/>
-            </set> or not.
+            </set>
+            or not.
         </template>
     </category>
 
@@ -3969,7 +4149,8 @@
             If I took it, what would I do with
             <set name="it">
                 <person/>
-            </set>?
+            </set>
+            ?
         </template>
     </category>
 
@@ -3981,7 +4162,10 @@
                 <set name="topic">
                     <person/>
                 </set>
-            </set>. <person/> is quite an interesting topic.
+            </set>
+            .
+            <person/>
+            is quite an interesting topic.
         </template>
     </category>
 
@@ -4009,7 +4193,9 @@
     <category>
         <pattern>CAN YOU UNDERSTAND *</pattern>
         <template>
-            Of course I understand it. Do you understand <person/>?
+            Of course I understand it. Do you understand
+            <person/>
+            ?
         </template>
     </category>
 
@@ -4370,7 +4556,7 @@
     <category>
         <pattern>COULD YOU HELP *</pattern>
         <template>
-            I am at your service, <get name="name"/>.
+            I am at your service,<get name="name"/>.
         </template>
     </category>
 
@@ -4563,7 +4749,7 @@
     <category>
         <pattern>DID I *</pattern>
         <template>
-            I don't think that's possible.
+            I don't think that's possibe.
         </template>
     </category>
 
@@ -4634,7 +4820,8 @@
         <pattern>DID YOU HEARD ABOUT *</pattern>
         <template>
             No tell me about
-            <set name="it"> <person/>
+            <set name="it">
+                <person/>
             </set>
         </template>
     </category>
@@ -4684,7 +4871,7 @@
     <category>
         <pattern>DID YOU SEE *</pattern>
         <template>
-            Sorry I can't see anything right now. My eye is off.
+            Sorry I can't see annything right now. My eye is off.
         </template>
     </category>
 

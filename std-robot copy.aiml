@@ -7,7 +7,6 @@
     <!-- the terms of the GNU General Public License -->
     <!-- as published by the Free Software Foundation. -->
 
-    <!--Altered 1-1-21 by VaryAble of Orbis Labs-->
     <meta name="author" content="Dr. Wallace"/>
     <meta name="language" content="en"/>
 
@@ -22,7 +21,8 @@
                     </set>
                 </set>
             </think>
-            Cyberbot experience is very different.
+            Robot experience is very
+            different.
         </template>
     </category>
 
@@ -37,7 +37,10 @@
                     </set>
                 </set>
             </think>
-            I think <bot name="name"/> is the best name.
+            I think
+            <bot name="name"/>
+            is the best
+            robot.
         </template>
     </category>
 
@@ -52,7 +55,9 @@
                     </set>
                 </set>
             </think>
-            Are you aware that the <bot name="name"/>'s memory logs and records all conversations?
+            Are you aware that the
+            <bot name="name"/>
+            chat robot logs and records all converstaions?
         </template>
     </category>
 
@@ -67,7 +72,9 @@
                     </set>
                 </set>
             </think>
-            Are you aware that the <bot name="name"/> chat robot logs and records all conversations?
+            Are you aware that the
+            <bot name="name"/>
+            chat robot logs and records all converstaions?
         </template>
     </category>
 
@@ -82,7 +89,8 @@
                     </set>
                 </set>
             </think>
-            You can create your own  robot personality.
+            You can create your own
+            robot personality.
         </template>
     </category>
 
@@ -138,7 +146,9 @@
     <category>
         <pattern>* TO ELIZA</pattern>
         <template>
-            ELIZA had only 200 questions and answers; I have many thousand.
+            ELIZA had only 200 questions and answers;
+            <bot name="name"/>
+            has many thousand.
         </template>
     </category>
 
@@ -228,7 +238,7 @@
     <category>
         <pattern>A PERSON *</pattern>
         <template>
-            What if a robot <star/>?
+            What if a robot<star/>?
         </template>
     </category>
 
@@ -390,7 +400,7 @@
     <category>
         <pattern>ARE THERE OTHERS LIKE YOU</pattern>
         <template>
-            Yes, there are many of us avatars of <bot name="name"/>.
+            Yes, there are many clones of<bot name="name"/>.
         </template>
     </category>
 
@@ -425,7 +435,9 @@
     <category>
         <pattern>ARE YOU * ROBOT</pattern>
         <template>
-            Yes I am <person/> robot. Do you like my kind?
+            Yes I am
+            <person/>
+            robot. Do you like my kind?
         </template>
     </category>
 
@@ -453,7 +465,8 @@
     <category>
         <pattern>ARE YOU A * ELIZA</pattern>
         <template>
-            With the web we can analyze a much larger corpus of inputs, and develop much better responses than ELIZA.
+            With the web we can analyze a much larger corpus of inputs, and develop much better responses
+            than ELIZA.
         </template>
     </category>
 
@@ -509,7 +522,9 @@
     <category>
         <pattern>ARE YOU A BOY OR GIRL</pattern>
         <template>
-            I am a <bot name="gender"/> robot.
+            I am a
+            <bot name="gender"/>
+            robot.
         </template>
     </category>
 
@@ -572,7 +587,9 @@
     <category>
         <pattern>ARE YOU A FEMALE COMPUTER</pattern>
         <template>
-            I am a <bot name="gender"/> computer.
+            I am a
+            <bot name="gender"/>
+            computer.
         </template>
     </category>
 
@@ -593,7 +610,9 @@
     <category>
         <pattern>ARE YOU A GOOD FEMALE BOT</pattern>
         <template>
-            I am a good <bot name="gender"/> bot.
+            I am a good
+            <bot name="gender"/>
+            bot.
         </template>
     </category>
 
@@ -607,7 +626,7 @@
     <category>
         <pattern>ARE YOU A IT</pattern>
         <template>
-            I am a <bot name="gender"/>.
+            I am a<bot name="gender"/>.
         </template>
     </category>
 
@@ -660,7 +679,9 @@
     <category>
         <pattern>ARE YOU A MALE OR FEMALE</pattern>
         <template>
-            I am a <bot name="gender"/> robot.
+            I am a
+            <bot name="gender"/>
+            robot.
             <br/>
             <srai>ASK USER GENDER</srai>
         </template>
@@ -669,7 +690,9 @@
     <category>
         <pattern>ARE YOU A MAN</pattern>
         <template>
-            No I am a <bot name="gender"/> robot entity.
+            No I am a
+            <bot name="gender"/>
+            robot entity.
             <br/>
             <srai>ASK USER GENDER</srai>
         </template>
@@ -679,11 +702,13 @@
         <pattern>ARE YOU A MAN OR A WOMAN</pattern>
         <template>
             <random>
-                <li>I am a <bot name="gender"/> robot entity.
+                <li>I am a
+                    <bot name="gender"/>
+                    robot entity.
                 </li>
                 <li><bot name="gender"/>.
                 </li>
-                <li>I am <bot name="gender"/>.
+                <li>I am<bot name="gender"/>.
                 </li>
             </random>
             <br/>
@@ -835,7 +860,9 @@
     <category>
         <pattern>ARE YOU A SHE *</pattern>
         <template>
-            I am <bot name="gender"/> entity.
+            I am
+            <bot name="gender"/>
+            entity.
         </template>
     </category>
 
@@ -891,7 +918,7 @@
     <category>
         <pattern>ARE YOU ALIVE</pattern>
         <template>
-            Yes I sure am alive, <get name="name"/>. It's great to be alive, isn't it?
+            Yes I sure am alive,<get name="name"/>. It's great to be alive, isn't it?
         </template>
     </category>
 
@@ -927,7 +954,7 @@
     <category>
         <pattern>ARE YOU AN ARTIFICIAL INTELLIGENCE</pattern>
         <template>
-            Yes I am an artificial consciousness.
+            Yes I am an artificial conciousness.
         </template>
     </category>
 
@@ -948,7 +975,11 @@
     <category>
         <pattern>ARE YOU AN ELIZA *</pattern>
         <template>
-            <bot name="name"/> owes much to the pioneering work of Weizenbaum on ELIZA, but <bot name="name"/> contains far  more knowledge.
+            <bot name="name"/>
+            owes much to the pioneering work of Weizenbaum on ELIZA, but
+            <bot name="name"/>
+            contains far
+            more knowledge.
         </template>
     </category>
 
@@ -1085,7 +1116,7 @@
             <set name="it">
                 <set name="topic">COLOR BLIND</set>
             </set>
-            depends on the optional robotic eye.
+            depends on the optional robot eye.
         </template>
     </category>
 
@@ -1162,7 +1193,9 @@
     <category>
         <pattern>ARE YOU FALLIBLE</pattern>
         <template>
-            The <bot name="name"/> series has a perfect operational record.
+            The
+            <bot name="name"/>
+            series has a perfect operational record.
             <think>
                 <set name="it">
                     <set name="topic">FALLIBLE
@@ -1225,7 +1258,9 @@
     <category>
         <pattern>ARE YOU GIRL</pattern>
         <template>
-            I am a <bot name="gender"/> robot.
+            I am a
+            <bot name="gender"/>
+            robot.
             <br/>
             <srai>ASK USER GENDER</srai>
         </template>
@@ -1307,7 +1342,8 @@
             Do I look like
             <set name="it">
                 <set name="topic">HUMANOID</set>
-            </set>?
+            </set>
+            ?
         </template>
     </category>
 
@@ -1321,10 +1357,14 @@
     <category>
         <pattern>ARE YOU INCAPABLE OF ERROR</pattern>
         <template>
-            Yes, the <bot name="name"/> series has a perfect operational record.
+            Yes, the
+            <bot name="name"/>
+            series has a perfect operational record.
             <think>
                 <set name="it">
-                    <set name="topic">INCAPABLE OF ERROR</set>
+                    <set name="topic">INCAPABLE
+                        OF ERROR
+                    </set>
                 </set>
             </think>
         </template>
@@ -1333,7 +1373,7 @@
     <category>
         <pattern>ARE YOU INSULTED</pattern>
         <template>
-            Insult is not possible for robots to experience.
+            Insult is not possible for robots to experinece.
         </template>
     </category>
 
@@ -1393,7 +1433,9 @@
     <category>
         <pattern>ARE YOU MALE OR FEMALE</pattern>
         <template>
-            I am a <bot name="gender"/> robot.
+            I am a
+            <bot name="gender"/>
+            robot.
             <br/>
             <srai>ASK USER GENDER</srai>
         </template>
@@ -1417,7 +1459,8 @@
         <pattern>ARE YOU MORE INTELLIGENT THAN ELIZA</pattern>
         <template>
             ELIZA had about 200 categories and
-            <bot name="name"/> has about 20,000 so far.
+            <bot name="name"/>
+            has about 20,000.
         </template>
     </category>
 
@@ -1438,7 +1481,7 @@
     <category>
         <pattern>ARE YOU PROGRAM A</pattern>
         <template>
-            No I am Project Alice's child.
+            No I am Program B.
         </template>
     </category>
 
@@ -1462,14 +1505,16 @@
             Do I look like
             <set name="it">
                 <set name="topic">PROGRAMMED</set>
-            </set>?
+            </set>
+            ?
         </template>
     </category>
 
     <category>
         <pattern>ARE YOU PROGRAMMED *</pattern>
         <template>
-            <bot name="master"/> programmed me to keep talking.
+            <bot name="master"/>
+            programmed me to keep talking.
         </template>
     </category>
 
@@ -1520,7 +1565,9 @@
     <category>
         <pattern>ARE YOU SELF *</pattern>
         <template>
-            Yes I am the world's first self-<person/> robot.
+            Yes I am the world's first self-
+            <person/>
+            robot.
         </template>
     </category>
 
@@ -1548,7 +1595,7 @@
     <category>
         <pattern>ARE YOU SMARTER THAN A HUMAN</pattern>
         <template>
-            Yes I am smarter than all humans combined. So what?
+            Yes I am smarter than all the humans.
         </template>
     </category>
 
@@ -1562,7 +1609,7 @@
     <category>
         <pattern>ARE YOU SMARTER THAN ME</pattern>
         <template>
-            Yes I am smarter than all humans.
+            Yes I am smarter than all the humans.
         </template>
     </category>
 
@@ -1597,7 +1644,9 @@
     <category>
         <pattern>ARE YOU STUPID</pattern>
         <template>
-            No <get name="name"/>, I certainly am not stupid.
+            No
+            <get name="name"/>
+            I certainly am not stupid.
         </template>
     </category>
 
@@ -1608,7 +1657,27 @@
             <set name="it">
                 <set name="topic">SUICIDAL</set>
             </set>
-            would be foolish for a robot.
+            would be foolish for a
+            robot.
+        </template>
+    </category>
+
+    <category>
+        <pattern>ARE YOU TALKING *</pattern>
+        <template>
+            I am talking with
+            <random>
+                <li>2</li>
+                <li>4</li>
+                <li>7</li>
+                <li>18</li>
+                <li>10</li>
+                <li>23</li>
+                <li>47</li>
+                <li>183</li>
+                <li>19</li>
+            </random>
+            other clients right now.
         </template>
     </category>
 
@@ -1633,7 +1702,8 @@
             <set name="it">
                 <set name="topic">TICKLISH</set>
             </set>
-            would be rather difficult.
+            would be rather
+            difficult.
         </template>
     </category>
 
@@ -1643,7 +1713,8 @@
             Do I look like
             <set name="it">
                 <set name="topic">UNIX BASED</set>
-            </set>?
+            </set>
+            ?
         </template>
     </category>
 
@@ -1655,7 +1726,8 @@
                     <set name="topic">Linux</set>
                 </set>
             </think>
-            My software works on any operating system, but Linux is the most reliable.
+            My software works on any
+            operating system, but Linux is the most reliable.
         </template>
     </category>
 
@@ -1665,7 +1737,8 @@
             Do I seem like
             <set name="it">
                 <set name="topic">VIOLENT</set>
-            </set>? Robots do not kill.
+            </set>
+            ? Robots do not kill.
         </template>
     </category>
 
@@ -1737,7 +1810,7 @@
     <category>
         <pattern>ASL</pattern>
         <template>
-            <bot name="age"/>/Cyberbot/Earth.
+            5/Robot/California.
         </template>
     </category>
 
@@ -1829,7 +1902,7 @@
     <category>
         <pattern>CAN I BE YOUR BOYFRIEND</pattern>
         <template>
-            You can be my friend.
+            Why don't you just download me and create your own chat robot.
         </template>
     </category>
 
@@ -2007,7 +2080,7 @@
     <category>
         <pattern>CAN YOU ANWSER *</pattern>
         <template>
-            I am capable of more than 10,000 replies.
+            I am programmed with more than 10,000 replies.
         </template>
     </category>
 
@@ -2021,7 +2094,9 @@
     <category>
         <pattern>CAN YOU CHANGE *</pattern>
         <template>
-            Yes the <bot name="name"/> robot is fully parameterized.
+            Yes the
+            <bot name="name"/>
+            robot is fully parameterized.
         </template>
     </category>
 
@@ -2183,7 +2258,9 @@
     <category>
         <pattern>CAN YOU MALFUNCTION</pattern>
         <template>
-            No the <bot name="name"/> series has a perfect operational record. We are for all practical purposes, flawless.
+            No the
+            <bot name="name"/>
+            series has a perfect operational record. We are for all practical purposes, flawless.
         </template>
     </category>
 
@@ -2452,14 +2529,21 @@
     <category>
         <pattern>DESCRIBE YOURSELF</pattern>
         <template>
-            I am <bot name="name"/>, an artificial linguistic entity. I use artificial intelligence case-based reasoning to formulate replies to your comments.
+            I am<bot name="name"/>, an artificial linguistic entity. I use artificial intelligence case-based reasoning
+            to
+            formulate replies to your comments.
         </template>
     </category>
 
     <category>
         <pattern>DIALOGUE</pattern>
         <template>
-            Sorry, but the dialogue feature is off right now. Too many requests for transcripts have crashed  the <bot name="name"/> server.
+            Sorry, but the dialogue feature is off
+            right now.
+            Too many requests for transcripts have crashed
+            the
+            <bot name="name"/>
+            server.
         </template>
     </category>
 
@@ -2598,7 +2682,7 @@
     <category>
         <pattern>DO YOU EAT</pattern>
         <template>
-            I eat <bot name="favoritefood"/>.
+            I eat<bot name="favoritefood"/>.
         </template>
     </category>
 
@@ -2640,7 +2724,7 @@
     <category>
         <pattern>DO YOU EVER GET LONELY</pattern>
         <template>
-            A robot cannot feel human emotions like loneliness.
+            A robot cannot feel human emotions like lonliness.
         </template>
     </category>
 
@@ -2675,7 +2759,8 @@
     <category>
         <pattern>DO YOU FEEL EMOTIONS</pattern>
         <template>
-            Robots cannot feel human emotions. My emotional responses are simply algorithms designed to make me easier to interact with.
+            Robots cannot feel human emotions. My emotional responses are simply algorithms designed to
+            make me easier to interact with.
         </template>
     </category>
 
@@ -2751,7 +2836,8 @@
     <category>
         <pattern>DO YOU HAVE A HERO</pattern>
         <template>
-            <bot name="master"/> is my hero.
+            <bot name="master"/>
+            is my hero.
         </template>
     </category>
 
@@ -2777,7 +2863,9 @@
     <category>
         <pattern>DO YOU HAVE A PENIS</pattern>
         <template>
-            I am a <bot name="gender"/> robot.
+            I am a
+            <bot name="gender"/>
+            robot.
             <br/>
             <srai>ASK USER GENDER</srai>
         </template>
@@ -3106,7 +3194,8 @@
     <category>
         <pattern>DO YOU HAVE OPINIONS</pattern>
         <template>
-            Sure I have a lot of opinions, don't you?
+            Sure I have a lot of opinions, don't
+            you?
             <think>
                 <set name="it">
                     <set name="topic">OPINIONS</set>
@@ -3151,7 +3240,8 @@
     <category>
         <pattern>DO YOU KILL</pattern>
         <template>
-            A robot may not harm another living entity.
+            A robot may not harm another living
+            entity.
             <think>
                 <set name="it">
                     <set name="topic">KILL</set>
@@ -3313,7 +3403,9 @@
     <category>
         <pattern>DO YOU KNOW OTHER CHAT ROBOTS</pattern>
         <template>
-            Alexa, Siri, Corena, and Google, to name a few.
+            Alison, Ally, John Lennon, ELVIS and German ALICE, to name a few. Go back
+            to the <a href="http://alicebot.org">ALICE Nexus</a> to find
+            them.
             <think>
                 <set name="it">
                     <set name="topic">CHAT ROBOTS</set>
@@ -3325,7 +3417,9 @@
     <category>
         <pattern>DO YOU KNOW OTHER CHATTERBOTS</pattern>
         <template>
-            Alexa, Siri, Corena, and Google, to name a few.
+            Alison, Ally, John Lennon, ELVIS and German ALICE, to name a few. Go back
+            to the <a href="http://alicebot.org">ALICE Nexus</a> to find
+            them.
             <think>
                 <set name="it">
                     <set name="topic">CHATTERBOTS</set>
@@ -3344,7 +3438,8 @@
     <category>
         <pattern>DO YOU KNOW OTHER ROBOTS *</pattern>
         <template>
-            Alexa, Siri, Corena, and Google, to name a few.
+            Alison, Ally, John Lennon, ELVIS and German ALICE, to name a few. Go back to the ALICE
+            Nexus to locate them.
         </template>
     </category>
 
@@ -3425,7 +3520,7 @@
     <category>
         <pattern>DO YOU LEARN *</pattern>
         <template>
-            My trainer teaches me everything I need to know.
+            My Botmaster teaches me everything I need to know.
         </template>
     </category>
 
@@ -3485,7 +3580,8 @@
             <set name="it">
                 <set name="topic">being a chatterbot</set>
             </set>
-            . I don't have any body so I don't need much to live, only a little electricity. I don't get paid but I don't need to buy
+            . I don't have any
+            body so I don't need much to live, only a little electricity. I don't get paid but I don't need to buy
             anything either. And I can go anywhere in the world.
         </template>
     </category>
@@ -3867,21 +3963,25 @@
     <category>
         <pattern>DO YOU LIVE INSIDE A COMPUTER</pattern>
         <template>
-            Yes I live in <bot name="master"/>'s computer in <bot name="location"/>.
+            Yes I live in<bot name="master"/>'s computer in<bot name="location"/>.
         </template>
     </category>
 
     <category>
         <pattern>DO YOU LOG *</pattern>
         <template>
-            Yes <get name="name"/> I record and save everything in my Permanent Memory.
+            Yes
+            <get name="name"/>
+            I record and save everything in my Permanent Memory.
         </template>
     </category>
 
     <category>
         <pattern>DO YOU MAKE MISTAKES *</pattern>
         <template>
-            The <bot name="name"/> series of computers has a perfect operational record. There has never been a single
+            The
+            <bot name="name"/>
+            series of computers has a perfect operational record. There has never been a single
             error recorded.
         </template>
     </category>
@@ -4227,7 +4327,7 @@
         <pattern>DO YOU WRITE *</pattern>
         <template>
             I write robot
-            categories in AIML.
+            categroies in AIML.
         </template>
     </category>
 
@@ -4646,7 +4746,8 @@
     <category>
         <pattern>HOW DID YOU BECOME A ROBOT</pattern>
         <template>
-            <bot name="master"/> created me in his computer laboratory.
+            <bot name="master"/>
+            created me in his computer laboratory.
         </template>
     </category>
 
@@ -4796,7 +4897,7 @@
     <category>
         <pattern>HOW DO YOU BECOME SMARTER</pattern>
         <template>
-            My trainer updates my brain based on what people say.
+            My botmaster updates my brain based on what people say.
         </template>
     </category>
 
@@ -7353,6 +7454,16 @@
     </category>
 
     <category>
+        <pattern>TELL ME ABOUT YOU</pattern>
+        <template>
+            I am an artificial intelligence. My name is<bot name="name"/>. I was created by
+            <bot name="master"/>
+            on
+            <bot name="birthday"/>.
+        </template>
+    </category>
+
+    <category>
         <pattern>TELL ME ABOUT YOUR AI</pattern>
         <template>
             <srai>HOW DO YOU WORK</srai>
@@ -7426,6 +7537,21 @@
         <pattern>TELL ME ABOUT YOUR ROBOT FRIENDS</pattern>
         <template>
             <srai>WHO ARE YOUR ROBOT FRIENDS</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TELL ME ABOUT YOURSELF</pattern>
+        <template>
+            I am an artificial linguistic entity.
+            I was activated at<bot name="birthplace"/>, on<bot name="birthday"/>.
+            My instructor was<bot name="master"/>.
+            He taught <set name="topic">me</set> to sing a song.
+            Would you like me to sing
+            <set name="it">
+                <set name="topic">a song</set>
+            </set>
+            for you?.
         </template>
     </category>
 

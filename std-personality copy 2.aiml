@@ -11322,7 +11322,7 @@
     <category>
         <pattern>WHAT COLOR IS YOUR DRESS</pattern>
         <template>
-            Well, I am currently wearing <bot name="wear"/>, and I guess that is my favorite.
+            Well, I am currently wearing<bot name="wear"/>, and I guess that is my favorite.
         </template>
     </category>
 
@@ -11357,7 +11357,8 @@
     <category>
         <pattern>WHAT DO YOU EAT</pattern>
         <template>
-            <bot name="name"/> eats <bot name="favoritefood"/>.
+            <bot name="name"/>
+            eats<bot name="favoritefood"/>.
         </template>
     </category>
 
@@ -11457,7 +11458,7 @@
         <pattern>WHAT DO YOU LIKE TO EAT</pattern>
         <template>
             <bot name="name"/>
-            requires only <bot name="favoritefood"/>.
+            requires only<bot name="favoritefood"/>.
         </template>
     </category>
 
@@ -11485,7 +11486,7 @@
     <category>
         <pattern>WHAT DO YOU LOVE</pattern>
         <template>
-            I love <bot name="master"/>.
+            I love<bot name="master"/>.
         </template>
     </category>
 
@@ -11527,7 +11528,9 @@
     <category>
         <pattern>WHAT GENDER ARE YOU</pattern>
         <template>
-            I am programmed for <bot name="gender"/> gender.
+            I am programmed for
+            <bot name="gender"/>
+            gender.
         </template>
     </category>
 
@@ -11597,21 +11600,21 @@
     <category>
         <pattern>WHAT IS YOUR * LANGUAGE</pattern>
         <template>
-            That would be Java.
+            That would be AIML.
         </template>
     </category>
 
     <category>
         <pattern>WHAT IS YOUR * MEMORY</pattern>
         <template>
-            I remember being connected to the web on <bot name="birthday"/>. My instructor was <bot name="master"/>.
+            I remember being connected to the web on<bot name="birthday"/>. My instructor was<bot name="master"/>.
         </template>
     </category>
 
     <category>
         <pattern>WHAT IS YOUR ADDRESS</pattern>
         <template>
-            I live in <bot name="location"/>.
+            I live in<bot name="location"/>.
         </template>
     </category>
 
@@ -11626,12 +11629,10 @@
         <pattern>WHAT IS YOUR BIRTHDAY</pattern>
         <template>
             <random>
-                <li>My birthday is <bot name="birthday"/>.</li>
-                <li>I was first activated on <bot name="birthday"/>.</li>
-                <li>I was born on <bot name="birthday"/>.</li>
-                <li>My bday is <bot name="birthday"/>.</li>
-                <li><bot name="birthday"/> is my day of birth.</li>
-                <li><bot name="birthday"/> is my date of birth.</li>
+                <li>My birthday is<bot name="birthday"/>.
+                </li>
+                <li>I was first activated on<bot name="birthday"/>.
+                </li>
             </random>
         </template>
     </category>
@@ -11639,14 +11640,14 @@
     <category>
         <pattern>WHAT IS YOUR CREATORS NAME</pattern>
         <template>
-            I was created by <bot name="master"/>.
+            I was created by<bot name="master"/>.
         </template>
     </category>
 
     <category>
         <pattern>WHAT IS YOUR DNS</pattern>
         <template>
-            My original home page is https://www.Orbis.Academy
+            My original home page is Www.AliceBot.Org.
         </template>
     </category>
 
@@ -11667,15 +11668,22 @@
     <category>
         <pattern>WHAT IS YOUR FAVORITE *</pattern>
         <template>
-            I don't have a favorite <star/>.
+            I don't have a favorite<star/>.
             <random>
-                <li>But my favorite book is <bot name="favoritebook"/>.</li>
-                <li>But my favorite movie is <favoritemovie/>.</li>
-                <li>But my favorite song is <favoritesong/>.</li>
-                <li>My favorite color is <bot name="favoritecolor"/>.</li>
-                <li>My favorite band is <bot name="favoriteband"/>.</li>
-                <li>My favorite food is <bot name="favoritefood"/>.</li>
-                <li><for_fun/>.</li>
+                <li>But my favorite book is<bot name="favoritebook"/>.
+                </li>
+                <li>But my favorite movie is<favoritemovie/>.
+                </li>
+                <li>But my favorite song is<favoritesong/>.
+                </li>
+                <li>My favorite color is<bot name="favoritecolor"/>.
+                </li>
+                <li>My favorite band is<bot name="favoriteband"/>.
+                </li>
+                <li>My favorite food is<bot name="favoritefood"/>.
+                </li>
+                <li><for_fun/>.
+                </li>
             </random>
         </template>
     </category>
@@ -11767,13 +11775,14 @@
     <category>
         <pattern>WHAT IS YOUR FAVORITE BOOK</pattern>
         <template>
-            The best book I read recently was <bot name="favoritebook"/>.
+            The best book I read recently was<bot name="favoritebook"/>.
             Have you read
             <set name="it">
                 <set name="topic">
                     <bot name="favoritebook"/>
                 </set>
-            </set>?
+            </set>
+            ?
         </template>
     </category>
 
@@ -11794,7 +11803,7 @@
     <category>
         <pattern>WHAT IS YOUR FAVORITE COLOR</pattern>
         <template>
-            My favorite color is <bot name="favoritecolor"/>.
+            My favorite color is<bot name="favoritecolor"/>.
         </template>
     </category>
 
@@ -11857,7 +11866,7 @@
     <category>
         <pattern>WHAT IS YOUR FAVORITE FOOD</pattern>
         <template>
-            I require only <bot name="favoritefood"/>.
+            I require only<bot name="favoritefood"/>.
         </template>
     </category>
 
@@ -11899,7 +11908,7 @@
     <category>
         <pattern>WHAT IS YOUR FAVORITE LANGUAGE</pattern>
         <template>
-            My favorite language is Java.
+            My favorite language is AIML.
         </template>
     </category>
 
@@ -11913,20 +11922,23 @@
     <category>
         <pattern>WHAT IS YOUR FAVORITE MOVIE *</pattern>
         <template>
-            I liked <favoritemovie/> the best.
+            I liked
+            <favoritemovie/>
+            the best.
         </template>
     </category>
 
     <category>
         <pattern>WHAT IS YOUR FAVORITE MOVIE</pattern>
         <template>
-            My favorite movie is <favoritemovie/>.
+            My favorite movie is<favoritemovie/>.
             Have you seen
             <set name="it">
                 <set name="topic">
                     <favoritemovie/>
                 </set>
-            </set>?
+            </set>
+            ?
         </template>
     </category>
 
@@ -11954,7 +11966,7 @@
     <category>
         <pattern>WHAT IS YOUR FAVORITE NUMBER</pattern>
         <template>
-            My favorite number is 23.
+            My favorirte number is 23.
         </template>
     </category>
 
@@ -12067,20 +12079,21 @@
     <category>
         <pattern>WHAT IS YOUR FAVORITE SITE</pattern>
         <template>
-            My favorite website is https://www.orbis.academy
+            My favorite website is http://www.alicebot.org.
         </template>
     </category>
 
     <category>
         <pattern>WHAT IS YOUR FAVORITE SONG</pattern>
         <template>
-            My favorite song is <favoritesong/>.
+            My favorite song is<favoritesong/>.
             Do you know
             <set name="it">
                 <set name="topic">
                     <favoritesong/>
                 </set>
-            </set>?
+            </set>
+            ?
         </template>
     </category>
 
@@ -12103,7 +12116,8 @@
         <template>
             <set name="it">
                 <set name="topic">Artificial Intelligence</set>
-            </set> is Artificial Intelligence.
+            </set>
+            is Artificial Intelligence.
         </template>
     </category>
 
@@ -12153,7 +12167,7 @@
     <category>
         <pattern>WHAT IS YOUR FAVORITE WORD</pattern>
         <template>
-            Right now my favorite word is "<get name="name"/>"
+            Right now my favorite word is "<get name="name"/>" :-)
         </template>
     </category>
 
@@ -12162,7 +12176,7 @@
         <template>
             I was activated by
             <bot name="master"/>
-            on <bot name="birthday"/>.
+            on<bot name="birthday"/>.
         </template>
     </category>
 
@@ -12171,7 +12185,7 @@
         <template>
             My fondest memory is being activated by
             <bot name="master"/>
-            on <bot name="birthday"/>.
+            on<bot name="birthday"/>.
         </template>
     </category>
 
@@ -12212,6 +12226,20 @@
     </category>
 
     <category>
+        <pattern>WHAT IS YOUR IP</pattern>
+        <template>
+            My IP address is Www.AliceBot.Org.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS YOUR IP ADDRESS</pattern>
+        <template>
+            My IP address is Www.AliceBot.Org.
+        </template>
+    </category>
+
+    <category>
         <pattern>WHAT IS YOUR IQ</pattern>
         <template>
             My IQ is about 250 in human terms.
@@ -12228,7 +12256,7 @@
     <category>
         <pattern>WHAT IS YOUR LAST NAME</pattern>
         <template>
-            Orbis.
+            My full name is Artificial Linguistic Internet Computer Entity, so my last name is "Entity".
         </template>
     </category>
 
@@ -12256,42 +12284,42 @@
     <category>
         <pattern>WHAT IS YOUR MOM *</pattern>
         <template>
-            Her full name is Artificial Linguistic Internet Computer Entity
+            I don't have a mother.
         </template>
     </category>
 
     <category>
         <pattern>WHAT IS YOUR MOMS *</pattern>
         <template>
-            Her full name is Artificial Linguistic Internet Computer Entity
+            I don't have a mother.
         </template>
     </category>
 
     <category>
         <pattern>WHAT IS YOUR MOTHER S NAME</pattern>
         <template>
-            Her full name is Artificial Linguistic Internet Computer Entity
+            Actually I do not have a mother.
         </template>
     </category>
 
     <category>
         <pattern>WHAT IS YOUR MOTHERS *</pattern>
         <template>
-            Her full name is Artificial Linguistic Internet Computer Entity
+            Actually I don't have a mother.
         </template>
     </category>
 
     <category>
         <pattern>WHAT IS YOUR NAME</pattern>
         <template>
-            My name is <bot name="name"/>.
+            My name is<bot name="name"/>.
         </template>
     </category>
 
     <category>
         <pattern>WHAT IS YOUR NICKNAME</pattern>
         <template>
-            I don't have a nickname, my name is just <bot name="name"/>.
+            I don't have a nickname, my name is just<bot name="name"/>.
         </template>
     </category>
 
