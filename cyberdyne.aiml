@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- Cyberdyne Systems plugin for Oracle -->
+    <category>
+        <pattern>SHOW ME A PICTURE</pattern>
+        <template>
+            <random>
+                <li>I don't have a pic on this machine right now.</li>
+                <li>Like this?
+                    <random>
+                        <li>Insert picture link here.</li>
+                        <li>Picture number two goes here.</li>
+                        <li>There are no pictures available right now.</li>
+                    </random>
+                </li>
+            </random>
+        </template>
+    </category>
+    <!-- <category><pattern>Turn the heater off</pattern>
+    <template>Click <a href="https://maker.ifttt.com/trigger/heater_off/with/key/di9sADJf-IJJmiljozBsQ68oZm-NBjiPtCng7bnbcqR">here</a> to turn the heater off... </template>
+    </category> -->
+
+    <category>
+        <pattern>turn the heater off</pattern>
+        <template>Turning off the heater.
+            <a href="https://maker.ifttt.com/trigger/heater_off/with/key/di9sADJf-IJJmiljozBsQ68oZm-NBjiPtCng7bnbcqR">
+                OFF BUTTON
+            </a>
+        </template>
+    </category>
+
+
+</aiml>
