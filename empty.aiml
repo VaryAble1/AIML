@@ -1,0 +1,16 @@
+<aiml>
+
+    <category>
+        <pattern>*</pattern>
+        <template>
+            <think>
+                <set name="BotDB Pattern">
+                    <star/>
+                </set>
+                <script>:pickup</script>
+            </think>
+            What should I say...
+        </template>
+    </category>
+
+</aiml>

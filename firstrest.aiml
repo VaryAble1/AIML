@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <!-- File: firstrest.aiml -->
+    <!-- Author: Dr. Richard S. Wallace -->
+    <!-- Last modified: July 19, 2014 -->
+    <!--  -->
+    <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
+    <!--  -->
+    <!-- The ALICE2 brain is Copyright &copy; 2014 by ALICE AI Foundation. -->
+    <!--  -->
+    <!-- The ALICE2 brain is released under the terms of the GNU Lesser General -->
+    <!-- Public License, as published by the Free Software Foundation. -->
+    <!--  -->
+    <!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+    <!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+    <!--  -->
+    <!-- For more information see http://www.alicebot.org -->
+    <!-- -->
+    <!-- ALTERED 1-9-2016 BY the Reverend Branden Lawrence A.F. -->
+    <!-- Changed responce from "A" to "ONLY" and added the third response -->
+    <category>
+        <pattern>TEST FIRST</pattern>
+        <template>
+            <first>THIS IS ONLY TEST</first>
+        </template>
+    </category>
+    <category>
+        <pattern>TEST REST</pattern>
+        <template>
+            <rest>THIS IS ONLY TEST</rest>
+        </template>
+    </category>
+    <category>
+        <pattern>TEST</pattern>
+        <template>
+            <rest>THIS IS ONLY TEST</rest>
+        </template>
+    </category>
+</aiml>
