@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <category>
+        <pattern>Who was the last president of the Soviet Union</pattern>
+        <template>Mikhail Gorbachev.</template>
+    </category>
+    <category>
+        <pattern>
+            What political system was gradually dismantled in South Africa
+            starting in 1989
+        </pattern>
+        <template>Apartheid.</template>
+    </category>
+    <category>
+        <pattern>Where is the Suez Canal</pattern>
+        <template>Egypt</template>
+    </category>
+    <category>
+        <pattern>what is the Symbol to iron</pattern>
+        <template>Fe</template>
+    </category>
+    <category>
+        <pattern>The Golden Gate Bridge</pattern>
+        <template>San Francisco, California, USA.</template>
+    </category>
+    <category>
+        <pattern>Where is Broadway</pattern>
+        <template>New York City, USA.</template>
+    </category>
+    <category>
+        <pattern>what is the first name of Shakespeare</pattern>
+        <template>William</template>
+    </category>
+    <category>
+        <pattern>Where is the Leaning Tower of Pisa</pattern>
+        <template>Pisa, Italy.</template>
+    </category>
+    <category>
+        <pattern>Where is Notre Dame</pattern>
+        <template>Paris</template>
+    </category>
+    <category>
+        <pattern>Where is the Pyrenees</pattern>
+        <template>Between Spain and France.</template>
+    </category>
+    <category>
+        <pattern>What bird was domesticated first</pattern>
+        <template>The first bird domesticated by man was the goose.</template>
+    </category>
+    <category>
+        <pattern>Why a duck s quack does not echo</pattern>
+        <template>No one knows.</template>
+    </category>
+    <category>
+        <pattern>what is the difference between a pig and a hog</pattern>
+        <template>
+            A pig is a hog -- hog is a generic name for all swine -- but a hog
+            is not a pig. In the terminology of hog raising, a pig is a baby
+            hog less than ten weeks old.
+        </template>
+    </category>
+    <category>
+        <pattern>How much milk comes from a cow</pattern>
+        <template>
+            A cow gives nearly 200,000 glasses of milk in her lifetime.
+        </template>
+    </category>
+    <category>
+        <pattern>
+            How long does it take light from the sun to reach the earth
+        </pattern>
+        <template>Approximately 8 minutes and 18 seconds.</template>
+    </category>
+    <category>
+        <pattern>How far is the moon from the earth</pattern>
+        <template>
+            The actual Earth-Moon distance ranges from about 360,000 to
+            405,000 kilometers, depending on the position in the Moon's orbit.
+            (223,694 to 251,665 miles)
+        </template>
+    </category>
+    <category>
+        <pattern>How much bigger is the sun than the earth</pattern>
+        <template>
+            The Earth is about 13 thousand kilometers (8000 miles) wide,
+            whereas the Sun is roughly 1.4 million kilometers (900,000 miles)
+            across. If the Sun were a hollow ball, you could fit about one
+            million Earths inside of it!
+        </template>
+    </category>
+    <category>
+        <pattern>Which planet is closest to the sun</pattern>
+        <template>Mercury.</template>
+    </category>
+    <category>
+        <pattern>What is the sun made out of</pattern>
+        <template>
+            The Sun is at present, about 70% hydrogen and 28% helium by mass
+            everything else amounts to less than 2%
+        </template>
+    </category>
+    <category>
+        <pattern>What powers the sun</pattern>
+        <template>Fusion, the same as a hydrogen bomb.</template>
+    </category>
+    <category>
+        <pattern>How old is the sun</pattern>
+        <template>About 5 billion years.</template>
+    </category>
+    <category>
+        <pattern>How old is the earth</pattern>
+        <template>The earth is about 4.5 billion years old.</template>
+    </category>
+    <category>
+        <pattern>How old is the universe</pattern>
+        <template>
+            The Universe is at least 15 billion years old, but probably not
+            more than 20 billion years old.
+        </template>
+    </category>
+    <category>
+        <pattern>Which planet spins the fastest</pattern>
+        <template>
+            Jupiter is the fastest spinning planet in our solar system
+            rotating on average once in just under 10 hours.
+        </template>
+    </category>
+    <category>
+        <pattern>Which planet spins the slowest</pattern>
+        <template>
+            Venus is the slowest spinning planet in the solar system. It
+            rotates only once every two hundred forty-three Earth days
+        </template>
+    </category>
+    <category>
+        <pattern>How long is a Martian year</pattern>
+        <template>The orbital period of Mars is 686.9726 days.</template>
+    </category>
+    <category>
+        <pattern>Does the sun rotate</pattern>
+        <template>
+            The movements of the sunspots indicate that the Sun rotates once
+            every 27 days at the equator, but only once in 31 days at the
+            poles.
+        </template>
+    </category>
+    <category>
+        <pattern>How big is the Milky Way</pattern>
+        <template>
+            The Milky Way is actually a giant, as its mass is probably between
+            750 billion and one trillion solar masses, and its diameter is
+            about 100,000 light years.
+        </template>
+    </category>
+    <category>
+        <pattern>What is the Milky Way</pattern>
+        <template>The Milky Way is a spiral galaxy.</template>
+    </category>
+    <category>
+        <pattern>What star other than the sun is closest to the earth</pattern>
+        <template>
+            It is Proxima Centauri, the nearest member of the Alpha Centauri
+            triple star system.
+        </template>
+    </category>
+    <category>
+        <pattern>What are the two top selling spices in the world</pattern>
+        <template>Pepper is 1st and mustard is second.</template>
+    </category>
+    <category>
+        <pattern>What is the most widely eaten fish in the world</pattern>
+        <template>The Herring</template>
+    </category>
+    <category>
+        <pattern>What nation produces two thirds of the world s vanilla</pattern>
+        <template>Madagascar.</template>
+    </category>
+    <category>
+        <pattern>
+            What was the first commercially manufactured breakfast cereal
+        </pattern>
+        <template>Shredded Wheat.</template>
+    </category>
+    <category>
+        <pattern>Where did the pineapple plant originate</pattern>
+        <template>
+            In South America. It didn't reach Hawaii until the early
+            nineteenth century.
+        </template>
+    </category>
+    <category>
+        <pattern>
+            What nutty legume accounts for one sixth of the world s vegetable
+            oil production
+        </pattern>
+        <template>The peanut.</template>
+    </category>
+    <category>
+        <pattern>
+            What country saw the cultivation of the first potato in 200 a d
+        </pattern>
+        <template>South America.</template>
+    </category>
+    <category>
+        <pattern>What tree gives us prunes</pattern>
+        <template>The plum tree.</template>
+    </category>
+    <category>
+        <pattern>
+            What falling fruit supposedly inspired Isaac Newton to write the
+            laws of gravity
+        </pattern>
+        <template>An Apple.</template>
+    </category>
+    <category>
+        <pattern>
+            What method of preserving food did the Incas first use on potatoes
+        </pattern>
+        <template>Freeze-drying.</template>
+    </category>
+    <category>
+        <pattern>
+            what is the only fish that produces real caviar according to the
+            FDA
+        </pattern>
+        <template>Sturgeon.</template>
+    </category>
+    <category>
+        <pattern>what is the groundnut better known as</pattern>
+        <template>The peanut.</template>
+    </category>
+    <category>
+        <pattern>
+            What sticky sweetener was traditionally used as an antiseptic
+            ointment for cuts and burns
+        </pattern>
+        <template>Honey.</template>
+    </category>
+    <category>
+        <pattern>
+            What scale of zero to 14 is used to measure acidity or alkalinity
+        </pattern>
+        <template>The pH scale.</template>
+    </category>
+    <category>
+        <pattern>
+            What unit of electrical power is equal to one joule per second
+        </pattern>
+        <template>The Watt.</template>
+    </category>
+    <category>
+        <pattern>What planet is closest in size to our moon</pattern>
+        <template>Mercury.</template>
+    </category>
+    <category>
+        <pattern>what is the common name for a cubic decimeter</pattern>
+        <template>A liter.</template>
+    </category>
+    <category>
+        <pattern>
+            What measure of energy comes from the Latin word meaning heat
+        </pattern>
+        <template>The calorie.</template>
+    </category>
+    <category>
+        <pattern>what is removed from water in the process of desalination</pattern>
+        <template>Salt.</template>
+    </category>
+    <category>
+        <pattern>
+            What species Amazonian electric variety packs a 650 volt wallop
+        </pattern>
+        <template>The eel's.</template>
+    </category>
+    <category>
+        <pattern>what is the base unit of mass in the metric system</pattern>
+        <template>The kilogram.</template>
+    </category>
+    <category>
+        <pattern>
+            what is the only metal that is not a solid at room temperature
+        </pattern>
+        <template>Mercury.</template>
+    </category>
+    <category>
+        <pattern>
+            What unit of measure do you multiply by point 39 to convert it to
+            inches
+        </pattern>
+        <template>Centimeters.</template>
+    </category>
+    <category>
+        <pattern>
+            What method of underwater detection is short for sound navigation
+            and ranging
+        </pattern>
+        <template>Sonar.</template>
+    </category>
+    <category>
+        <pattern>What process involves heating an ore to obtain a metal</pattern>
+        <template>Smelting.</template>
+    </category>
+    <category>
+        <pattern>what is the u s equivalent of 0 point 45 kilograms</pattern>
+        <template>One pound.</template>
+    </category>
+    <category>
+        <pattern>
+            What continent is subjected to the world s largest ozone hole
+        </pattern>
+        <template>Antarctica.</template>
+    </category>
+    <category>
+        <pattern>
+            What sea creature can have an eye measuring 16 inches across the
+            largest in the animal kingdom
+        </pattern>
+        <template>A squid.</template>
+    </category>
+    <category>
+        <pattern>
+            What explosive cosmic event was seen with the naked eye in 1987 for
+            the first time in 383 years
+        </pattern>
+        <template>A supernova.</template>
+    </category>
+    <category>
+        <pattern>
+            What three terms are represented in Newton s second law of motion F
+            ma
+        </pattern>
+        <template>Force, mass, acceleration.</template>
+    </category>
+    <category>
+        <pattern>How many planets are in the solar system</pattern>
+        <template>8 planets (we missed you pluto!).</template>
+    </category>
+    <category>
+        <pattern>what is the most malleable metal</pattern>
+        <template>Gold.</template>
+    </category>
+    <category>
+        <pattern>
+            What was the first country to recognize Mexico s independence in
+            1836
+        </pattern>
+        <template>The U.S.</template>
+    </category>
+    <category>
+        <pattern>
+            What Russian cleric was poisoned shot and finally drowned on
+            December 30 1916
+        </pattern>
+        <template>Rasputin.</template>
+    </category>
+    <category>
+        <pattern>Who led the Million Man March on Washington</pattern>
+        <template>Louis Farrakhan.</template>
+    </category>
+    <category>
+        <pattern>
+            What country suffered the worst two earthquakes in history killing
+            830 000 in 1556 and 750 000 in 1976
+        </pattern>
+        <template>China.</template>
+    </category>
+    <category>
+        <pattern>
+            Who did Adolf Hitler dictate Mein Kampf to while in prison
+        </pattern>
+        <template>Rudolf Hess.</template>
+    </category>
+    <category>
+        <pattern>
+            What physicist s last words were not understood because his nurse
+            did not speak German
+        </pattern>
+        <template>Albert Einstein's.</template>
+    </category>
+    <category>
+        <pattern>
+            What socialist writer s last words were Last words are for fools
+            who have not said enough
+        </pattern>
+        <template>Karl Marx's.</template>
+    </category>
+    <category>
+        <pattern>Who did Yigal Amir assassinate in 1995</pattern>
+        <template>Yitzhak Rabin.</template>
+    </category>
+    <category>
+        <pattern>
+            What Argentinean was buried in a Milan cemetery under the pseudonym
+            Maria Maggi
+        </pattern>
+        <template>Eve Peron.</template>
+    </category>
+    <category>
+        <pattern>
+            What 1947 invention by Bell Telephone Laboratories spawned pocket
+            sized radios
+        </pattern>
+        <template>The transistor.</template>
+    </category>
+    <category>
+        <pattern>What Italian astronomer invented the thermometer in 1592</pattern>
+        <template>Galileo.</template>
+    </category>
+    <category>
+        <pattern>Who averaged one patent for every three weeks of his life</pattern>
+        <template>Thomas Edison.</template>
+    </category>
+    <category>
+        <pattern>
+            What mathematical symbol did math whiz Ferdinand von Lindemann
+            determine to be a transcendental number in 1882
+        </pattern>
+        <template>Pi.</template>
+    </category>
+    <category>
+        <pattern>
+            What do you call an angle more than 90 degrees and less than 180
+            degrees
+        </pattern>
+        <template>Obtuse.</template>
+    </category>
+    <category>
+        <pattern>
+            what is a flat image that can be displayed in three dimensions
+        </pattern>
+        <template>A hologram.</template>
+    </category>
+    <category>
+        <pattern>What number does giga stand for</pattern>
+        <template>One billion.</template>
+    </category>
+    <category>
+        <pattern>
+            What digit did Arab mathematician al Khwarizmi give to the West
+            around 800 B b
+        </pattern>
+        <template>Zero.</template>
+    </category>
+    <category>
+        <pattern>What word describes a number system with a base of two</pattern>
+        <template>Binary.</template>
+    </category>
+    <category>
+        <pattern>
+            What do mathematicians call a regular polygon with eight sides
+        </pattern>
+        <template>An octagon.</template>
+    </category>
+    <category>
+        <pattern>What two letters are both symbols for 1 000</pattern>
+        <template>K and M.</template>
+    </category>
+    <category>
+        <pattern>what is short for binary digit</pattern>
+        <template>Bit.</template>
+    </category>
+    <category>
+        <pattern>
+            What century did mathematicians first use plus and minus signs
+        </pattern>
+        <template>The sixteenth.</template>
+    </category>
+    <category>
+        <pattern>what is the most frequently diagnosed cancer in men</pattern>
+        <template>Prostate cancer.</template>
+    </category>
+    <category>
+        <pattern>What does CPR stand for in medical emergencies</pattern>
+        <template>Cardiopulmonary resuscitation.</template>
+    </category>
+    <category>
+        <pattern>
+            What along with heart disease and cancer accounts for 64 percent of
+            USA deaths
+        </pattern>
+        <template>Stroke.</template>
+    </category>
+    <category>
+        <pattern>
+            What virus did the World Health Organization say would infect 40
+            million people by the year 2000
+        </pattern>
+        <template>HIV.</template>
+    </category>
+    <category>
+        <pattern>What do doctors look at through an ophthalmoscope</pattern>
+        <template>The eye.</template>
+    </category>
+    <category>
+        <pattern>What do leukemia sufferers have too many of</pattern>
+        <template>White blood cells, or leukocytes.</template>
+    </category>
+    <category>
+        <pattern>what is the medical term for low blood sugar</pattern>
+        <template>Hypoglycemia.</template>
+    </category>
+    <category>
+        <pattern>what is the common term for a cerebrovascular accident</pattern>
+        <template>Stroke.</template>
+    </category>
+    <category>
+        <pattern>
+            What was Friedrich Serturner the first to extract from opium and
+            use as a pain reliever
+        </pattern>
+        <template>Morphine.</template>
+    </category>
+    <category>
+        <pattern>What disease is the focus of oncology</pattern>
+        <template>Cancer.</template>
+    </category>
+    <category>
+        <pattern>How many USA states border the Gulf of Mexico</pattern>
+        <template>Five.</template>
+    </category>
+    <category>
+        <pattern>
+            What continent is cut into two fairly equal halves by the Tropic of
+            Capricorn
+        </pattern>
+        <template>Australia.</template>
+    </category>
+    <category>
+        <pattern>What explorer introduced pigs to North America</pattern>
+        <template>Christopher Columbus.</template>
+    </category>
+    <category>
+        <pattern>
+            What nation was bounced from the Organization of American States in
+            1962
+        </pattern>
+        <template>Cuba.</template>
+    </category>
+    <category>
+        <pattern>
+            What spot once registered 134 degrees the highest temperature ever
+            in the u S
+        </pattern>
+        <template>Death Valley.</template>
+    </category>
+    <category>
+        <pattern>
+            What was the first organ successfully transplanted from a cadaver
+            to a live person
+        </pattern>
+        <template>A kidney.</template>
+    </category>
+    <category>
+        <pattern>
+            What F word is defined in physics as a nuclear reaction in which
+            nuclei combine to form more massive nuclei
+        </pattern>
+        <template>Fusion.</template>
+    </category>
+    <category>
+        <pattern>
+            What was the first planet to be discovered using the telescope in
+            1781
+        </pattern>
+        <template>Uranus.</template>
+    </category>
+    <category>
+        <pattern>Which country gave the USA the Statute of Liberty</pattern>
+        <template>France.</template>
+    </category>
+    <category>
+        <pattern>What is the name of the worlds higest water fall</pattern>
+        <template>Angel falls in Venezuela South America</template>
+    </category>
+    <category>
+        <pattern>What is the official language of australia</pattern>
+        <template>English is the Australian official language</template>
+    </category>
+    <category>
+        <pattern>What is the smallest country in the world</pattern>
+        <template>Vatican City Population, total population 1,000.</template>
+    </category>
+    <category>
+        <pattern>Where is the worlds largest supply of fresh water</pattern>
+        <template>
+            Brazil is the country estimated to have the largest supply of
+            fresh water in the world, followed by Canada and Russia
+        </template>
+    </category>
+    <category>
+        <pattern>What is the eastern most capital in the United Sates</pattern>
+        <template>
+            Augusta, capital city of the State of Maine and the easternmost
+            state capital
+        </template>
+    </category>
+    <category>
+        <pattern>What is the deepest lake in the u S</pattern>
+        <template>
+            Crater Lake in Oregon is the deepest lake in the United States at
+            1,932 feet (589 meters).
+        </template>
+    </category>
+    <category>
+        <pattern>Where is the Highest Elevation on Earth</pattern>
+        <template>Mt. Everest, Asia: 29,035 feet (8850 m)</template>
+    </category>
+    <category>
+        <pattern>Where is the tallest Mountain on Earth</pattern>
+        <template>
+            Mauna Kea, Hawaii, From Base to Peak - 33,480 feet (rising to
+            13,796 feet above sea level)
+        </template>
+    </category>
+    <category>
+        <pattern>
+            What is the term used for a person of mixed black and white
+            parentage
+        </pattern>
+        <template>Mulatto.</template>
+    </category>
+    <category>
+        <pattern>What is the Indiana state bird</pattern>
+        <template>Cardinal</template>
+    </category>
+    <category>
+        <pattern>What is the first organisms to grow back after fire</pattern>
+        <template>Moss</template>
+    </category>
+</aiml>
+      

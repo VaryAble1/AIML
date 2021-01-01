@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: learnf.aiml -->
+<!-- Author: VaryAble -->
+<!-- Last modified: August 10, 2020 -->
+<!--  -->
+<!-- This AIML file is part of the ALICE 0.0.1 chat bot knowledge base. -->
+<!--  -->
+<!-- The ALICE brain is Copyright &copy; 2020 by Orbis Labs. -->
+<!--  -->
+<!-- The ALICE brain is released under the terms of the GNU Lesser General -->
+<!-- Public License, as published by the Free Software Foundation. -->
+<!--  -->
+<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+<!--  -->
+<!-- For more information see https://www.orbis.academy -->
+<!--  -->
+<category><pattern>WHO PLAYS ^</pattern>
+<template>George likes to play basketball</template>
+</category>
+<category><pattern>WHO LIKES TO PLAY BASKETBALL</pattern>
+<template>George likes to play basketball</template>
+</category>
+<category><pattern>WHAT DOES GEORGE PLAY ^</pattern>
+<template>George likes to play basketball</template>
+</category>
+<category><pattern>WHAT DOES GEORGE LIKE ^</pattern>
+<template>George likes to play basketball</template>
+</category>
+<category><pattern>WHAT DOES HE PLAY ^</pattern>
+<template>George likes to play basketball</template>
+</category>
+<category><pattern>WHAT DOES HE LIKE ^</pattern>
+<template>George likes to play basketball</template>
+</category>
+</aiml>
